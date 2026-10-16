@@ -1,0 +1,10 @@
+total 46824
+-rw-rw-r-- 1 ubuntu ubuntu        0 Oct 10 17:43 report.txt
+-rwxrwxr-x 1 ubuntu ubuntu 23482369 Oct 10 17:42 sweet-go1.26.7
+-rwxrwxr-x 1 ubuntu ubuntu 24460836 Oct 10 17:43 sweet-go1.27.0
+--- size sweet-go1.26.7
+   text	   data	    bss	    dec	    hex	filename
+15754006	 511603	33841504	50107113	2fc92e9	/home/ubuntu/bench-out/results/binsize/sweet-go1.26.7
+--- size sweet-go1.27.0
+   text	   data	    bss	    dec	    hex	filename
+16185464	 516539	33842224	50544227	3033e63	/home/ubuntu/bench-out/results/binsize/sweet-go1.27.0

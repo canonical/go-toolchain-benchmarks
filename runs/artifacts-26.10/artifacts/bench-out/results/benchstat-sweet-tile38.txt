@@ -1,0 +1,31 @@
+                   │ tile38//go1.26.7.results │   tile38//go1.27.0.results    │
+                   │          sec/op          │   sec/op     vs base          │
+Tile38QueryLoad-32                1.293m ± 1%   1.297m ± 1%  ~ (p=0.481 n=10)
+
+                   │ tile38//go1.26.7.results │      tile38//go1.27.0.results       │
+                   │    average-RSS-bytes     │ average-RSS-bytes  vs base          │
+Tile38QueryLoad-32               3.845Gi ± 0%        3.846Gi ± 1%  ~ (p=0.481 n=10)
+
+                   │ tile38//go1.26.7.results │     tile38//go1.27.0.results     │
+                   │      peak-RSS-bytes      │ peak-RSS-bytes  vs base          │
+Tile38QueryLoad-32               3.911Gi ± 0%     3.915Gi ± 0%  ~ (p=0.247 n=10)
+
+                   │ tile38//go1.26.7.results │    tile38//go1.27.0.results     │
+                   │      peak-VM-bytes       │ peak-VM-bytes  vs base          │
+Tile38QueryLoad-32               5.090Gi ± 1%    5.152Gi ± 1%  ~ (p=0.105 n=10)
+
+                   │ tile38//go1.26.7.results │     tile38//go1.27.0.results      │
+                   │     p50-latency-sec      │ p50-latency-sec  vs base          │
+Tile38QueryLoad-32                594.8µ ± 1%       594.9µ ± 1%  ~ (p=0.796 n=10)
+
+                   │ tile38//go1.26.7.results │     tile38//go1.27.0.results      │
+                   │     p90-latency-sec      │ p90-latency-sec  vs base          │
+Tile38QueryLoad-32                1.648m ± 1%       1.655m ± 1%  ~ (p=0.739 n=10)
+
+                   │ tile38//go1.26.7.results │     tile38//go1.27.0.results      │
+                   │     p99-latency-sec      │ p99-latency-sec  vs base          │
+Tile38QueryLoad-32                11.34m ± 2%       11.42m ± 1%  ~ (p=0.315 n=10)
+
+                   │ tile38//go1.26.7.results │   tile38//go1.27.0.results    │
+                   │          ops/s           │    ops/s     vs base          │
+Tile38QueryLoad-32                18.56k ± 1%   18.50k ± 1%  ~ (p=0.481 n=10)

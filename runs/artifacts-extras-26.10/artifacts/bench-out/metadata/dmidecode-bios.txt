@@ -1,0 +1,38 @@
+# dmidecode 3.7
+Getting SMBIOS data from sysfs.
+SMBIOS 3.4.0 present.
+
+Handle 0x0004, DMI type 0, 26 bytes
+Platform Firmware Information
+	Vendor: HPE
+	Version: A42
+	Release Date: 04/02/2026
+	Address: 0xF0000
+	Runtime Size: 64 KiB
+	ROM Size: 64 MiB
+	Characteristics:
+		PCI is supported
+		PNP is supported
+		Firmware is upgradeable
+		Firmware shadowing is allowed
+		ESCD support is available
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		5.25"/360 kB floppy services are supported (int 13h)
+		5.25"/1.2 MB floppy services are supported (int 13h)
+		3.5"/720 kB floppy services are supported (int 13h)
+		Print screen service is supported (int 5h)
+		8042 keyboard services are supported (int 9h)
+		Serial services are supported (int 14h)
+		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
+		ACPI is supported
+		USB legacy is supported
+		BIOS boot specification is supported
+		Function key-initiated network boot is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	Platform Firmware Revision: 4.4
+	Embedded Controller Firmware Revision: 3.20
+

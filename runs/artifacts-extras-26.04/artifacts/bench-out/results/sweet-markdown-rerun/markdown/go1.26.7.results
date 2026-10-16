@@ -1,0 +1,10 @@
+BenchmarkMarkdownRenderXHTML-32 1 395544977 ns/op 22112938 average-RSS-bytes 22814720 peak-RSS-bytes 1262682112 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 395843264 ns/op 22437888 average-RSS-bytes 22933504 peak-RSS-bytes 1329864704 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 396980470 ns/op 22663168 average-RSS-bytes 23199744 peak-RSS-bytes 1330126848 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 400605115 ns/op 22274048 average-RSS-bytes 23085056 peak-RSS-bytes 1330380800 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 401439074 ns/op 22254933 average-RSS-bytes 23470080 peak-RSS-bytes 1330143232 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 405466151 ns/op 22483968 average-RSS-bytes 23207936 peak-RSS-bytes 1329872896 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 400547948 ns/op 22405120 average-RSS-bytes 22605824 peak-RSS-bytes 1262952448 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 396810402 ns/op 22196224 average-RSS-bytes 23011328 peak-RSS-bytes 1262673920 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 405198250 ns/op 22503424 average-RSS-bytes 22900736 peak-RSS-bytes 1262682112 peak-VM-bytes
+BenchmarkMarkdownRenderXHTML-32 1 403618758 ns/op 22585344 average-RSS-bytes 23019520 peak-RSS-bytes 1262927872 peak-VM-bytes

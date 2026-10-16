@@ -1,0 +1,10 @@
+# Sweet configuration: both Go toolchains in ONE config so a single
+# `sweet run` compares them directly. Results from separate `sweet run`
+# invocations must not be compared, per Sweet's documentation.
+[[config]]
+  name = "go1.26.7"
+  goroot = "/opt/go1.26.7"
+
+[[config]]
+  name = "go1.27.0"
+  goroot = "/opt/go1.27.0"

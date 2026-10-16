@@ -1,0 +1,15 @@
+                        │ gopher-lua//go1.26.7.results │   gopher-lua//go1.27.0.results    │
+                        │            sec/op            │   sec/op    vs base               │
+GopherLuaKNucleotide-32                     40.49 ± 0%   37.36 ± 0%  -7.73% (p=0.000 n=10)
+
+                        │ gopher-lua//go1.26.7.results │    gopher-lua//go1.27.0.results     │
+                        │      average-RSS-bytes       │ average-RSS-bytes  vs base          │
+GopherLuaKNucleotide-32                   36.67Mi ± 0%        36.70Mi ± 0%  ~ (p=0.631 n=10)
+
+                        │ gopher-lua//go1.26.7.results │   gopher-lua//go1.27.0.results   │
+                        │        peak-RSS-bytes        │ peak-RSS-bytes  vs base          │
+GopherLuaKNucleotide-32                  38.85Mi ± 11%     38.86Mi ± 0%  ~ (p=0.971 n=10)
+
+                        │ gopher-lua//go1.26.7.results │  gopher-lua//go1.27.0.results   │
+                        │        peak-VM-bytes         │ peak-VM-bytes  vs base          │
+GopherLuaKNucleotide-32                   1.239Gi ± 5%    1.239Gi ± 5%  ~ (p=0.239 n=10)

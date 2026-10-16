@@ -1,0 +1,47 @@
+           │ etcd//go1.26.7.results │       etcd//go1.27.0.results       │
+           │         sec/op         │   sec/op     vs base               │
+EtcdPut-32              22.54m ± 2%   22.57m ± 4%       ~ (p=0.853 n=10)
+EtcdSTM-32              133.5m ± 1%   133.3m ± 1%       ~ (p=0.436 n=10)
+geomean                 54.85m        54.85m       +0.00%
+
+           │ etcd//go1.26.7.results │          etcd//go1.27.0.results          │
+           │   average-RSS-bytes    │ average-RSS-bytes  vs base               │
+EtcdPut-32             79.57Mi ± 2%        80.46Mi ± 2%       ~ (p=0.190 n=10)
+EtcdSTM-32             87.76Mi ± 3%        86.53Mi ± 4%       ~ (p=0.796 n=10)
+geomean                83.57Mi             83.44Mi       -0.15%
+
+           │ etcd//go1.26.7.results │        etcd//go1.27.0.results         │
+           │     peak-RSS-bytes     │ peak-RSS-bytes  vs base               │
+EtcdPut-32             84.73Mi ± 4%     86.45Mi ± 5%       ~ (p=0.247 n=10)
+EtcdSTM-32             93.10Mi ± 3%     92.37Mi ± 3%       ~ (p=0.971 n=10)
+geomean                88.82Mi          89.36Mi       +0.61%
+
+           │ etcd//go1.26.7.results │        etcd//go1.27.0.results        │
+           │     peak-VM-bytes      │ peak-VM-bytes  vs base               │
+EtcdPut-32             11.29Gi ± 0%    11.29Gi ± 0%  +0.00% (p=0.001 n=10)
+EtcdSTM-32             11.29Gi ± 0%    11.29Gi ± 1%  +0.00% (p=0.000 n=10)
+geomean                11.29Gi         11.29Gi       +0.00%
+
+           │ etcd//go1.26.7.results │         etcd//go1.27.0.results         │
+           │    p50-latency-sec     │ p50-latency-sec  vs base               │
+EtcdPut-32              21.97m ± 2%       21.93m ± 3%       ~ (p=0.739 n=10)
+EtcdSTM-32              99.19m ± 2%       99.18m ± 1%       ~ (p=0.912 n=10)
+geomean                 46.68m            46.63m       -0.11%
+
+           │ etcd//go1.26.7.results │         etcd//go1.27.0.results         │
+           │    p90-latency-sec     │ p90-latency-sec  vs base               │
+EtcdPut-32              33.16m ± 4%       33.77m ± 6%       ~ (p=0.247 n=10)
+EtcdSTM-32              272.2m ± 1%       270.1m ± 1%       ~ (p=0.075 n=10)
+geomean                 95.01m            95.49m       +0.51%
+
+           │ etcd//go1.26.7.results │         etcd//go1.27.0.results         │
+           │    p99-latency-sec     │ p99-latency-sec  vs base               │
+EtcdPut-32              43.40m ± 6%       45.48m ± 6%       ~ (p=0.089 n=10)
+EtcdSTM-32              578.3m ± 2%       570.2m ± 1%  -1.41% (p=0.043 n=10)
+geomean                 158.4m            161.0m       +1.65%
+
+           │ etcd//go1.26.7.results │       etcd//go1.27.0.results       │
+           │         ops/s          │    ops/s     vs base               │
+EtcdPut-32              43.63k ± 2%   43.50k ± 4%       ~ (p=0.631 n=10)
+EtcdSTM-32              7.447k ± 1%   7.463k ± 1%       ~ (p=0.436 n=10)
+geomean                 18.03k        18.02k       -0.05%

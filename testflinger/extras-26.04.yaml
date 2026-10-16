@@ -1,0 +1,36 @@
+# Extras: Ubuntu 26.04 LTS on chakron — supplementary blog-coverage benchmarks
+# (stdlib json/flate/gzip, binary size, gVisor, markdown rerun).
+# Same DUT, same pins, same artifact flow as the main campaign.
+job_queue: chakron
+global_timeout: 14400
+output_timeout: 3600
+tags:
+  - go-benchmark
+  - extras
+  - go1.26.7-vs-go1.27.0
+  - ubuntu-26.04
+  - amd64
+provision_data:
+  distro: resolute
+test_data:
+  attachments:
+    - local: ../versions.env
+    - local: ../scripts/dut-setup.sh
+    - local: ../scripts/dut-metadata.sh
+    - local: ../scripts/dut-extras.sh
+    - local: ../scripts/sweet-config.toml
+  test_cmds: |
+    set -x
+    SSH="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+    SCP="scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+    $SCP attachments/test/versions.env attachments/test/dut-setup.sh attachments/test/dut-metadata.sh attachments/test/dut-extras.sh attachments/test/sweet-config.toml ubuntu@$DEVICE_IP:
+    $SSH ubuntu@$DEVICE_IP 'set -o pipefail; bash dut-setup.sh 2>&1 | tee setup.log'
+    SETUP_RC=$?
+    $SSH ubuntu@$DEVICE_IP 'set -o pipefail; bash dut-metadata.sh 2>&1 | tee metadata.log' || true
+    $SSH ubuntu@$DEVICE_IP 'set -o pipefail; bash dut-extras.sh 2>&1 | tee extras-run.log' || true
+    # Always collect artifacts, even on failure.
+    $SSH ubuntu@$DEVICE_IP 'cd /home/ubuntu && tar czf /tmp/artifacts.tgz --ignore-failed-read bench-out setup.log metadata.log extras-run.log' || true
+    mkdir -p artifacts
+    $SCP ubuntu@$DEVICE_IP:/tmp/artifacts.tgz artifacts/ || true
+    (cd artifacts && tar xzf artifacts.tgz && rm -f artifacts.tgz) || true
+    exit $SETUP_RC

@@ -1,0 +1,4 @@
+# encoding/json/v2
+package encoding/json/v2: build constraints exclude all Go files in /opt/go1.26.7/src/encoding/json/v2
+# encoding/json/jsontext
+package encoding/json/jsontext: build constraints exclude all Go files in /opt/go1.26.7/src/encoding/json/jsontext

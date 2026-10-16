@@ -1,0 +1,5 @@
+[sweet] Work directory: /tmp/gosweet15443698
+[sweet] Benchmarks: gvisor (20 runs)
+[sweet] Setting up benchmark: gvisor
+[sweet] error: build gvisor for go1.26.7: exit status 1
+[sweet] error: failed to execute benchmarks: gvisor

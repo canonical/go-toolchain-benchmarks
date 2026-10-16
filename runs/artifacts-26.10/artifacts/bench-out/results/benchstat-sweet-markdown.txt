@@ -1,0 +1,15 @@
+                       │ markdown//go1.26.7.results │     markdown//go1.27.0.results     │
+                       │           sec/op           │   sec/op     vs base               │
+MarkdownRenderXHTML-32                  398.9m ± 3%   384.6m ± 2%  -3.58% (p=0.000 n=10)
+
+                       │ markdown//go1.26.7.results │     markdown//go1.27.0.results      │
+                       │     average-RSS-bytes      │ average-RSS-bytes  vs base          │
+MarkdownRenderXHTML-32                 21.40Mi ± 1%        21.32Mi ± 1%  ~ (p=0.289 n=10)
+
+                       │ markdown//go1.26.7.results │    markdown//go1.27.0.results    │
+                       │       peak-RSS-bytes       │ peak-RSS-bytes  vs base          │
+MarkdownRenderXHTML-32                 21.98Mi ± 1%     21.73Mi ± 5%  ~ (p=0.079 n=10)
+
+                       │ markdown//go1.26.7.results │   markdown//go1.27.0.results    │
+                       │       peak-VM-bytes        │ peak-VM-bytes  vs base          │
+MarkdownRenderXHTML-32                 1.176Gi ± 5%    1.177Gi ± 5%  ~ (p=0.059 n=10)

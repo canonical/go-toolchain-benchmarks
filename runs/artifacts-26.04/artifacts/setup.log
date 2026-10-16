@@ -1,0 +1,555 @@
+=== [setup] waiting for cloud-init and boot activity to settle
+status: done
+=== [setup] installing dependencies
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu resolute-security InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Get:5 http://archive.ubuntu.com/ubuntu resolute/main Translation-en [524 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute/universe Translation-en [6329 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute/restricted Translation-en [25.8 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute/multiverse Translation-en [127 kB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [173 kB]
+Get:10 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Get:11 http://archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [106 kB]
+Get:12 http://archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [101 kB]
+Get:13 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse Translation-en [4168 B]
+Get:14 http://archive.ubuntu.com/ubuntu resolute-security/main Translation-en [138 kB]
+Get:15 http://archive.ubuntu.com/ubuntu resolute-security/universe Translation-en [64.9 kB]
+Get:16 http://archive.ubuntu.com/ubuntu resolute-security/restricted Translation-en [96.3 kB]
+Get:17 http://archive.ubuntu.com/ubuntu resolute-security/multiverse Translation-en [2844 B]
+Get:18 http://archive.ubuntu.com/ubuntu resolute-backports/universe Translation-en [7988 B]
+Get:19 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [598 kB]
+Get:20 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en [138 kB]
+Get:21 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Components [46.7 kB]
+Get:22 http://security.ubuntu.com/ubuntu resolute-security/main amd64 c-n-f Metadata [4616 B]
+Get:23 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [200 kB]
+Get:24 http://security.ubuntu.com/ubuntu resolute-security/universe Translation-en [64.9 kB]
+Get:25 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Components [55.6 kB]
+Get:26 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 c-n-f Metadata [3552 B]
+Get:27 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [474 kB]
+Get:28 http://security.ubuntu.com/ubuntu resolute-security/restricted Translation-en [96.3 kB]
+Get:29 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Components [212 B]
+Get:30 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 c-n-f Metadata [396 B]
+Get:31 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [10.8 kB]
+Get:32 http://security.ubuntu.com/ubuntu resolute-security/multiverse Translation-en [2844 B]
+Get:33 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Components [212 B]
+Get:34 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 c-n-f Metadata [120 B]
+Fetched 9533 kB in 5s (1926 kB/s)
+Reading package lists...
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (restricted/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (multiverse/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (restricted/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (multiverse/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (restricted/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (multiverse/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (restricted/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (multiverse/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:1 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (restricted/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (multiverse/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:3 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (main/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (main/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (main/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (main/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (universe/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (universe/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (universe/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (restricted/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (restricted/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (restricted/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (restricted/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Packages (multiverse/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target Translations (multiverse/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-amd64.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target DEP-11 (multiverse/dep11/Components-all.yml) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+W: Target CNF (multiverse/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list:7 and /etc/apt/sources.list.d/ubuntu.sources:1
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version (1:2.53.0-1ubuntu1).
+git set to manually installed.
+bash is already the newest version (5.3-2ubuntu1).
+binutils is already the newest version (2.46-3ubuntu2).
+binutils set to manually installed.
+curl is already the newest version (8.18.0-1ubuntu2.7).
+curl set to manually installed.
+ca-certificates is already the newest version (20260601~26.04.1).
+ca-certificates set to manually installed.
+jq is already the newest version (1.8.1-4ubuntu2).
+jq set to manually installed.
+xz-utils is already the newest version (5.8.3-1).
+xz-utils set to manually installed.
+Solving dependencies...
+The following additional packages will be installed:
+  cmake-data cpp cpp-15 cpp-15-x86-64-linux-gnu cpp-x86-64-linux-gnu g++-15
+  g++-15-x86-64-linux-gnu g++-x86-64-linux-gnu gcc-15 gcc-15-base
+  gcc-15-x86-64-linux-gnu gcc-x86-64-linux-gnu libarchive13t64 libasan8
+  libcc1-0 libgcc-15-dev libgomp1 libhwasan0 libisl23 libitm1 libjsoncpp26
+  liblsan0 libmpc3 libpkgconf7 libquadmath0 librhash1 libstdc++-15-dev
+  libtsan2 libubsan1 pkgconf pkgconf-bin
+Suggested packages:
+  cmake-doc cmake-format elpa-cmake-mode ninja-build cpp-doc gcc-15-locales
+  cpp-15-doc g++-multilib g++-15-multilib gcc-15-doc gcc-multilib autoconf
+  automake libtool flex bison gdb gcc-doc gcc-15-multilib gdb-x86-64-linux-gnu
+  lrzip libstdc++-15-doc make-doc
+The following NEW packages will be installed:
+  cmake cmake-data cpp cpp-15 cpp-15-x86-64-linux-gnu cpp-x86-64-linux-gnu g++
+  g++-15 g++-15-x86-64-linux-gnu g++-x86-64-linux-gnu gcc gcc-15 gcc-15-base
+  gcc-15-x86-64-linux-gnu gcc-x86-64-linux-gnu libarchive13t64 libasan8
+  libcc1-0 libgcc-15-dev libgomp1 libhwasan0 libisl23 libitm1 libjsoncpp26
+  liblsan0 libmpc3 libpkgconf7 libquadmath0 librhash1 libstdc++-15-dev
+  libtsan2 libubsan1 make pkg-config pkgconf pkgconf-bin
+0 upgraded, 36 newly installed, 0 to remove and 13 not upgraded.
+Need to get 88.0 MB of archives.
+After this operation, 302 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu resolute/main amd64 cmake-data all 4.2.3-2ubuntu2 [2581 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libarchive13t64 amd64 3.8.5-1ubuntu2.3 [397 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute/main amd64 libjsoncpp26 amd64 1.9.6-5 [84.0 kB]
+Get:4 http://archive.ubuntu.com/ubuntu resolute/main amd64 librhash1 amd64 1.4.6-1.1 [133 kB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute/main amd64 cmake amd64 4.2.3-2ubuntu2 [13.7 MB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute/main amd64 gcc-15-base amd64 15.2.0-16ubuntu1 [39.0 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute/main amd64 libisl23 amd64 0.27-1build1 [691 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute/main amd64 libmpc3 amd64 1.3.1-3 [54.6 kB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute/main amd64 cpp-15-x86-64-linux-gnu amd64 15.2.0-16ubuntu1 [12.9 MB]
+Get:10 http://archive.ubuntu.com/ubuntu resolute/main amd64 cpp-15 amd64 15.2.0-16ubuntu1 [1030 B]
+Get:11 http://archive.ubuntu.com/ubuntu resolute/main amd64 cpp-x86-64-linux-gnu amd64 4:15.2.0-5ubuntu1 [5840 B]
+Get:12 http://archive.ubuntu.com/ubuntu resolute/main amd64 cpp amd64 4:15.2.0-5ubuntu1 [22.4 kB]
+Get:13 http://archive.ubuntu.com/ubuntu resolute/main amd64 libcc1-0 amd64 16-20260322-1ubuntu1 [51.2 kB]
+Get:14 http://archive.ubuntu.com/ubuntu resolute/main amd64 libgomp1 amd64 16-20260322-1ubuntu1 [162 kB]
+Get:15 http://archive.ubuntu.com/ubuntu resolute/main amd64 libitm1 amd64 16-20260322-1ubuntu1 [30.0 kB]
+Get:16 http://archive.ubuntu.com/ubuntu resolute/main amd64 libasan8 amd64 16-20260322-1ubuntu1 [3184 kB]
+Get:17 http://archive.ubuntu.com/ubuntu resolute/main amd64 liblsan0 amd64 16-20260322-1ubuntu1 [1394 kB]
+Get:18 http://archive.ubuntu.com/ubuntu resolute/main amd64 libtsan2 amd64 16-20260322-1ubuntu1 [2849 kB]
+Get:19 http://archive.ubuntu.com/ubuntu resolute/main amd64 libubsan1 amd64 16-20260322-1ubuntu1 [1240 kB]
+Get:20 http://archive.ubuntu.com/ubuntu resolute/main amd64 libhwasan0 amd64 16-20260322-1ubuntu1 [1731 kB]
+Get:21 http://archive.ubuntu.com/ubuntu resolute/main amd64 libquadmath0 amd64 16-20260322-1ubuntu1 [155 kB]
+Get:22 http://archive.ubuntu.com/ubuntu resolute/main amd64 libgcc-15-dev amd64 15.2.0-16ubuntu1 [2866 kB]
+Get:23 http://archive.ubuntu.com/ubuntu resolute/main amd64 gcc-15-x86-64-linux-gnu amd64 15.2.0-16ubuntu1 [25.4 MB]
+Get:24 http://archive.ubuntu.com/ubuntu resolute/main amd64 gcc-15 amd64 15.2.0-16ubuntu1 [539 kB]
+Get:25 http://archive.ubuntu.com/ubuntu resolute/main amd64 gcc-x86-64-linux-gnu amd64 4:15.2.0-5ubuntu1 [1208 B]
+Get:26 http://archive.ubuntu.com/ubuntu resolute/main amd64 gcc amd64 4:15.2.0-5ubuntu1 [5010 B]
+Get:27 http://archive.ubuntu.com/ubuntu resolute/main amd64 libstdc++-15-dev amd64 15.2.0-16ubuntu1 [2920 kB]
+Get:28 http://archive.ubuntu.com/ubuntu resolute/main amd64 g++-15-x86-64-linux-gnu amd64 15.2.0-16ubuntu1 [14.4 MB]
+Get:29 http://archive.ubuntu.com/ubuntu resolute/main amd64 g++-15 amd64 15.2.0-16ubuntu1 [26.7 kB]
+Get:30 http://archive.ubuntu.com/ubuntu resolute/main amd64 g++-x86-64-linux-gnu amd64 4:15.2.0-5ubuntu1 [968 B]
+Get:31 http://archive.ubuntu.com/ubuntu resolute/main amd64 g++ amd64 4:15.2.0-5ubuntu1 [1100 B]
+Get:32 http://archive.ubuntu.com/ubuntu resolute/main amd64 libpkgconf7 amd64 2.5.1-4 [38.8 kB]
+Get:33 http://archive.ubuntu.com/ubuntu resolute/main amd64 make amd64 4.4.1-3 [197 kB]
+Get:34 http://archive.ubuntu.com/ubuntu resolute/main amd64 pkgconf-bin amd64 2.5.1-4 [22.7 kB]
+Get:35 http://archive.ubuntu.com/ubuntu resolute/main amd64 pkgconf amd64 2.5.1-4 [20.0 kB]
+Get:36 http://archive.ubuntu.com/ubuntu resolute/main amd64 pkg-config amd64 2.5.1-4 [7684 B]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 88.0 MB in 1s (67.5 MB/s)
+Selecting previously unselected package cmake-data.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 98651 files and directories currently installed.)
+Preparing to unpack .../00-cmake-data_4.2.3-2ubuntu2_all.deb ...
+Unpacking cmake-data (4.2.3-2ubuntu2) ...
+Selecting previously unselected package libarchive13t64:amd64.
+Preparing to unpack .../01-libarchive13t64_3.8.5-1ubuntu2.3_amd64.deb ...
+Unpacking libarchive13t64:amd64 (3.8.5-1ubuntu2.3) ...
+Selecting previously unselected package libjsoncpp26:amd64.
+Preparing to unpack .../02-libjsoncpp26_1.9.6-5_amd64.deb ...
+Unpacking libjsoncpp26:amd64 (1.9.6-5) ...
+Selecting previously unselected package librhash1:amd64.
+Preparing to unpack .../03-librhash1_1.4.6-1.1_amd64.deb ...
+Unpacking librhash1:amd64 (1.4.6-1.1) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../04-cmake_4.2.3-2ubuntu2_amd64.deb ...
+Unpacking cmake (4.2.3-2ubuntu2) ...
+Selecting previously unselected package gcc-15-base:amd64.
+Preparing to unpack .../05-gcc-15-base_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking gcc-15-base:amd64 (15.2.0-16ubuntu1) ...
+Selecting previously unselected package libisl23:amd64.
+Preparing to unpack .../06-libisl23_0.27-1build1_amd64.deb ...
+Unpacking libisl23:amd64 (0.27-1build1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../07-libmpc3_1.3.1-3_amd64.deb ...
+Unpacking libmpc3:amd64 (1.3.1-3) ...
+Selecting previously unselected package cpp-15-x86-64-linux-gnu.
+Preparing to unpack .../08-cpp-15-x86-64-linux-gnu_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking cpp-15-x86-64-linux-gnu (15.2.0-16ubuntu1) ...
+Selecting previously unselected package cpp-15.
+Preparing to unpack .../09-cpp-15_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking cpp-15 (15.2.0-16ubuntu1) ...
+Selecting previously unselected package cpp-x86-64-linux-gnu.
+Preparing to unpack .../10-cpp-x86-64-linux-gnu_4%3a15.2.0-5ubuntu1_amd64.deb ...
+Unpacking cpp-x86-64-linux-gnu (4:15.2.0-5ubuntu1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../11-cpp_4%3a15.2.0-5ubuntu1_amd64.deb ...
+Unpacking cpp (4:15.2.0-5ubuntu1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../12-libcc1-0_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking libcc1-0:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../13-libgomp1_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking libgomp1:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../14-libitm1_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking libitm1:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package libasan8:amd64.
+Preparing to unpack .../15-libasan8_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking libasan8:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../16-liblsan0_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking liblsan0:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package libtsan2:amd64.
+Preparing to unpack .../17-libtsan2_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking libtsan2:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../18-libubsan1_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking libubsan1:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package libhwasan0:amd64.
+Preparing to unpack .../19-libhwasan0_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking libhwasan0:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../20-libquadmath0_16-20260322-1ubuntu1_amd64.deb ...
+Unpacking libquadmath0:amd64 (16-20260322-1ubuntu1) ...
+Selecting previously unselected package libgcc-15-dev:amd64.
+Preparing to unpack .../21-libgcc-15-dev_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking libgcc-15-dev:amd64 (15.2.0-16ubuntu1) ...
+Selecting previously unselected package gcc-15-x86-64-linux-gnu.
+Preparing to unpack .../22-gcc-15-x86-64-linux-gnu_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking gcc-15-x86-64-linux-gnu (15.2.0-16ubuntu1) ...
+Selecting previously unselected package gcc-15.
+Preparing to unpack .../23-gcc-15_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking gcc-15 (15.2.0-16ubuntu1) ...
+Selecting previously unselected package gcc-x86-64-linux-gnu.
+Preparing to unpack .../24-gcc-x86-64-linux-gnu_4%3a15.2.0-5ubuntu1_amd64.deb ...
+Unpacking gcc-x86-64-linux-gnu (4:15.2.0-5ubuntu1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../25-gcc_4%3a15.2.0-5ubuntu1_amd64.deb ...
+Unpacking gcc (4:15.2.0-5ubuntu1) ...
+Selecting previously unselected package libstdc++-15-dev:amd64.
+Preparing to unpack .../26-libstdc++-15-dev_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking libstdc++-15-dev:amd64 (15.2.0-16ubuntu1) ...
+Selecting previously unselected package g++-15-x86-64-linux-gnu.
+Preparing to unpack .../27-g++-15-x86-64-linux-gnu_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking g++-15-x86-64-linux-gnu (15.2.0-16ubuntu1) ...
+Selecting previously unselected package g++-15.
+Preparing to unpack .../28-g++-15_15.2.0-16ubuntu1_amd64.deb ...
+Unpacking g++-15 (15.2.0-16ubuntu1) ...
+Selecting previously unselected package g++-x86-64-linux-gnu.
+Preparing to unpack .../29-g++-x86-64-linux-gnu_4%3a15.2.0-5ubuntu1_amd64.deb ...
+Unpacking g++-x86-64-linux-gnu (4:15.2.0-5ubuntu1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../30-g++_4%3a15.2.0-5ubuntu1_amd64.deb ...
+Unpacking g++ (4:15.2.0-5ubuntu1) ...
+Selecting previously unselected package libpkgconf7:amd64.
+Preparing to unpack .../31-libpkgconf7_2.5.1-4_amd64.deb ...
+Unpacking libpkgconf7:amd64 (2.5.1-4) ...
+Selecting previously unselected package make.
+Preparing to unpack .../32-make_4.4.1-3_amd64.deb ...
+Unpacking make (4.4.1-3) ...
+Selecting previously unselected package pkgconf-bin.
+Preparing to unpack .../33-pkgconf-bin_2.5.1-4_amd64.deb ...
+Unpacking pkgconf-bin (2.5.1-4) ...
+Selecting previously unselected package pkgconf:amd64.
+Preparing to unpack .../34-pkgconf_2.5.1-4_amd64.deb ...
+Unpacking pkgconf:amd64 (2.5.1-4) ...
+Selecting previously unselected package pkg-config:amd64.
+Preparing to unpack .../35-pkg-config_2.5.1-4_amd64.deb ...
+Unpacking pkg-config:amd64 (2.5.1-4) ...
+Setting up libpkgconf7:amd64 (2.5.1-4) ...
+Setting up libgomp1:amd64 (16-20260322-1ubuntu1) ...
+Setting up make (4.4.1-3) ...
+Setting up libjsoncpp26:amd64 (1.9.6-5) ...
+Setting up libquadmath0:amd64 (16-20260322-1ubuntu1) ...
+Setting up libmpc3:amd64 (1.3.1-3) ...
+Setting up pkgconf-bin (2.5.1-4) ...
+Setting up libubsan1:amd64 (16-20260322-1ubuntu1) ...
+Setting up libhwasan0:amd64 (16-20260322-1ubuntu1) ...
+Setting up libasan8:amd64 (16-20260322-1ubuntu1) ...
+Setting up cmake-data (4.2.3-2ubuntu2) ...
+Setting up librhash1:amd64 (1.4.6-1.1) ...
+Setting up libtsan2:amd64 (16-20260322-1ubuntu1) ...
+Setting up libisl23:amd64 (0.27-1build1) ...
+Setting up gcc-15-base:amd64 (15.2.0-16ubuntu1) ...
+Setting up libarchive13t64:amd64 (3.8.5-1ubuntu2.3) ...
+Setting up libcc1-0:amd64 (16-20260322-1ubuntu1) ...
+Setting up liblsan0:amd64 (16-20260322-1ubuntu1) ...
+Setting up libitm1:amd64 (16-20260322-1ubuntu1) ...
+Setting up libgcc-15-dev:amd64 (15.2.0-16ubuntu1) ...
+Setting up cpp-15-x86-64-linux-gnu (15.2.0-16ubuntu1) ...
+Setting up pkgconf:amd64 (2.5.1-4) ...
+Setting up gcc-15-x86-64-linux-gnu (15.2.0-16ubuntu1) ...
+Setting up libstdc++-15-dev:amd64 (15.2.0-16ubuntu1) ...
+Setting up pkg-config:amd64 (2.5.1-4) ...
+Setting up cpp-15 (15.2.0-16ubuntu1) ...
+Setting up cmake (4.2.3-2ubuntu2) ...
+Setting up cpp-x86-64-linux-gnu (4:15.2.0-5ubuntu1) ...
+Setting up g++-15-x86-64-linux-gnu (15.2.0-16ubuntu1) ...
+Setting up gcc-x86-64-linux-gnu (4:15.2.0-5ubuntu1) ...
+Setting up gcc-15 (15.2.0-16ubuntu1) ...
+Setting up cpp (4:15.2.0-5ubuntu1) ...
+Setting up g++-x86-64-linux-gnu (4:15.2.0-5ubuntu1) ...
+Setting up g++-15 (15.2.0-16ubuntu1) ...
+Setting up gcc (4:15.2.0-5ubuntu1) ...
+Setting up g++ (4:15.2.0-5ubuntu1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Processing triggers for man-db (2.13.1-1build1) ...
+Processing triggers for libc-bin (2.43-2ubuntu2.4) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+=== [setup] enabling ptrace for the gVisor benchmark (0 and 1 are supported)
+0
+=== [setup] setting performance CPU governor where supported
+=== [setup] downloading go1.26.7.linux-amd64.tar.gz
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100     75 100     75   0      0    162      0                              0100     75 100     75   0      0    162      0                              0
+  0      0   0      0   0      0      0      0                              0  0 63.79M   0 615.9k   0      0 421.6k      0   02:34   00:01   02:33 615.9k 85 63.79M  85 54.45M   0      0 22.13M      0   00:02   00:02         27.23M100 63.79M 100 63.79M   0      0 24.94M      0   00:02   00:02         27.23M100 63.79M 100 63.79M   0      0 24.94M      0   00:02   00:02         27.23M100 63.79M 100 63.79M   0      0 24.94M      0   00:02   00:02         27.23M
+go1.26.7.linux-amd64.tar.gz: OK
+go version go1.26.7 linux/amd64
+=== [setup] downloading go1.27.0.linux-amd64.tar.gz
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100     75 100     75   0      0    377      0                              0100     75 100     75   0      0    377      0                              0
+  0      0   0      0   0      0      0      0                              0  2 67.25M   2  1.98M   0      0  1.65M      0   00:40   00:01   00:39  1.98M100 67.25M 100 67.25M   0      0 31.77M      0   00:02   00:02          1.98M100 67.25M 100 67.25M   0      0 31.77M      0   00:02   00:02          1.98M100 67.25M 100 67.25M   0      0 31.77M      0   00:02   00:02          1.98M
+go1.27.0.linux-amd64.tar.gz: OK
+go version go1.27.0 linux/amd64
+=== [setup] cloning x/benchmarks at pinned commit
+Cloning into '/home/ubuntu/benchmarks'...
+Note: switching to '70693762b6a0d7f393892f0ace40979e3cbe5737'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 7069376 all: upgrade go directive to at least 1.26.0 [generated]
+70693762b6a0d7f393892f0ace40979e3cbe5737
+=== [setup] building sweet (with the baseline toolchain)
+go: downloading github.com/google/pprof v0.0.0-20241017200806-017d972448fc
+go: downloading go.chromium.org/luci v0.0.0-20250606083430-318ed8f4881d
+go: downloading github.com/gomodule/redigo v1.9.2
+go: downloading github.com/BurntSushi/toml v1.0.0
+go: downloading github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
+go: downloading github.com/opencontainers/runtime-spec v1.0.2
+go: downloading golang.org/x/crypto v0.55.0
+go: downloading google.golang.org/protobuf v1.36.5
+go: downloading golang.org/x/net v0.58.0
+go: downloading cloud.google.com/go/compute/metadata v0.6.0
+go: downloading golang.org/x/oauth2 v0.36.0
+go: downloading google.golang.org/grpc v1.70.0
+go: downloading github.com/danjacques/gofslock v0.0.0-20240212154529-d899e02bfe22
+go: downloading github.com/golang/protobuf v1.5.4
+go: downloading github.com/klauspost/compress v1.17.11
+go: downloading github.com/golang/mock v1.6.0
+go: downloading golang.org/x/exp v0.0.0-20260812173653-3d80eb74bc5b
+go: downloading google.golang.org/api v0.218.0
+go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20250127172529-29210b9bc287
+go: downloading golang.org/x/term v0.45.0
+go: downloading golang.org/x/sync v0.22.0
+go: downloading github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e
+go: downloading golang.org/x/sys v0.47.0
+go: downloading github.com/julienschmidt/httprouter v1.3.0
+go: downloading golang.org/x/text v0.41.0
+unknown subcommand: "version"
+
+Sweet v0.3.0: Go Benchmarking Suite
+
+Sweet is a set of benchmarks derived from the Go community which are intended
+to represent a breadth of real-world applications. The primary use-case of this
+suite is to perform an evaluation of the difference in CPU and memory
+performance between two Go implementations.
+
+If you use this benchmarking suite for any measurements, please ensure you use
+a versioned release and note the version in the release.
+
+All results are reported in the standard Go testing package format, such that
+results may be compared using the benchstat tool.
+
+Usage: sweet <subcommand> [subcommand flags] [subcommand args]
+
+Subcommands:
+         get: Retrieves assets for benchmarks.
+         put: Uploads a new version of the benchmark assets.
+         run: Executes benchmarks in the suite.
+         gen: Generate dynamic binary assets.
+=== [setup] fetching sweet assets (pinned by the benchmark commit)
+[sweet] Fetching assets v0.3.0
+=== [setup] installing benchstat at pinned x/perf commit
+go: downloading golang.org/x/perf v0.0.0-20260819171926-ebcb4798430d
+go: downloading github.com/aclements/go-moremath v0.0.0-20210112150236-f10218a38794
+Usage: benchstat [flags] inputs...
+
+=== [setup] done

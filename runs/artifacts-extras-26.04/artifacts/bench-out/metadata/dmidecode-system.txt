@@ -1,0 +1,19 @@
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.4.0 present.
+
+Handle 0x0085, DMI type 1, 27 bytes
+System Information
+	Manufacturer: HPE
+	Product Name: ProLiant DL385 Gen10 Plus
+	Version: Not Specified
+	Serial Number: JS04NP1155
+	UUID: 38334c44-4735-534a-3034-4e5031313535
+	Wake-up Type: Power Switch
+	SKU Number: DL385G10+
+	Family: ProLiant
+
+Handle 0x00CC, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+

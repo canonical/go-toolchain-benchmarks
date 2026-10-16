@@ -1,0 +1,70 @@
+# Smoke test: Ubuntu 26.10 devel on chakron (single-agent queue => fixed DUT).
+# The lab MAAS has no stonking images (valid series stop at ubuntu/resolute),
+# so this provisions resolute and upgrades in place to stonking via APT
+# (dut-upgrade-stonking.sh), reboots, verifies the release, then validates
+# the full setup path. Non-ephemeral: sweet assets need real disk.
+job_queue: chakron
+global_timeout: 14400
+output_timeout: 1800
+tags:
+  - go-benchmark
+  - smoke
+  - ubuntu-26.10
+  - amd64
+provision_data:
+  distro: resolute
+test_data:
+  attachments:
+    - local: ../versions.env
+    - local: ../scripts/dut-setup.sh
+    - local: ../scripts/dut-metadata.sh
+    - local: ../scripts/dut-upgrade-stonking.sh
+    - local: ../scripts/dut-assert-stonking-sources.sh
+  test_cmds: |
+    set -x
+    SSH="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+    SCP="scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+    $SCP attachments/test/versions.env attachments/test/dut-setup.sh attachments/test/dut-metadata.sh attachments/test/dut-upgrade-stonking.sh attachments/test/dut-assert-stonking-sources.sh ubuntu@$DEVICE_IP:
+    $SSH ubuntu@$DEVICE_IP 'set -o pipefail; bash dut-upgrade-stonking.sh 2>&1 | tee upgrade.log'
+    UPGRADE_RC=$?
+    if [ $UPGRADE_RC -ne 0 ]; then
+      echo "stonking upgrade FAILED"
+      $SSH ubuntu@$DEVICE_IP 'cd /home/ubuntu && tar czf /tmp/artifacts.tgz --ignore-failed-read bench-out upgrade.log' || true
+      mkdir -p artifacts
+      $SCP ubuntu@$DEVICE_IP:/tmp/artifacts.tgz artifacts/ || true
+      (cd artifacts && tar xzf artifacts.tgz && rm -f artifacts.tgz) || true
+      exit 1
+    fi
+    # MAAS leaves the firmware boot order PXE-first, so a bare reboot would
+    # netboot into the MAAS ephemeral environment instead of the installed
+    # system. Set a one-time BootNext to the local Ubuntu entry first.
+    $SSH ubuntu@$DEVICE_IP 'sudo efibootmgr -v | tee efiboot-pre-reboot.log' || true
+    $SSH ubuntu@$DEVICE_IP 'B=$(sudo efibootmgr | grep -i "^Boot[0-9A-Fa-f]\{4\}.\{0,2\}ubuntu" | head -1 | cut -c5-8); echo "BootNext=$B"; [ -n "$B" ] && sudo efibootmgr -n "$B"; sudo reboot' || true
+    echo "rebooting into stonking; waiting for DUT to return"
+    sleep 90
+    DEADLINE=$(( $(date +%s) + 1800 ))
+    until $SSH -o ConnectTimeout=10 ubuntu@$DEVICE_IP true 2>/dev/null; do
+      if [ "$(date +%s)" -gt "$DEADLINE" ]; then
+        echo "FATAL: DUT did not return within 30 minutes of reboot"
+        $SSH ubuntu@$DEVICE_IP 'cd /home/ubuntu && tar czf /tmp/artifacts.tgz --ignore-failed-read bench-out upgrade.log efiboot-pre-reboot.log' || true
+        mkdir -p artifacts
+        $SCP ubuntu@$DEVICE_IP:/tmp/artifacts.tgz artifacts/ || true
+        (cd artifacts && tar xzf artifacts.tgz && rm -f artifacts.tgz) || true
+        exit 1
+      fi
+      echo "waiting for DUT $(date -Is)"
+      sleep 30
+    done
+    $SSH ubuntu@$DEVICE_IP 'grep PRETTY_NAME /etc/os-release; uname -r'
+    $SSH ubuntu@$DEVICE_IP 'grep -q "26.10" /etc/os-release' || { echo "DUT did not come up as 26.10"; exit 1; }
+    # cloud-init/MAAS regenerates ubuntu.sources (back to resolute) during
+    # boot; re-assert the stonking sources before installing anything.
+    $SSH ubuntu@$DEVICE_IP 'bash dut-assert-stonking-sources.sh'
+    $SSH ubuntu@$DEVICE_IP 'set -o pipefail; bash dut-setup.sh 2>&1 | tee setup.log'
+    SETUP_RC=$?
+    $SSH ubuntu@$DEVICE_IP 'set -o pipefail; bash dut-metadata.sh 2>&1 | tee metadata.log' || true
+    $SSH ubuntu@$DEVICE_IP 'cd /home/ubuntu && tar czf /tmp/artifacts.tgz --ignore-failed-read bench-out upgrade.log efiboot-pre-reboot.log setup.log metadata.log' || true
+    mkdir -p artifacts
+    $SCP ubuntu@$DEVICE_IP:/tmp/artifacts.tgz artifacts/ || true
+    (cd artifacts && tar xzf artifacts.tgz && rm -f artifacts.tgz) || true
+    exit $SETUP_RC

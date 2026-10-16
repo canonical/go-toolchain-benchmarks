@@ -1,0 +1,83 @@
+# dmidecode 3.7
+Getting SMBIOS data from sysfs.
+SMBIOS 3.4.0 present.
+
+Handle 0x0061, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: Proc 1
+	Type: Central Processor
+	Family: Zen
+	Manufacturer: Advanced Micro Devices, Inc.
+	ID: 10 0F 83 00 FF FB 8B 17
+	Signature: Family 23, Model 49, Stepping 0
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD EPYC 7302 16-Core Processor                
+	Voltage: 1.1 V
+	External Clock: 100 MHz
+	Max Speed: 4100 MHz
+	Current Speed: 3000 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket SP3
+	L1 Cache Handle: 0x005E
+	L2 Cache Handle: 0x005F
+	L3 Cache Handle: 0x0060
+	Serial Number: Not Specified
+	Asset Tag: Unknown
+	Part Number: Not Specified
+	Core Count: 16
+	Core Enabled: 16
+	Thread Count: 32
+	Characteristics:
+		64-bit capable
+		Multi-Core
+		Hardware Thread
+		Execute Protection
+		Enhanced Virtualization
+		Power/Performance Control
+
+Handle 0x0062, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: Proc 2
+	Type: Central Processor
+	Family: Zen
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Signature: Family 0, Model 0, Stepping 0
+	Flags: None
+	Version: Not Specified
+	External Clock: Unknown
+	Max Speed: 4100 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: Socket SP3
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+

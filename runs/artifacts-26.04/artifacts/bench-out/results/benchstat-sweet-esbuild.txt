@@ -1,0 +1,11 @@
+                  │ esbuild//go1.26.7.results │     esbuild//go1.27.0.results      │
+                  │          sec/op           │   sec/op     vs base               │
+ESBuildThreeJS-32                 667.6m ± 2%   669.2m ± 1%       ~ (p=1.000 n=10)
+ESBuildRomeTS-32                  211.4m ± 3%   214.3m ± 2%       ~ (p=0.143 n=10)
+geomean                           375.7m        378.7m       +0.81%
+
+                  │ esbuild//go1.26.7.results │        esbuild//go1.27.0.results         │
+                  │     average-RSS-bytes     │ average-RSS-bytes  vs base               │
+ESBuildThreeJS-32               344.0Mi ±  1%       340.3Mi ±  3%       ~ (p=0.075 n=10)
+ESBuildRomeTS-32                83.55Mi ± 15%       93.51Mi ± 13%       ~ (p=0.315 n=10)
+geomean                         169.5Mi             178.4Mi        +5.22%

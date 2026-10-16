@@ -1,0 +1,68 @@
+BootCurrent: 001A
+Timeout: 0 seconds
+BootOrder: 001A,0010,0002,001C,001E,000D,0019,001F,0021,001D,001B,0006,0007,0008,0009,000A,000B,000C,0000,000E,0001,0003,0004,0005,000F,0011,0012
+Boot0000* System Utilities	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(1fd631e5-44e0-2f91-10ab-f88f3568ef30)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 e5 31 d6 1f e0 44 91 2f 10 ab f8 8f 35 68 ef 30 / 7f ff 04 00
+Boot0001  Embedded UEFI Shell	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(c57ad6b7-0515-40a8-9d21-551652854e37)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 b7 d6 7a c5 15 05 a8 40 9d 21 55 16 52 85 4e 37 / 7f ff 04 00
+Boot0002* Slot 1 Port 1 : Mellanox Network Adapter - B8:59:9F:C7:65:F6 (HTTP(S) IPv4)	PciRoot(0x3)/Pci(0x1,0x1)/Pci(0x0,0x0)/MAC(b8599fc765f6,1)/IPv4(0.0.0.0,0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0)/Uri(){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 03 00 00 00 / 01 01 06 00 01 01 / 01 01 06 00 00 00 / 03 0b 25 00 b8 59 9f c7 65 f6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 / 03 0c 1b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 03 18 04 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot0003  Diagnose Error	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(0849279d-40d5-53ea-e764-2496766f9844)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 9d 27 49 08 d5 40 ea 53 e7 64 24 96 76 6f 98 44 / 7f ff 04 00
+Boot0004  Intelligent Provisioning	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(4a433501-ddaa-490b-96b2-04f42d8669b8)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 01 35 43 4a aa dd 0b 49 96 b2 04 f4 2d 86 69 b8 / 7f ff 04 00
+Boot0005  Boot Menu	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(d3fd6286-43c5-bb8d-0793-07b70aa9de36)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 86 62 fd d3 c5 43 8d bb 07 93 07 b7 0a a9 de 36 / 7f ff 04 00
+Boot0006  Network Boot	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(0334f316-c276-49f6-9879-aaf1ecffa5d5)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 16 f3 34 03 76 c2 f6 49 98 79 aa f1 ec ff a5 d5 / 7f ff 04 00
+Boot0007  View Integrated Management Log	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(93c92423-d1c6-4286-be67-b76b6671047e)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 23 24 c9 93 c6 d1 86 42 be 67 b7 6b 66 71 04 7e / 7f ff 04 00
+Boot0008  View GUI mode Integrated Management Log	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(f77778ab-a777-7777-9c58-60b5f0cba9d4)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 ab 78 77 f7 77 a7 77 77 9c 58 60 b5 f0 cb a9 d4 / 7f ff 04 00
+Boot0009  View BIOS Event Log	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(c20a40f3-4f7f-b41f-f614-628093c6b567)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 f3 40 0a c2 7f 4f 1f b4 f6 14 62 80 93 c6 b5 67 / 7f ff 04 00
+Boot000A  HTTP Boot	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(3f770860-3d63-4803-9ea3-df37144ab546)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 60 08 77 3f 63 3d 03 48 9e a3 df 37 14 4a b5 46 / 7f ff 04 00
+Boot000B  PXE Boot	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(ee8b26b0-37e9-11e1-b86c-0800200c9a66)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 b0 26 8b ee e9 37 e1 11 b8 6c 08 00 20 0c 9a 66 / 7f ff 04 00
+Boot000C  Embedded Diagnostics	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(b57fe6f1-4f49-d46e-4bba-0a8add34d2f3)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 f1 e6 7f b5 49 4f 6e d4 4b ba 0a 8a dd 34 d2 f3 / 7f ff 04 00
+Boot000D  Generic USB Boot	UsbClass(ffff,ffff,255,255)
+      dp: 03 0f 0b 00 ff ff ff ff ff ff ff / 7f ff 04 00
+Boot000E  Slot 3 NVMe Drive 1 : NVM Express Controller - S4CCNA0MC00429-SAMSUNG MZPLL3T2HAJQ-00005-0	PciRoot(0x3)/Pci(0x1,0x2)/Pci(0x0,0x0)/NVMe(0x1,00-00-00-00-00-00-00-00){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 03 00 00 00 / 01 01 06 00 02 01 / 01 01 06 00 00 00 / 03 17 10 00 01 00 00 00 00 00 00 00 00 00 00 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot000F  Storage Slot 12 : HPE Smart Array P816i-a SR Gen10 - 54.5 TiB, RAID1+0 Logical Drive 2(Target:0, Lun:1)	PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x0)/Sata(0,0,1){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 00 00 00 00 / 01 01 06 00 02 03 / 01 01 06 00 00 00 / 03 12 0a 00 00 00 00 00 01 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot0010* Ubuntu	HD(1,GPT,88aba84e-d19b-4351-ad1c-0c2f4e9bd0db,0x800,0x100000)/\EFI\ubuntu\shimx64.efi
+      dp: 04 01 2a 00 01 00 00 00 00 08 00 00 00 00 00 00 00 00 10 00 00 00 00 00 4e a8 ab 88 9b d1 51 43 ad 1c 0c 2f 4e 9b d0 db 02 02 / 04 04 34 00 5c 00 45 00 46 00 49 00 5c 00 75 00 62 00 75 00 6e 00 74 00 75 00 5c 00 73 00 68 00 69 00 6d 00 78 00 36 00 34 00 2e 00 65 00 66 00 69 00 00 00 / 7f ff 04 00
+Boot0011  Non bootable Hotkey	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(4affaab0-1376-44b4-9c6e-e92388751bc6)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 b0 aa ff 4a 76 13 b4 44 9c 6e e9 23 88 75 1b c6 / 7f ff 04 00
+Boot0012  Embedded iPXE	FvVol(cdbb7b35-6833-4ed6-9ab2-57d2acddf6f0)/FvFile(e22ad661-333a-4452-a101-64cc1898b837)
+      dp: 04 07 14 00 35 7b bb cd 33 68 d6 4e 9a b2 57 d2 ac dd f6 f0 / 04 06 14 00 61 d6 2a e2 3a 33 52 44 a1 01 64 cc 18 98 b8 37 / 7f ff 04 00
+Boot0019  Storage Slot 12 : HPE Smart Array P816i-a SR Gen10 - 3.6 TiB, RAID1 Logical Drive 1(Target:0, Lun:0)	PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x0)/SCSI(0,0){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 00 00 00 00 / 01 01 06 00 02 03 / 01 01 06 00 00 00 / 03 02 08 00 00 00 00 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot001A* OCP Slot 10 Port 1 : Intel(R) Ethernet Network Adapter I350-T4 for OCP NIC 3.0 (PXE IPv4)	PciRoot(0x1)/Pci(0x1,0x3)/Pci(0x0,0x0)/MAC(6805cab73e8e,1)/IPv4(0.0.0.0,0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 01 00 00 00 / 01 01 06 00 03 01 / 01 01 06 00 00 00 / 03 0b 25 00 68 05 ca b7 3e 8e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 / 03 0c 1b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot001B* OCP Slot 10 Port 1 : Intel(R) Ethernet Network Adapter I350-T4 for OCP NIC 3.0 (PXE IPv6)	PciRoot(0x1)/Pci(0x1,0x3)/Pci(0x0,0x0)/MAC(6805cab73e8e,1)/IPv6([::],0,Static,[::],[::],64){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 01 00 00 00 / 01 01 06 00 03 01 / 01 01 06 00 00 00 / 03 0b 25 00 68 05 ca b7 3e 8e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 / 03 0d 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot001C* OCP Slot 10 Port 1 : Intel(R) Ethernet Network Adapter I350-T4 for OCP NIC 3.0 (HTTP(S) IPv4)	PciRoot(0x1)/Pci(0x1,0x3)/Pci(0x0,0x0)/MAC(6805cab73e8e,1)/IPv4(0.0.0.0,0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0)/Uri(){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 01 00 00 00 / 01 01 06 00 03 01 / 01 01 06 00 00 00 / 03 0b 25 00 68 05 ca b7 3e 8e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 / 03 0c 1b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 03 18 04 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot001D* OCP Slot 10 Port 1 : Intel(R) Ethernet Network Adapter I350-T4 for OCP NIC 3.0 (HTTP(S) IPv6)	PciRoot(0x1)/Pci(0x1,0x3)/Pci(0x0,0x0)/MAC(6805cab73e8e,1)/IPv6([::],0,Static,[::],[::],64)/Uri(){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 01 00 00 00 / 01 01 06 00 03 01 / 01 01 06 00 00 00 / 03 0b 25 00 68 05 ca b7 3e 8e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 / 03 0d 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 03 18 04 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot001E* Slot 1 Port 1 : Mellanox Network Adapter - B8:59:9F:C7:65:F6 (PXE IPv4)	PciRoot(0x3)/Pci(0x1,0x1)/Pci(0x0,0x0)/MAC(b8599fc765f6,1)/IPv4(0.0.0.0,0,DHCP,0.0.0.0,0.0.0.0,0.0.0.0){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 03 00 00 00 / 01 01 06 00 01 01 / 01 01 06 00 00 00 / 03 0b 25 00 b8 59 9f c7 65 f6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 / 03 0c 1b 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot001F* Slot 1 Port 1 : Mellanox Network Adapter - B8:59:9F:C7:65:F6 (PXE IPv6)	PciRoot(0x3)/Pci(0x1,0x1)/Pci(0x0,0x0)/MAC(b8599fc765f6,1)/IPv6([::],0,Static,[::],[::],64){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 03 00 00 00 / 01 01 06 00 01 01 / 01 01 06 00 00 00 / 03 0b 25 00 b8 59 9f c7 65 f6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 / 03 0d 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2
+Boot0021* Slot 1 Port 1 : Mellanox Network Adapter - B8:59:9F:C7:65:F6 (HTTP(S) IPv6)	PciRoot(0x3)/Pci(0x1,0x1)/Pci(0x0,0x0)/MAC(b8599fc765f6,1)/IPv6([::],0,Static,[::],[::],64)/Uri(){auto_created_boot_option}
+      dp: 02 01 0c 00 d0 41 03 0a 03 00 00 00 / 01 01 06 00 01 01 / 01 01 06 00 00 00 / 03 0b 25 00 b8 59 9f c7 65 f6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 / 03 0d 3c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 / 03 18 04 00 / 7f ff 04 00
+    data: 4e ac 08 81 11 9f 59 4d 85 0e e2 1a 52 2c 59 b2

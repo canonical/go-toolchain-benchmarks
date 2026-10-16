@@ -1,0 +1,15 @@
+                       │ /home/ubuntu/bench-out/results/sweet-markdown-rerun/markdown/go1.26.7.results │ /home/ubuntu/bench-out/results/sweet-markdown-rerun/markdown/go1.27.0.results │
+                       │                                    sec/op                                     │                         sec/op                          vs base               │
+MarkdownRenderXHTML-32                                                                     400.6m ± 1%                                              388.3m ± 2%  -3.07% (p=0.000 n=10)
+
+                       │ /home/ubuntu/bench-out/results/sweet-markdown-rerun/markdown/go1.26.7.results │ /home/ubuntu/bench-out/results/sweet-markdown-rerun/markdown/go1.27.0.results │
+                       │                               average-RSS-bytes                               │                      average-RSS-bytes                       vs base          │
+MarkdownRenderXHTML-32                                                                    21.38Mi ± 1%                                                  21.36Mi ± 1%  ~ (p=0.912 n=10)
+
+                       │ /home/ubuntu/bench-out/results/sweet-markdown-rerun/markdown/go1.26.7.results │ /home/ubuntu/bench-out/results/sweet-markdown-rerun/markdown/go1.27.0.results │
+                       │                                peak-RSS-bytes                                 │                       peak-RSS-bytes                         vs base          │
+MarkdownRenderXHTML-32                                                                    21.95Mi ± 1%                                                  21.65Mi ± 2%  ~ (p=0.137 n=10)
+
+                       │ /home/ubuntu/bench-out/results/sweet-markdown-rerun/markdown/go1.26.7.results │ /home/ubuntu/bench-out/results/sweet-markdown-rerun/markdown/go1.27.0.results │
+                       │                                 peak-VM-bytes                                 │                        peak-VM-bytes                         vs base          │
+MarkdownRenderXHTML-32                                                                    1.207Gi ± 3%                                                  1.176Gi ± 5%  ~ (p=0.779 n=10)

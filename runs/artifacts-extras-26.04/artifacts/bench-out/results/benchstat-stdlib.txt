@@ -1,0 +1,997 @@
+goos: linux
+goarch: amd64
+pkg: compress/flate
+cpu: AMD EPYC 7302 16-Core Processor                
+                                 │ /home/ubuntu/bench-out/results/stdlib-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                 │                         sec/op                         │            sec/op              vs base                 │
+Decode/Digits/Huffman/1e4-32                                                 163.9µ ±  1%                    159.9µ ±  0%    -2.42% (p=0.000 n=10)
+Decode/Digits/Huffman/1e5-32                                                 1.471m ±  0%                    1.441m ±  0%    -2.03% (p=0.000 n=10)
+Decode/Digits/Huffman/1e6-32                                                 14.52m ±  0%                    14.21m ±  0%    -2.14% (p=0.000 n=10)
+Decode/Digits/Speed/1e4-32                                                   176.5µ ±  0%                    160.1µ ±  0%    -9.31% (p=0.000 n=10)
+Decode/Digits/Speed/1e5-32                                                   1.818m ±  0%                    1.457m ±  0%   -19.87% (p=0.000 n=10)
+Decode/Digits/Speed/1e6-32                                                   18.38m ±  1%                    14.75m ±  1%   -19.79% (p=0.000 n=10)
+Decode/Digits/Default/1e4-32                                                 180.1µ ±  0%                    177.9µ ±  0%    -1.24% (p=0.000 n=10)
+Decode/Digits/Default/1e5-32                                                 1.793m ±  0%                    1.640m ±  0%    -8.50% (p=0.000 n=10)
+Decode/Digits/Default/1e6-32                                                 17.87m ±  0%                    16.22m ±  3%    -9.28% (p=0.000 n=10)
+Decode/Digits/Compression/1e4-32                                             180.6µ ±  0%                    164.6µ ±  0%    -8.83% (p=0.000 n=10)
+Decode/Digits/Compression/1e5-32                                             1.788m ±  0%                    1.513m ±  0%   -15.40% (p=0.000 n=10)
+Decode/Digits/Compression/1e6-32                                             17.91m ±  0%                    14.96m ±  1%   -16.45% (p=0.000 n=10)
+Decode/Newton/Huffman/1e4-32                                                 185.7µ ±  0%                    181.3µ ±  0%    -2.39% (p=0.000 n=10)
+Decode/Newton/Huffman/1e5-32                                                 1.673m ±  0%                    1.622m ±  0%    -3.09% (p=0.000 n=10)
+Decode/Newton/Huffman/1e6-32                                                 16.57m ±  0%                    16.32m ±  0%    -1.52% (p=0.000 n=10)
+Decode/Newton/Speed/1e4-32                                                   168.5µ ±  1%                    154.8µ ±  0%    -8.14% (p=0.000 n=10)
+Decode/Newton/Speed/1e5-32                                                   1.415m ±  0%                    1.249m ±  0%   -11.75% (p=0.000 n=10)
+Decode/Newton/Speed/1e6-32                                                   14.06m ±  0%                    12.57m ±  0%   -10.58% (p=0.000 n=10)
+Decode/Newton/Default/1e4-32                                                 153.5µ ±  0%                    154.8µ ±  0%    +0.83% (p=0.000 n=10)
+Decode/Newton/Default/1e5-32                                                 1.145m ±  0%                    1.193m ±  0%    +4.13% (p=0.000 n=10)
+Decode/Newton/Default/1e6-32                                                 11.17m ±  0%                    11.72m ±  0%    +4.94% (p=0.000 n=10)
+Decode/Newton/Compression/1e4-32                                             152.9µ ±  1%                    151.0µ ±  0%    -1.24% (p=0.000 n=10)
+Decode/Newton/Compression/1e5-32                                             1.141m ±  0%                    1.123m ±  0%    -1.60% (p=0.000 n=10)
+Decode/Newton/Compression/1e6-32                                             11.13m ±  0%                    10.99m ±  0%    -1.25% (p=0.000 n=10)
+Encode/Digits/Huffman/1e4-32                                                 48.58µ ±  1%                    32.37µ ±  0%   -33.38% (p=0.000 n=10)
+Encode/Digits/Huffman/1e5-32                                                 479.5µ ± 12%                    294.2µ ±  4%   -38.65% (p=0.000 n=10)
+Encode/Digits/Huffman/1e6-32                                                 4.832m ±  0%                    2.914m ±  3%   -39.71% (p=0.000 n=10)
+Encode/Digits/Speed/1e4-32                                                  236.00µ ±  2%                    91.99µ ±  0%   -61.02% (p=0.000 n=10)
+Encode/Digits/Speed/1e5-32                                                   2.362m ±  4%                    1.552m ±  0%   -34.30% (p=0.000 n=10)
+Encode/Digits/Speed/1e6-32                                                   23.38m ±  0%                    18.11m ±  0%   -22.57% (p=0.000 n=10)
+Encode/Digits/Default/1e4-32                                                 423.2µ ±  1%                    291.8µ ±  5%   -31.04% (p=0.000 n=10)
+Encode/Digits/Default/1e5-32                                                 6.533m ±  1%                    3.373m ±  1%   -48.38% (p=0.000 n=10)
+Encode/Digits/Default/1e6-32                                                 69.70m ±  1%                    34.07m ±  0%   -51.12% (p=0.000 n=10)
+Encode/Digits/Compression/1e4-32                                             422.5µ ±  1%                    557.9µ ±  1%   +32.03% (p=0.000 n=10)
+Encode/Digits/Compression/1e5-32                                             6.539m ±  1%                   12.570m ±  2%   +92.24% (p=0.000 n=10)
+Encode/Digits/Compression/1e6-32                                             69.59m ±  1%                   142.32m ±  1%  +104.52% (p=0.000 n=10)
+Encode/Newton/Huffman/1e4-32                                                 72.91µ ±  3%                    49.30µ ±  1%   -32.38% (p=0.000 n=10)
+Encode/Newton/Huffman/1e5-32                                                 616.2µ ±  1%                    373.4µ ± 11%   -39.40% (p=0.000 n=10)
+Encode/Newton/Huffman/1e6-32                                                 6.221m ±  1%                    4.108m ±  1%   -33.97% (p=0.000 n=10)
+Encode/Newton/Speed/1e4-32                                                   248.3µ ±  1%                    148.3µ ±  1%   -40.28% (p=0.000 n=10)
+Encode/Newton/Speed/1e5-32                                                   1.970m ±  0%                    1.270m ±  0%   -35.52% (p=0.000 n=10)
+Encode/Newton/Speed/1e6-32                                                   19.75m ± 14%                    13.18m ±  0%   -33.27% (p=0.002 n=10)
+Encode/Newton/Default/1e4-32                                                 512.4µ ± 11%                    278.1µ ±  1%   -45.72% (p=0.000 n=10)
+Encode/Newton/Default/1e5-32                                                 8.189m ±  4%                    2.471m ±  1%   -69.83% (p=0.000 n=10)
+Encode/Newton/Default/1e6-32                                                 85.50m ±  3%                    25.15m ±  1%   -70.58% (p=0.000 n=10)
+Encode/Newton/Compression/1e4-32                                             519.7µ ±  1%                    643.0µ ±  0%   +23.74% (p=0.000 n=10)
+Encode/Newton/Compression/1e5-32                                             11.38m ±  1%                    13.11m ±  1%   +15.22% (p=0.000 n=10)
+Encode/Newton/Compression/1e6-32                                             120.8m ±  1%                    141.8m ±  5%   +17.46% (p=0.000 n=10)
+WriterMemUsage/level=-2-32                                                                                   700.0µ ±  1%
+WriterMemUsage/level=-1-32                                                                                   817.1µ ±  4%
+WriterMemUsage/level=0-32                                                                                    142.8µ ±  7%
+WriterMemUsage/level=1-32                                                                                    381.9µ ± 14%
+WriterMemUsage/level=2-32                                                                                    552.9µ ±  7%
+WriterMemUsage/level=3-32                                                                                    562.6µ ±  8%
+WriterMemUsage/level=4-32                                                                                    497.9µ ±  9%
+WriterMemUsage/level=5-32                                                                                    584.3µ ±  9%
+WriterMemUsage/level=6-32                                                                                    847.0µ ±  3%
+WriterMemUsage/level=7-32                                                                                    838.1µ ±  5%
+WriterMemUsage/level=8-32                                                                                    844.0µ ±  3%
+WriterMemUsage/level=9-32                                                                                    1.330m ±  4%
+geomean                                                                      2.077m                          1.375m         -18.61%
+
+                                 │ /home/ubuntu/bench-out/results/stdlib-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                 │                          B/s                           │              B/s               vs base                 │
+Decode/Digits/Huffman/1e4-32                                                58.20Mi ±  1%                   59.64Mi ±  0%    +2.48% (p=0.000 n=10)
+Decode/Digits/Huffman/1e5-32                                                64.83Mi ±  0%                   66.17Mi ±  0%    +2.07% (p=0.000 n=10)
+Decode/Digits/Huffman/1e6-32                                                65.68Mi ±  0%                   67.12Mi ±  0%    +2.19% (p=0.000 n=10)
+Decode/Digits/Speed/1e4-32                                                  54.04Mi ±  0%                   59.58Mi ±  0%   +10.26% (p=0.000 n=10)
+Decode/Digits/Speed/1e5-32                                                  52.46Mi ±  0%                   65.47Mi ±  0%   +24.80% (p=0.000 n=10)
+Decode/Digits/Speed/1e6-32                                                  51.88Mi ±  1%                   64.67Mi ±  1%   +24.67% (p=0.000 n=10)
+Decode/Digits/Default/1e4-32                                                52.95Mi ±  0%                   53.62Mi ±  0%    +1.26% (p=0.000 n=10)
+Decode/Digits/Default/1e5-32                                                53.19Mi ±  0%                   58.14Mi ±  0%    +9.30% (p=0.000 n=10)
+Decode/Digits/Default/1e6-32                                                53.36Mi ±  0%                   58.81Mi ±  3%   +10.22% (p=0.000 n=10)
+Decode/Digits/Compression/1e4-32                                            52.81Mi ±  0%                   57.93Mi ±  0%    +9.69% (p=0.000 n=10)
+Decode/Digits/Compression/1e5-32                                            53.32Mi ±  0%                   63.03Mi ±  0%   +18.21% (p=0.000 n=10)
+Decode/Digits/Compression/1e6-32                                            53.25Mi ±  0%                   63.73Mi ±  1%   +19.69% (p=0.000 n=10)
+Decode/Newton/Huffman/1e4-32                                                51.35Mi ±  0%                   52.61Mi ±  0%    +2.46% (p=0.000 n=10)
+Decode/Newton/Huffman/1e5-32                                                57.00Mi ±  0%                   58.82Mi ±  0%    +3.20% (p=0.000 n=10)
+Decode/Newton/Huffman/1e6-32                                                57.54Mi ±  0%                   58.43Mi ±  0%    +1.53% (p=0.000 n=10)
+Decode/Newton/Speed/1e4-32                                                  56.59Mi ±  1%                   61.60Mi ±  0%    +8.86% (p=0.000 n=10)
+Decode/Newton/Speed/1e5-32                                                  67.38Mi ±  0%                   76.35Mi ±  0%   +13.32% (p=0.000 n=10)
+Decode/Newton/Speed/1e6-32                                                  67.85Mi ±  0%                   75.87Mi ±  0%   +11.83% (p=0.000 n=10)
+Decode/Newton/Default/1e4-32                                                62.13Mi ±  0%                   61.62Mi ±  0%    -0.81% (p=0.000 n=10)
+Decode/Newton/Default/1e5-32                                                83.27Mi ±  0%                   79.97Mi ±  0%    -3.96% (p=0.000 n=10)
+Decode/Newton/Default/1e6-32                                                85.36Mi ±  0%                   81.34Mi ±  0%    -4.71% (p=0.000 n=10)
+Decode/Newton/Compression/1e4-32                                            62.37Mi ±  1%                   63.15Mi ±  0%    +1.25% (p=0.000 n=10)
+Decode/Newton/Compression/1e5-32                                            83.56Mi ±  0%                   84.92Mi ±  0%    +1.63% (p=0.000 n=10)
+Decode/Newton/Compression/1e6-32                                            85.68Mi ±  0%                   86.77Mi ±  0%    +1.27% (p=0.000 n=10)
+Encode/Digits/Huffman/1e4-32                                                196.3Mi ±  1%                   294.6Mi ±  0%   +50.10% (p=0.000 n=10)
+Encode/Digits/Huffman/1e5-32                                                198.9Mi ± 10%                   324.2Mi ±  3%   +63.00% (p=0.000 n=10)
+Encode/Digits/Huffman/1e6-32                                                197.3Mi ±  0%                   327.3Mi ±  2%   +65.86% (p=0.000 n=10)
+Encode/Digits/Speed/1e4-32                                                  40.41Mi ±  2%                  103.67Mi ±  0%  +156.53% (p=0.000 n=10)
+Encode/Digits/Speed/1e5-32                                                  40.38Mi ±  4%                   61.45Mi ±  0%   +52.20% (p=0.000 n=10)
+Encode/Digits/Speed/1e6-32                                                  40.78Mi ±  0%                   52.67Mi ±  0%   +29.15% (p=0.000 n=10)
+Encode/Digits/Default/1e4-32                                                22.54Mi ±  1%                   32.68Mi ±  5%   +45.03% (p=0.000 n=10)
+Encode/Digits/Default/1e5-32                                                14.60Mi ±  1%                   28.28Mi ±  1%   +93.73% (p=0.000 n=10)
+Encode/Digits/Default/1e6-32                                                13.68Mi ±  1%                   27.99Mi ±  0%  +104.57% (p=0.000 n=10)
+Encode/Digits/Compression/1e4-32                                            22.57Mi ±  1%                   17.09Mi ±  1%   -24.26% (p=0.000 n=10)
+Encode/Digits/Compression/1e5-32                                           14.586Mi ±  1%                   7.586Mi ±  2%   -47.99% (p=0.000 n=10)
+Encode/Digits/Compression/1e6-32                                           13.704Mi ±  1%                   6.700Mi ±  1%   -51.11% (p=0.000 n=10)
+Encode/Newton/Huffman/1e4-32                                                130.8Mi ±  3%                   193.4Mi ±  1%   +47.88% (p=0.000 n=10)
+Encode/Newton/Huffman/1e5-32                                                154.8Mi ±  1%                   255.4Mi ± 12%   +65.03% (p=0.000 n=10)
+Encode/Newton/Huffman/1e6-32                                                153.3Mi ±  1%                   232.2Mi ±  1%   +51.44% (p=0.000 n=10)
+Encode/Newton/Speed/1e4-32                                                  38.41Mi ±  1%                   64.31Mi ±  1%   +67.44% (p=0.000 n=10)
+Encode/Newton/Speed/1e5-32                                                  48.41Mi ±  0%                   75.08Mi ±  0%   +55.10% (p=0.000 n=10)
+Encode/Newton/Speed/1e6-32                                                  48.29Mi ± 17%                   72.37Mi ±  0%   +49.86% (p=0.002 n=10)
+Encode/Newton/Default/1e4-32                                                18.62Mi ± 13%                   34.29Mi ±  1%   +84.22% (p=0.000 n=10)
+Encode/Newton/Default/1e5-32                                                11.64Mi ±  5%                   38.60Mi ±  1%  +231.49% (p=0.000 n=10)
+Encode/Newton/Default/1e6-32                                                11.15Mi ±  3%                   37.91Mi ±  1%  +239.89% (p=0.000 n=10)
+Encode/Newton/Compression/1e4-32                                            18.35Mi ±  1%                   14.83Mi ±  0%   -19.20% (p=0.000 n=10)
+Encode/Newton/Compression/1e5-32                                            8.383Mi ±  1%                   7.272Mi ±  1%   -13.25% (p=0.000 n=10)
+Encode/Newton/Compression/1e6-32                                            7.896Mi ±  1%                   6.723Mi ±  5%   -14.86% (p=0.000 n=10)
+geomean                                                                     45.93Mi                         56.43Mi         +22.87%
+
+                                 │ /home/ubuntu/bench-out/results/stdlib-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                 │                          B/op                          │              B/op               vs base                │
+Decode/Digits/Huffman/1e4-32                                                 39.65Ki ± 0%                     39.66Ki ± 0%   +0.01% (p=0.004 n=10)
+Decode/Digits/Huffman/1e5-32                                                 39.65Ki ± 0%                     39.66Ki ± 0%        ~ (p=0.075 n=10)
+Decode/Digits/Huffman/1e6-32                                                 39.80Ki ± 0%                     39.79Ki ± 0%   -0.01% (p=0.000 n=10)
+Decode/Digits/Speed/1e4-32                                                   39.72Ki ± 0%                     39.65Ki ± 0%   -0.18% (p=0.000 n=10)
+Decode/Digits/Speed/1e5-32                                                   39.94Ki ± 0%                     39.85Ki ± 0%   -0.22% (p=0.000 n=10)
+Decode/Digits/Speed/1e6-32                                                   43.45Ki ± 0%                     42.05Ki ± 0%   -3.23% (p=0.000 n=10)
+Decode/Digits/Default/1e4-32                                                 39.69Ki ± 0%                     39.72Ki ± 0%   +0.09% (p=0.000 n=10)
+Decode/Digits/Default/1e5-32                                                 39.94Ki ± 0%                     40.01Ki ± 0%   +0.19% (p=0.000 n=10)
+Decode/Digits/Default/1e6-32                                                 43.82Ki ± 0%                     40.38Ki ± 0%   -7.85% (p=0.000 n=10)
+Decode/Digits/Compression/1e4-32                                             39.69Ki ± 0%                     39.68Ki ± 0%   -0.03% (p=0.003 n=10)
+Decode/Digits/Compression/1e5-32                                             39.94Ki ± 0%                     39.79Ki ± 0%   -0.37% (p=0.000 n=10)
+Decode/Digits/Compression/1e6-32                                             43.82Ki ± 0%                     41.37Ki ± 0%   -5.58% (p=0.000 n=10)
+Decode/Newton/Huffman/1e4-32                                                 40.38Ki ± 0%                     40.39Ki ± 0%        ~ (p=0.118 n=10)
+Decode/Newton/Huffman/1e5-32                                                 44.05Ki ± 0%                     44.62Ki ± 0%   +1.28% (p=0.000 n=10)
+Decode/Newton/Huffman/1e6-32                                                 78.22Ki ± 0%                    104.36Ki ± 0%  +33.41% (p=0.000 n=10)
+Decode/Newton/Speed/1e4-32                                                   40.29Ki ± 0%                     40.38Ki ± 0%   +0.23% (p=0.000 n=10)
+Decode/Newton/Speed/1e5-32                                                   42.81Ki ± 0%                     42.46Ki ± 0%   -0.82% (p=0.000 n=10)
+Decode/Newton/Speed/1e6-32                                                   79.36Ki ± 0%                     80.17Ki ± 0%   +1.02% (p=0.000 n=10)
+Decode/Newton/Default/1e4-32                                                 40.16Ki ± 0%                     40.28Ki ± 0%   +0.29% (p=0.000 n=10)
+Decode/Newton/Default/1e5-32                                                 41.96Ki ± 0%                     41.96Ki ± 0%   +0.02% (p=0.000 n=10)
+Decode/Newton/Default/1e6-32                                                 60.36Ki ± 0%                     64.29Ki ± 0%   +6.51% (p=0.000 n=10)
+Decode/Newton/Compression/1e4-32                                             40.16Ki ± 0%                     40.21Ki ± 0%   +0.13% (p=0.000 n=10)
+Decode/Newton/Compression/1e5-32                                             41.96Ki ± 0%                     41.38Ki ± 0%   -1.38% (p=0.000 n=10)
+Decode/Newton/Compression/1e6-32                                             62.15Ki ± 0%                     56.49Ki ± 0%   -9.11% (p=0.000 n=10)
+WriterMemUsage/level=-2-32                                                                                    306.6Ki ± 0%
+WriterMemUsage/level=-1-32                                                                                    1.026Mi ± 0%
+WriterMemUsage/level=0-32                                                                                     338.6Ki ± 0%
+WriterMemUsage/level=1-32                                                                                     794.6Ki ± 0%
+WriterMemUsage/level=2-32                                                                                     1.151Mi ± 0%
+WriterMemUsage/level=3-32                                                                                     1.151Mi ± 0%
+WriterMemUsage/level=4-32                                                                                     922.6Ki ± 0%
+WriterMemUsage/level=5-32                                                                                     1.026Mi ± 0%
+WriterMemUsage/level=6-32                                                                                     1.026Mi ± 0%
+WriterMemUsage/level=7-32                                                                                     986.6Ki ± 0%
+WriterMemUsage/level=8-32                                                                                     986.6Ki ± 0%
+WriterMemUsage/level=9-32                                                                                     1.090Mi ± 0%
+geomean                                                                      44.78Ki                          119.5Ki        +0.36%
+
+                                 │ /home/ubuntu/bench-out/results/stdlib-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                 │                       allocs/op                        │          allocs/op            vs base                  │
+Decode/Digits/Huffman/1e4-32                                                   5.000 ± 0%                     5.000 ± 0%        ~ (p=1.000 n=10) ¹
+Decode/Digits/Huffman/1e5-32                                                   5.000 ± 0%                     5.000 ± 0%        ~ (p=1.000 n=10) ¹
+Decode/Digits/Huffman/1e6-32                                                   5.000 ± 0%                     5.000 ± 0%        ~ (p=1.000 n=10) ¹
+Decode/Digits/Speed/1e4-32                                                     8.000 ± 0%                     5.000 ± 0%  -37.50% (p=0.000 n=10)
+Decode/Digits/Speed/1e5-32                                                     11.00 ± 0%                     13.00 ± 0%  +18.18% (p=0.000 n=10)
+Decode/Digits/Speed/1e6-32                                                     73.00 ± 0%                     60.00 ± 0%  -17.81% (p=0.000 n=10)
+Decode/Digits/Default/1e4-32                                                   7.000 ± 0%                     8.000 ± 0%  +14.29% (p=0.000 n=10)
+Decode/Digits/Default/1e5-32                                                   13.00 ± 0%                     10.00 ± 0%  -23.08% (p=0.000 n=10)
+Decode/Digits/Default/1e6-32                                                   79.00 ± 0%                     16.00 ± 0%  -79.75% (p=0.000 n=10)
+Decode/Digits/Compression/1e4-32                                               7.000 ± 0%                     7.000 ± 0%        ~ (p=1.000 n=10) ¹
+Decode/Digits/Compression/1e5-32                                               13.00 ± 0%                     11.00 ± 0%  -15.38% (p=0.000 n=10)
+Decode/Digits/Compression/1e6-32                                               79.00 ± 0%                     93.00 ± 0%  +17.72% (p=0.000 n=10)
+Decode/Newton/Huffman/1e4-32                                                   14.00 ± 0%                     14.00 ± 0%        ~ (p=1.000 n=10) ¹
+Decode/Newton/Huffman/1e5-32                                                   23.00 ± 0%                     25.00 ± 0%   +8.70% (p=0.000 n=10)
+Decode/Newton/Huffman/1e6-32                                                   161.0 ± 0%                     268.0 ± 0%  +66.46% (p=0.000 n=10)
+Decode/Newton/Speed/1e4-32                                                     18.00 ± 0%                     14.00 ± 0%  -22.22% (p=0.000 n=10)
+Decode/Newton/Speed/1e5-32                                                     31.00 ± 0%                     18.00 ± 0%  -41.94% (p=0.000 n=10)
+Decode/Newton/Speed/1e6-32                                                     228.0 ± 0%                     224.0 ± 0%   -1.75% (p=0.000 n=10)
+Decode/Newton/Default/1e4-32                                                   15.00 ± 0%                     18.00 ± 0%  +20.00% (p=0.000 n=10)
+Decode/Newton/Default/1e5-32                                                   32.00 ± 0%                     29.00 ± 0%   -9.38% (p=0.000 n=10)
+Decode/Newton/Default/1e6-32                                                   158.0 ± 0%                     209.0 ± 0%  +32.28% (p=0.000 n=10)
+Decode/Newton/Compression/1e4-32                                               15.00 ± 0%                     16.00 ± 0%   +6.67% (p=0.000 n=10)
+Decode/Newton/Compression/1e5-32                                               32.00 ± 0%                     19.00 ± 0%  -40.62% (p=0.000 n=10)
+Decode/Newton/Compression/1e6-32                                              150.00 ± 0%                     83.00 ± 0%  -44.67% (p=0.000 n=10)
+WriterMemUsage/level=-2-32                                                                                    11.00 ± 0%
+WriterMemUsage/level=-1-32                                                                                    13.00 ± 0%
+WriterMemUsage/level=0-32                                                                                     11.00 ± 0%
+WriterMemUsage/level=1-32                                                                                     13.00 ± 0%
+WriterMemUsage/level=2-32                                                                                     13.00 ± 0%
+WriterMemUsage/level=3-32                                                                                     13.00 ± 0%
+WriterMemUsage/level=4-32                                                                                     13.00 ± 0%
+WriterMemUsage/level=5-32                                                                                     13.00 ± 0%
+WriterMemUsage/level=6-32                                                                                     13.00 ± 0%
+WriterMemUsage/level=7-32                                                                                     12.00 ± 0%
+WriterMemUsage/level=8-32                                                                                     12.00 ± 0%
+WriterMemUsage/level=9-32                                                                                     14.00 ± 0%
+geomean                                                                        24.11                          17.78       -12.24%
+¹ all samples are equal
+
+pkg: encoding/json
+                                    │ /home/ubuntu/bench-out/results/stdlib-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                    │                         sec/op                         │            sec/op             vs base                  │
+CodeEncoder-32                                                                  363.1µ ± 60%                   469.5µ ± 67%  +29.31% (p=0.009 n=10)
+CodeEncoderError-32                                                             370.7µ ±  2%                   488.4µ ±  0%  +31.75% (p=0.000 n=10)
+CodeMarshal-32                                                                  408.5µ ±  1%                   548.0µ ±  2%  +34.17% (p=0.000 n=10)
+CodeMarshalError-32                                                             490.6µ ±  1%                   626.4µ ±  2%  +27.70% (p=0.000 n=10)
+MarshalBytes/32-32                                                              416.9n ±  3%                   594.1n ±  2%  +42.49% (p=0.000 n=10)
+MarshalBytes/256-32                                                             941.1n ±  1%                  1150.5n ±  1%  +22.26% (p=0.000 n=10)
+MarshalBytes/4096-32                                                            9.732µ ±  7%                   9.847µ ±  3%        ~ (p=1.000 n=10)
+MarshalBytesError/32-32                                                         390.0µ ±  4%                   454.9µ ±  1%  +16.65% (p=0.000 n=10)
+MarshalBytesError/256-32                                                        390.6µ ±  5%                   456.2µ ±  1%  +16.78% (p=0.000 n=10)
+MarshalBytesError/4096-32                                                       404.4µ ±  1%                   466.9µ ±  1%  +15.46% (p=0.000 n=10)
+MarshalMap-32                                                                   217.0n ±  2%                   125.3n ± 43%  -42.26% (p=0.000 n=10)
+CodeDecoder-32                                                                  1.960m ±  2%                   1.245m ±  1%  -36.52% (p=0.000 n=10)
+UnicodeDecoder-32                                                               540.0n ±  2%                   870.0n ±  0%  +61.11% (p=0.000 n=10)
+DecoderStream-32                                                                499.1n ±  1%                   919.3n ±  1%  +84.20% (p=0.000 n=10)
+CodeUnmarshal-32                                                                2.507m ± 80%                   1.414m ± 66%  -43.57% (p=0.000 n=10)
+CodeUnmarshalReuse-32                                                           2.015m ±  2%                   1.101m ±  1%  -45.38% (p=0.000 n=10)
+UnmarshalString-32                                                             105.40n ± 12%                   14.79n ±  3%  -85.97% (p=0.000 n=10)
+UnmarshalFloat64-32                                                             94.50n ±  0%                   18.65n ±  3%  -80.26% (p=0.000 n=10)
+UnmarshalInt64-32                                                               86.79n ±  1%                   14.54n ±  1%  -83.24% (p=0.000 n=10)
+UnmarshalMap-32                                                                 217.5n ± 41%                   124.9n ±  4%  -42.57% (p=0.000 n=10)
+Issue10335-32                                                                  131.65n ± 22%                   38.72n ±  8%  -70.59% (p=0.000 n=10)
+Issue34127-32                                                                   26.05n ± 45%                   48.15n ±  5%  +84.86% (p=0.000 n=10)
+Unmapped-32                                                                    222.15n ± 12%                   62.31n ± 19%  -71.95% (p=0.000 n=10)
+TypeFieldsCache/MissTypes1-32                                                   48.78µ ±  6%
+TypeFieldsCache/MissTypes10-32                                                  79.37µ ±  2%
+TypeFieldsCache/MissTypes100-32                                                 183.3µ ±  2%
+TypeFieldsCache/MissTypes1000-32                                                664.3µ ±  2%
+TypeFieldsCache/MissTypes10000-32                                               3.983m ±  9%
+TypeFieldsCache/MissTypes100000-32                                              32.91m ±  7%
+TypeFieldsCache/MissTypes1000000-32                                             392.5m ±  3%
+TypeFieldsCache/HitTypes1-32                                                    1.020n ± 62%
+TypeFieldsCache/HitTypes10-32                                                   1.019n ±  0%
+TypeFieldsCache/HitTypes100-32                                                  1.099n ±  0%
+TypeFieldsCache/HitTypes1000-32                                                 1.206n ±  1%
+TypeFieldsCache/HitTypes10000-32                                                1.282n ±  6%
+TypeFieldsCache/HitTypes100000-32                                               1.350n ± 13%
+TypeFieldsCache/HitTypes1000000-32                                              2.145n ±  4%
+EncodeMarshaler-32                                                              35.45n ±  5%                   27.11n ± 43%  -23.53% (p=0.042 n=10)
+EncoderEncode-32                                                                23.77n ± 52%                   39.10n ± 27%  +64.46% (p=0.000 n=10)
+NumberIsValid-32                                                                29.50n ±  7%
+NumberIsValidRegexp-32                                                          687.3n ±  1%
+UnmarshalNumber-32                                                              810.9n ±  2%
+NewEncoderEncode-32                                                                                            95.86m ± 22%
+geomean                                                                         2.676µ                         5.760µ        -23.14%                ¹
+¹ benchmark set differs from baseline; geomeans may not be comparable
+
+                      │ /home/ubuntu/bench-out/results/stdlib-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                      │                          B/s                           │              B/s                vs base                │
+CodeEncoder-32                                                   4.977Gi ± 38%                    3.849Gi ± 40%  -22.67% (p=0.009 n=10)
+CodeEncoderError-32                                              4.875Gi ±  2%                    3.700Gi ±  0%  -24.10% (p=0.000 n=10)
+CodeMarshal-32                                                   4.425Gi ±  1%                    3.298Gi ±  2%  -25.47% (p=0.000 n=10)
+CodeMarshalError-32                                              3.684Gi ±  1%                    2.885Gi ±  2%  -21.69% (p=0.000 n=10)
+CodeDecoder-32                                                   944.0Mi ±  2%                   1487.0Mi ±  1%  +57.53% (p=0.000 n=10)
+UnicodeDecoder-32                                                24.72Mi ±  2%                    15.35Mi ±  0%  -37.91% (p=0.000 n=10)
+CodeUnmarshal-32                                                 738.2Mi ± 44%                   1308.3Mi ± 40%  +77.22% (p=0.000 n=10)
+CodeUnmarshalReuse-32                                            918.4Mi ±  2%                   1681.4Mi ±  1%  +83.08% (p=0.000 n=10)
+geomean                                                          1.243Gi                          1.256Gi         +1.05%
+
+                      │ /home/ubuntu/bench-out/results/stdlib-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                      │                          B/op                          │         B/op           vs base                         │
+CodeEncoder-32                                                   6.000 ± 83%              7.500 ± 100%           ~ (p=0.235 n=10)
+CodeEncoderError-32                                              143.0 ±  3%            86558.5 ±   5%  +60430.42% (p=0.000 n=10)
+CodeMarshal-32                                                 1.866Mi ±  2%            1.959Mi ±   5%      +4.95% (p=0.011 n=10)
+CodeMarshalError-32                                            1.920Mi ±  2%            2.223Mi ±   5%     +15.75% (p=0.000 n=10)
+MarshalMap-32                                                   232.00 ±  0%              88.00 ±   0%     -62.07% (p=0.000 n=10)
+CodeDecoder-32                                                1074.4Ki ±  1%            628.6Ki ±   0%     -41.50% (p=0.000 n=10)
+UnicodeDecoder-32                                                28.00 ±  0%              16.00 ±   0%     -42.86% (p=0.000 n=10)
+DecoderStream-32                                                 8.000 ±  0%             16.000 ±   0%    +100.00% (p=0.000 n=10)
+CodeUnmarshal-32                                               1.918Mi ±  0%            1.618Mi ±   0%     -15.61% (p=0.000 n=10)
+CodeUnmarshalReuse-32                                          758.7Ki ±  0%            418.9Ki ±   0%     -44.79% (p=0.000 n=10)
+UnmarshalString-32                                               160.0 ±  0%                0.0 ±   0%    -100.00% (p=0.000 n=10)
+UnmarshalFloat64-32                                              144.0 ±  0%                0.0 ±   0%    -100.00% (p=0.000 n=10)
+UnmarshalInt64-32                                                144.0 ±  0%                0.0 ±   0%    -100.00% (p=0.000 n=10)
+UnmarshalMap-32                                                  256.0 ±  0%              104.0 ±   0%     -59.38% (p=0.000 n=10)
+Issue10335-32                                                    168.0 ±  0%                0.0 ±   0%    -100.00% (p=0.000 n=10)
+Issue34127-32                                                    32.00 ±  0%              48.00 ±   0%     +50.00% (p=0.000 n=10)
+Unmapped-32                                                      200.0 ±  0%                0.0 ±   0%    -100.00% (p=0.000 n=10)
+EncodeMarshaler-32                                               4.000 ±  0%              4.000 ±   0%           ~ (p=1.000 n=10) ¹
+EncoderEncode-32                                                 0.000 ±  0%              0.000 ±   0%           ~ (p=1.000 n=10) ¹
+UnmarshalNumber-32                                               168.0 ±  0%
+NewEncoderEncode-32                                                                     6.375Mi ±  19%
+geomean                                                                      ²                          ?                         ³ ² ⁴
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+³ benchmark set differs from baseline; geomeans may not be comparable
+⁴ ratios must be >0 to compute geomean
+
+                      │ /home/ubuntu/bench-out/results/stdlib-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                      │                       allocs/op                        │       allocs/op         vs base                        │
+CodeEncoder-32                                                    0.000 ± 0%                 0.000 ± 0%          ~ (p=1.000 n=10) ¹
+CodeEncoderError-32                                               4.000 ± 0%                56.000 ± 0%  +1300.00% (p=0.000 n=10)
+CodeMarshal-32                                                    1.000 ± 0%                 1.000 ± 0%          ~ (p=1.000 n=10) ¹
+CodeMarshalError-32                                               6.000 ± 0%                58.000 ± 0%   +866.67% (p=0.000 n=10)
+MarshalMap-32                                                     8.000 ± 0%                 7.000 ± 0%    -12.50% (p=0.000 n=10)
+CodeDecoder-32                                                   25.72k ± 0%                12.22k ± 0%    -52.48% (p=0.000 n=10)
+UnicodeDecoder-32                                                 2.000 ± 0%                 1.000 ± 0%    -50.00% (p=0.000 n=10)
+DecoderStream-32                                                  1.000 ± 0%                 2.000 ± 0%   +100.00% (p=0.000 n=10)
+CodeUnmarshal-32                                                 39.99k ± 0%                26.77k ± 0%    -33.06% (p=0.000 n=10)
+CodeUnmarshalReuse-32                                            25.76k ± 0%                12.15k ± 0%    -52.82% (p=0.000 n=10)
+UnmarshalString-32                                                2.000 ± 0%                 0.000 ± 0%   -100.00% (p=0.000 n=10)
+UnmarshalFloat64-32                                               1.000 ± 0%                 0.000 ± 0%   -100.00% (p=0.000 n=10)
+UnmarshalInt64-32                                                 1.000 ± 0%                 0.000 ± 0%   -100.00% (p=0.000 n=10)
+UnmarshalMap-32                                                  12.000 ± 0%                 8.000 ± 0%    -33.33% (p=0.000 n=10)
+Issue10335-32                                                     3.000 ± 0%                 0.000 ± 0%   -100.00% (p=0.000 n=10)
+Issue34127-32                                                     2.000 ± 0%                 3.000 ± 0%    +50.00% (p=0.000 n=10)
+Unmapped-32                                                       4.000 ± 0%                 0.000 ± 0%   -100.00% (p=0.000 n=10)
+EncodeMarshaler-32                                                1.000 ± 0%                 1.000 ± 0%          ~ (p=1.000 n=10) ¹
+EncoderEncode-32                                                  0.000 ± 0%                 0.000 ± 0%          ~ (p=1.000 n=10) ¹
+UnmarshalNumber-32                                                2.000 ± 0%
+NewEncoderEncode-32                                                                         100.0k ± 0%
+geomean                                                                      ²                           ?                        ³ ² ⁴
+¹ all samples are equal
+² summaries must be >0 to compute geomean
+³ benchmark set differs from baseline; geomeans may not be comparable
+⁴ ratios must be >0 to compute geomean
+
+pkg: encoding/json/jsontext
+                           │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                           │                         sec/op                         │
+AppendFormat/FromString-32                                             549.5n ± 14%
+AppendFormat/FromBytes-32                                              542.8n ± 14%
+geomean                                                                546.1n
+
+                           │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                           │                          B/op                          │
+AppendFormat/FromString-32                                             0.000 ± 0%
+AppendFormat/FromBytes-32                                              0.000 ± 0%
+geomean                                                                           ¹
+¹ summaries must be >0 to compute geomean
+
+                           │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                           │                       allocs/op                        │
+AppendFormat/FromString-32                                             0.000 ± 0%
+AppendFormat/FromBytes-32                                              0.000 ± 0%
+geomean                                                                           ¹
+¹ summaries must be >0 to compute geomean
+
+pkg: encoding/json/v2
+                                                    │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                                    │                         sec/op                         │
+UnmarshalDecodeOptions/None-32                                                                  143.2n ±  2%
+UnmarshalDecodeOptions/Same-32                                                                  162.8n ±  9%
+UnmarshalDecodeOptions/New-32                                                                   162.0n ±  2%
+MarshalEncodeOptions/None-32                                                                    134.3n ± 12%
+MarshalEncodeOptions/Same-32                                                                    158.4n ±  6%
+MarshalEncodeOptions/New-32                                                                     158.1n ±  6%
+Intern/Best/Alloc-32                                                                            38.32µ ±  1%
+Intern/Best/Cache-32                                                                            16.14µ ±  1%
+Intern/Best/GoMap-32                                                                            22.06µ ±  5%
+Intern/Repeat/Alloc-32                                                                          36.40µ ±  1%
+Intern/Repeat/Cache-32                                                                          15.06µ ±  2%
+Intern/Repeat/GoMap-32                                                                          28.51µ ±  0%
+Intern/Synthea/Alloc-32                                                                         1.445m ±  2%
+Intern/Synthea/Cache-32                                                                         1.137m ±  1%
+Intern/Synthea/GoMap-32                                                                         1.771m ±  1%
+Intern/Twitter/Alloc-32                                                                         338.6µ ±  2%
+Intern/Twitter/Cache-32                                                                         309.1µ ±  2%
+Intern/Twitter/GoMap-32                                                                         660.9µ ±  2%
+Intern/Worst/Alloc-32                                                                           34.36µ ±  1%
+Intern/Worst/Cache-32                                                                           67.19µ ±  1%
+Intern/Worst/GoMap-32                                                                           281.7µ ±  1%
+Unmarshal/Bool-32                                                                               269.6n ±  2%
+Unmarshal/String-32                                                                             349.0n ±  3%
+Unmarshal/Int-32                                                                                351.7n ±  1%
+Unmarshal/Uint-32                                                                               354.2n ±  1%
+Unmarshal/Float-32                                                                              460.1n ±  1%
+Unmarshal/Map/ManyEmpty-32                                                                      46.94µ ±  1%
+Unmarshal/Map/OneLarge-32                                                                       12.82µ ±  1%
+Unmarshal/Map/ManySmall-32                                                                      39.10µ ±  1%
+Unmarshal/Struct/ManyEmpty-32                                                                   16.27µ ±  3%
+Unmarshal/Struct/OneLarge-32                                                                    6.264µ ±  1%
+Unmarshal/Struct/ManySmall-32                                                                   12.97µ ±  1%
+Unmarshal/Slice/ManyEmpty-32                                                                    18.21µ ±  1%
+Unmarshal/Slice/OneLarge-32                                                                     4.538µ ±  0%
+Unmarshal/Slice/ManySmall-32                                                                    10.53µ ±  3%
+Unmarshal/Array/OneLarge-32                                                                     3.530µ ±  0%
+Unmarshal/Array/ManySmall-32                                                                    6.934µ ±  0%
+Unmarshal/Bytes/Slice-32                                                                        617.8n ±  1%
+Unmarshal/Bytes/Array-32                                                                        541.2n ±  0%
+Unmarshal/Pointer-32                                                                            1.858µ ±  1%
+Unmarshal/TextArshal-32                                                                         399.4n ±  1%
+Unmarshal/JSONArshalV1-32                                                                       375.0n ±  0%
+Unmarshal/JSONArshalV2-32                                                                       390.8n ±  0%
+Unmarshal/Time-32                                                                               509.0n ±  1%
+Marshal/Bool-32                                                                                 310.4n ±  1%
+Marshal/String-32                                                                               342.4n ±  3%
+Marshal/Int-32                                                                                  302.9n ±  4%
+Marshal/Uint-32                                                                                 300.3n ±  1%
+Marshal/Float-32                                                                                428.2n ±  1%
+Marshal/Map/ManyEmpty-32                                                                        5.987µ ±  0%
+Marshal/Map/OneLarge-32                                                                         7.903µ ±  0%
+Marshal/Map/ManySmall-32                                                                        24.93µ ±  1%
+Marshal/Struct/ManyEmpty-32                                                                     10.79µ ±  1%
+Marshal/Struct/OneLarge-32                                                                      3.806µ ±  1%
+Marshal/Struct/ManySmall-32                                                                     8.407µ ±  1%
+Marshal/Slice/ManyEmpty-32                                                                      2.795µ ±  1%
+Marshal/Slice/OneLarge-32                                                                       2.157µ ±  1%
+Marshal/Slice/ManySmall-32                                                                      4.376µ ±  2%
+Marshal/Array/OneLarge-32                                                                       1.970µ ±  1%
+Marshal/Array/ManySmall-32                                                                      3.813µ ±  1%
+Marshal/Bytes/Slice-32                                                                          393.4n ±  6%
+Marshal/Bytes/Array-32                                                                          401.9n ±  6%
+Marshal/Pointer-32                                                                              642.7n ±  1%
+Marshal/TextArshal-32                                                                           407.6n ±  1%
+Marshal/JSONArshalV1-32                                                                         411.4n ±  1%
+Marshal/JSONArshalV2-32                                                                         403.0n ±  1%
+Marshal/Time-32                                                                                 422.4n ±  1%
+Testdata/CanadaGeometry/Marshal/Concrete-32                                                     2.974m ±  2%
+Testdata/CanadaGeometry/Marshal/Interface-32                                                    3.218m ±  2%
+Testdata/CanadaGeometry/Unmarshal/Concrete-32                                                   5.861m ±  0%
+Testdata/CanadaGeometry/Unmarshal/Interface-32                                                  7.593m ±  1%
+Testdata/CanadaGeometry/Encode/Token/Streaming-32                                               2.653m ±  1%
+Testdata/CanadaGeometry/Encode/Token/Buffered-32                                                2.643m ±  8%
+Testdata/CanadaGeometry/Encode/Value/Streaming-32                                               1.714m ±  8%
+Testdata/CanadaGeometry/Encode/Value/Buffered-32                                                1.112m ±  6%
+Testdata/CanadaGeometry/Decode/Token/Streaming-32                                               1.536m ±  0%
+Testdata/CanadaGeometry/Decode/Token/Buffered-32                                                1.467m ±  1%
+Testdata/CanadaGeometry/Decode/Value/Streaming-32                                               1.511m ±  4%
+Testdata/CanadaGeometry/Decode/Value/Buffered-32                                                1.049m ±  1%
+Testdata/CitmCatalog/Marshal/Concrete-32                                                        5.028m ±  7%
+Testdata/CitmCatalog/Marshal/Interface-32                                                       7.745m ±  0%
+Testdata/CitmCatalog/Unmarshal/Concrete-32                                                      11.86m ±  0%
+Testdata/CitmCatalog/Unmarshal/Interface-32                                                     18.97m ±  1%
+Testdata/CitmCatalog/Encode/Token/Streaming-32                                                  7.662m ±  0%
+Testdata/CitmCatalog/Encode/Token/Buffered-32                                                   7.612m ±  0%
+Testdata/CitmCatalog/Encode/Value/Streaming-32                                                  5.814m ±  0%
+Testdata/CitmCatalog/Encode/Value/Buffered-32                                                   4.907m ±  1%
+Testdata/CitmCatalog/Decode/Token/Streaming-32                                                  6.068m ±  1%
+Testdata/CitmCatalog/Decode/Token/Buffered-32                                                   5.841m ±  1%
+Testdata/CitmCatalog/Decode/Value/Streaming-32                                                  5.481m ±  1%
+Testdata/CitmCatalog/Decode/Value/Buffered-32                                                   4.161m ±  1%
+Testdata/GolangSource/Marshal/Concrete-32                                                       18.17m ±  8%
+Testdata/GolangSource/Marshal/Interface-32                                                      24.48m ±  1%
+Testdata/GolangSource/Unmarshal/Concrete-32                                                     31.47m ±  0%
+Testdata/GolangSource/Unmarshal/Interface-32                                                    46.20m ±  0%
+Testdata/GolangSource/Encode/Token/Streaming-32                                                 26.60m ± 10%
+Testdata/GolangSource/Encode/Token/Buffered-32                                                  26.32m ± 10%
+Testdata/GolangSource/Encode/Value/Streaming-32                                                 13.82m ±  2%
+Testdata/GolangSource/Encode/Value/Buffered-32                                                  10.79m ±  3%
+Testdata/GolangSource/Decode/Token/Streaming-32                                                 13.14m ±  7%
+Testdata/GolangSource/Decode/Token/Buffered-32                                                  12.53m ±  1%
+Testdata/GolangSource/Decode/Value/Streaming-32                                                 10.98m ±  1%
+Testdata/GolangSource/Decode/Value/Buffered-32                                                  9.212m ± 10%
+Testdata/StringEscaped/Marshal/Concrete-32                                                      77.74µ ±  1%
+Testdata/StringEscaped/Marshal/Interface-32                                                     81.13µ ±  1%
+Testdata/StringEscaped/Unmarshal/Concrete-32                                                    543.4µ ±  0%
+Testdata/StringEscaped/Unmarshal/Interface-32                                                   560.3µ ±  0%
+Testdata/StringEscaped/Encode/Token/Streaming-32                                                93.12µ ±  1%
+Testdata/StringEscaped/Encode/Token/Buffered-32                                                 86.77µ ±  0%
+Testdata/StringEscaped/Encode/Value/Streaming-32                                                670.2µ ±  1%
+Testdata/StringEscaped/Encode/Value/Buffered-32                                                 634.7µ ±  0%
+Testdata/StringEscaped/Decode/Token/Streaming-32                                                240.8µ ±  0%
+Testdata/StringEscaped/Decode/Token/Buffered-32                                                 224.2µ ±  0%
+Testdata/StringEscaped/Decode/Value/Streaming-32                                                264.9µ ±  1%
+Testdata/StringEscaped/Decode/Value/Buffered-32                                                 220.5µ ±  0%
+Testdata/StringUnicode/Marshal/Concrete-32                                                      77.18µ ±  1%
+Testdata/StringUnicode/Marshal/Interface-32                                                     81.02µ ±  1%
+Testdata/StringUnicode/Unmarshal/Concrete-32                                                    88.81µ ±  1%
+Testdata/StringUnicode/Unmarshal/Interface-32                                                   110.0µ ±  1%
+Testdata/StringUnicode/Encode/Token/Streaming-32                                                93.21µ ±  1%
+Testdata/StringUnicode/Encode/Token/Buffered-32                                                 86.69µ ±  0%
+Testdata/StringUnicode/Encode/Value/Streaming-32                                                109.9µ ±  1%
+Testdata/StringUnicode/Encode/Value/Buffered-32                                                 78.46µ ±  1%
+Testdata/StringUnicode/Decode/Token/Streaming-32                                                87.42µ ±  1%
+Testdata/StringUnicode/Decode/Token/Buffered-32                                                 79.02µ ±  1%
+Testdata/StringUnicode/Decode/Value/Streaming-32                                                101.6µ ±  1%
+Testdata/StringUnicode/Decode/Value/Buffered-32                                                 75.88µ ±  3%
+Testdata/SyntheaFhir/Marshal/Concrete-32                                                        31.12m ±  1%
+Testdata/SyntheaFhir/Marshal/Interface-32                                                       11.58m ±  0%
+Testdata/SyntheaFhir/Unmarshal/Concrete-32                                                      18.85m ±  1%
+Testdata/SyntheaFhir/Unmarshal/Interface-32                                                     26.00m ±  1%
+Testdata/SyntheaFhir/Encode/Token/Streaming-32                                                  10.62m ±  1%
+Testdata/SyntheaFhir/Encode/Token/Buffered-32                                                   10.41m ±  0%
+Testdata/SyntheaFhir/Encode/Value/Streaming-32                                                  9.047m ±  4%
+Testdata/SyntheaFhir/Encode/Value/Buffered-32                                                   6.467m ±  0%
+Testdata/SyntheaFhir/Decode/Token/Streaming-32                                                  8.301m ±  1%
+Testdata/SyntheaFhir/Decode/Token/Buffered-32                                                   8.024m ±  1%
+Testdata/SyntheaFhir/Decode/Value/Streaming-32                                                  6.996m ±  0%
+Testdata/SyntheaFhir/Decode/Value/Buffered-32                                                   5.611m ±  0%
+Testdata/TwitterStatus/Marshal/Concrete-32                                                      3.205m ±  2%
+Testdata/TwitterStatus/Marshal/Interface-32                                                     3.719m ±  0%
+Testdata/TwitterStatus/Unmarshal/Concrete-32                                                    5.469m ±  0%
+Testdata/TwitterStatus/Unmarshal/Interface-32                                                   8.654m ±  0%
+Testdata/TwitterStatus/Encode/Token/Streaming-32                                                4.440m ±  1%
+Testdata/TwitterStatus/Encode/Token/Buffered-32                                                 4.352m ±  0%
+Testdata/TwitterStatus/Encode/Value/Streaming-32                                                3.596m ±  1%
+Testdata/TwitterStatus/Encode/Value/Buffered-32                                                 2.661m ±  1%
+Testdata/TwitterStatus/Decode/Token/Streaming-32                                                3.267m ±  2%
+Testdata/TwitterStatus/Decode/Token/Buffered-32                                                 3.043m ±  1%
+Testdata/TwitterStatus/Decode/Value/Streaming-32                                                3.169m ±  1%
+Testdata/TwitterStatus/Decode/Value/Buffered-32                                                 2.314m ±  0%
+SlowStreamingDecode/LargeString/Token-32                                                        212.9µ ±  0%
+SlowStreamingDecode/LargeString/Value-32                                                        218.1µ ±  1%
+SlowStreamingDecode/LargeNumber/Token-32                                                        162.9µ ±  0%
+SlowStreamingDecode/LargeNumber/Value-32                                                        170.4µ ±  1%
+SlowStreamingDecode/LargeWhitespace/Null/Token-32                                               287.8µ ±  1%
+SlowStreamingDecode/LargeWhitespace/Null/Value-32                                               146.8µ ±  1%
+SlowStreamingDecode/LargeWhitespace/Object/Token-32                                             1.329m ±  0%
+SlowStreamingDecode/LargeWhitespace/Object/Value-32                                             1.240m ±  1%
+SlowStreamingDecode/LargeWhitespace/Array/Token-32                                              817.4µ ±  0%
+SlowStreamingDecode/LargeWhitespace/Array/Value-32                                              714.1µ ±  2%
+TextValue/IsValid-32                                                                            4.120m ±  0%
+TextValue/Compact-32                                                                            4.198m ±  2%
+TextValue/Compact/Noop-32                                                                       2.165m ±  3%
+TextValue/Indent-32                                                                             6.353m ±  4%
+TextValue/Indent/Noop-32                                                                        5.261m ±  2%
+TextValue/Canonicalize-32                                                                       11.30m ±  0%
+TextValue/Canonicalize/Noop-32                                                                  9.123m ±  2%
+geomean                                                                                         158.6µ
+
+                                                    │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                                    │                          B/s                           │
+Unmarshal/Bool-32                                                                              14.15Mi ±  1%
+Unmarshal/String-32                                                                            41.00Mi ±  3%
+Unmarshal/Int-32                                                                               13.56Mi ±  0%
+Unmarshal/Uint-32                                                                              10.77Mi ±  1%
+Unmarshal/Float-32                                                                             10.36Mi ±  1%
+Unmarshal/Map/ManyEmpty-32                                                                     6.113Mi ±  1%
+Unmarshal/Map/OneLarge-32                                                                      15.54Mi ±  1%
+Unmarshal/Map/ManySmall-32                                                                     8.903Mi ±  1%
+Unmarshal/Struct/ManyEmpty-32                                                                  17.64Mi ±  3%
+Unmarshal/Struct/OneLarge-32                                                                   31.82Mi ±  1%
+Unmarshal/Struct/ManySmall-32                                                                  26.85Mi ±  1%
+Unmarshal/Slice/ManyEmpty-32                                                                   15.76Mi ±  1%
+Unmarshal/Slice/OneLarge-32                                                                    22.07Mi ±  0%
+Unmarshal/Slice/ManySmall-32                                                                   14.22Mi ±  3%
+Unmarshal/Array/OneLarge-32                                                                    28.37Mi ±  0%
+Unmarshal/Array/ManySmall-32                                                                   21.59Mi ±  0%
+Unmarshal/Bytes/Slice-32                                                                       71.02Mi ±  1%
+Unmarshal/Bytes/Array-32                                                                       81.06Mi ±  0%
+Unmarshal/Pointer-32                                                                           2.050Mi ±  1%
+Unmarshal/TextArshal-32                                                                        19.10Mi ±  1%
+Unmarshal/JSONArshalV1-32                                                                      20.34Mi ±  0%
+Unmarshal/JSONArshalV2-32                                                                      19.53Mi ±  0%
+Unmarshal/Time-32                                                                              41.22Mi ±  1%
+Marshal/Bool-32                                                                                12.29Mi ±  1%
+Marshal/String-32                                                                              41.79Mi ±  3%
+Marshal/Int-32                                                                                 15.75Mi ±  4%
+Marshal/Uint-32                                                                                12.70Mi ±  1%
+Marshal/Float-32                                                                               11.14Mi ±  1%
+Marshal/Map/ManyEmpty-32                                                                       47.95Mi ±  0%
+Marshal/Map/OneLarge-32                                                                        25.22Mi ±  0%
+Marshal/Map/ManySmall-32                                                                       13.96Mi ±  1%
+Marshal/Struct/ManyEmpty-32                                                                    26.61Mi ±  1%
+Marshal/Struct/OneLarge-32                                                                     52.38Mi ±  1%
+Marshal/Struct/ManySmall-32                                                                    41.40Mi ±  1%
+Marshal/Slice/ManyEmpty-32                                                                     102.7Mi ±  1%
+Marshal/Slice/OneLarge-32                                                                      46.42Mi ±  1%
+Marshal/Slice/ManySmall-32                                                                     34.22Mi ±  2%
+Marshal/Array/OneLarge-32                                                                      50.83Mi ±  1%
+Marshal/Array/ManySmall-32                                                                     39.27Mi ±  1%
+Marshal/Bytes/Slice-32                                                                         111.9Mi ±  7%
+Marshal/Bytes/Array-32                                                                         109.4Mi ±  6%
+Marshal/Pointer-32                                                                             5.932Mi ±  1%
+Marshal/TextArshal-32                                                                          18.72Mi ±  1%
+Marshal/JSONArshalV1-32                                                                        18.54Mi ±  1%
+Marshal/JSONArshalV2-32                                                                        18.94Mi ±  1%
+Marshal/Time-32                                                                                49.66Mi ±  1%
+Testdata/CanadaGeometry/Marshal/Concrete-32                                                    86.70Mi ±  2%
+Testdata/CanadaGeometry/Marshal/Interface-32                                                   80.13Mi ±  2%
+Testdata/CanadaGeometry/Unmarshal/Concrete-32                                                  44.00Mi ±  0%
+Testdata/CanadaGeometry/Unmarshal/Interface-32                                                 33.96Mi ±  1%
+Testdata/CanadaGeometry/Encode/Token/Streaming-32                                              97.20Mi ±  1%
+Testdata/CanadaGeometry/Encode/Token/Buffered-32                                               97.57Mi ±  8%
+Testdata/CanadaGeometry/Encode/Value/Streaming-32                                              151.0Mi ±  8%
+Testdata/CanadaGeometry/Encode/Value/Buffered-32                                               232.0Mi ±  7%
+Testdata/CanadaGeometry/Decode/Token/Streaming-32                                              167.9Mi ±  0%
+Testdata/CanadaGeometry/Decode/Token/Buffered-32                                               175.7Mi ±  1%
+Testdata/CanadaGeometry/Decode/Value/Streaming-32                                              170.8Mi ±  4%
+Testdata/CanadaGeometry/Decode/Value/Buffered-32                                               245.8Mi ±  1%
+Testdata/CitmCatalog/Marshal/Concrete-32                                                       329.0Mi ±  7%
+Testdata/CitmCatalog/Marshal/Interface-32                                                      212.7Mi ±  0%
+Testdata/CitmCatalog/Unmarshal/Concrete-32                                                     138.9Mi ±  0%
+Testdata/CitmCatalog/Unmarshal/Interface-32                                                    86.82Mi ±  1%
+Testdata/CitmCatalog/Encode/Token/Streaming-32                                                 215.0Mi ±  0%
+Testdata/CitmCatalog/Encode/Token/Buffered-32                                                  216.4Mi ±  0%
+Testdata/CitmCatalog/Encode/Value/Streaming-32                                                 283.3Mi ±  0%
+Testdata/CitmCatalog/Encode/Value/Buffered-32                                                  335.7Mi ±  1%
+Testdata/CitmCatalog/Decode/Token/Streaming-32                                                 271.5Mi ±  1%
+Testdata/CitmCatalog/Decode/Token/Buffered-32                                                  282.0Mi ±  1%
+Testdata/CitmCatalog/Decode/Value/Streaming-32                                                 300.5Mi ±  1%
+Testdata/CitmCatalog/Decode/Value/Buffered-32                                                  395.9Mi ±  1%
+Testdata/GolangSource/Marshal/Concrete-32                                                      102.4Mi ±  9%
+Testdata/GolangSource/Marshal/Interface-32                                                     75.58Mi ±  1%
+Testdata/GolangSource/Unmarshal/Concrete-32                                                    58.81Mi ±  0%
+Testdata/GolangSource/Unmarshal/Interface-32                                                   40.06Mi ±  0%
+Testdata/GolangSource/Encode/Token/Streaming-32                                                69.57Mi ± 11%
+Testdata/GolangSource/Encode/Token/Buffered-32                                                 70.31Mi ± 12%
+Testdata/GolangSource/Encode/Value/Streaming-32                                                133.9Mi ±  2%
+Testdata/GolangSource/Encode/Value/Buffered-32                                                 171.4Mi ±  3%
+Testdata/GolangSource/Decode/Token/Streaming-32                                                140.8Mi ±  7%
+Testdata/GolangSource/Decode/Token/Buffered-32                                                 147.7Mi ±  1%
+Testdata/GolangSource/Decode/Value/Streaming-32                                                168.6Mi ±  1%
+Testdata/GolangSource/Decode/Value/Buffered-32                                                 200.9Mi ±  9%
+Testdata/StringEscaped/Marshal/Concrete-32                                                     516.0Mi ±  1%
+Testdata/StringEscaped/Marshal/Interface-32                                                    494.4Mi ±  1%
+Testdata/StringEscaped/Unmarshal/Concrete-32                                                   73.81Mi ±  0%
+Testdata/StringEscaped/Unmarshal/Interface-32                                                  71.59Mi ±  0%
+Testdata/StringEscaped/Encode/Token/Streaming-32                                               430.8Mi ±  1%
+Testdata/StringEscaped/Encode/Token/Buffered-32                                                462.3Mi ±  0%
+Testdata/StringEscaped/Encode/Value/Streaming-32                                               59.86Mi ±  1%
+Testdata/StringEscaped/Encode/Value/Buffered-32                                                63.20Mi ±  0%
+Testdata/StringEscaped/Decode/Token/Streaming-32                                               166.6Mi ±  0%
+Testdata/StringEscaped/Decode/Token/Buffered-32                                                178.9Mi ±  0%
+Testdata/StringEscaped/Decode/Value/Streaming-32                                               151.4Mi ±  1%
+Testdata/StringEscaped/Decode/Value/Buffered-32                                                182.0Mi ±  0%
+Testdata/StringUnicode/Marshal/Concrete-32                                                     224.0Mi ±  1%
+Testdata/StringUnicode/Marshal/Interface-32                                                    213.3Mi ±  1%
+Testdata/StringUnicode/Unmarshal/Concrete-32                                                   194.6Mi ±  1%
+Testdata/StringUnicode/Unmarshal/Interface-32                                                  157.1Mi ±  1%
+Testdata/StringUnicode/Encode/Token/Streaming-32                                               185.4Mi ±  1%
+Testdata/StringUnicode/Encode/Token/Buffered-32                                                199.4Mi ±  0%
+Testdata/StringUnicode/Encode/Value/Streaming-32                                               157.3Mi ±  1%
+Testdata/StringUnicode/Encode/Value/Buffered-32                                                220.3Mi ±  1%
+Testdata/StringUnicode/Decode/Token/Streaming-32                                               197.7Mi ±  1%
+Testdata/StringUnicode/Decode/Token/Buffered-32                                                218.7Mi ±  1%
+Testdata/StringUnicode/Decode/Value/Streaming-32                                               170.1Mi ±  1%
+Testdata/StringUnicode/Decode/Value/Buffered-32                                                227.8Mi ±  2%
+Testdata/SyntheaFhir/Marshal/Concrete-32                                                       61.55Mi ±  1%
+Testdata/SyntheaFhir/Marshal/Interface-32                                                      165.5Mi ±  0%
+Testdata/SyntheaFhir/Unmarshal/Concrete-32                                                     101.6Mi ±  1%
+Testdata/SyntheaFhir/Unmarshal/Interface-32                                                    73.66Mi ±  1%
+Testdata/SyntheaFhir/Encode/Token/Streaming-32                                                 180.3Mi ±  1%
+Testdata/SyntheaFhir/Encode/Token/Buffered-32                                                  184.0Mi ±  0%
+Testdata/SyntheaFhir/Encode/Value/Streaming-32                                                 211.8Mi ±  4%
+Testdata/SyntheaFhir/Encode/Value/Buffered-32                                                  296.2Mi ±  0%
+Testdata/SyntheaFhir/Decode/Token/Streaming-32                                                 230.8Mi ±  1%
+Testdata/SyntheaFhir/Decode/Token/Buffered-32                                                  238.7Mi ±  1%
+Testdata/SyntheaFhir/Decode/Value/Streaming-32                                                 273.8Mi ±  0%
+Testdata/SyntheaFhir/Decode/Value/Buffered-32                                                  341.4Mi ±  0%
+Testdata/TwitterStatus/Marshal/Concrete-32                                                     188.0Mi ±  2%
+Testdata/TwitterStatus/Marshal/Interface-32                                                    162.0Mi ±  0%
+Testdata/TwitterStatus/Unmarshal/Concrete-32                                                   110.1Mi ±  0%
+Testdata/TwitterStatus/Unmarshal/Interface-32                                                  69.59Mi ±  0%
+Testdata/TwitterStatus/Encode/Token/Streaming-32                                               135.6Mi ±  1%
+Testdata/TwitterStatus/Encode/Token/Buffered-32                                                138.4Mi ±  0%
+Testdata/TwitterStatus/Encode/Value/Streaming-32                                               167.5Mi ±  1%
+Testdata/TwitterStatus/Encode/Value/Buffered-32                                                226.3Mi ±  1%
+Testdata/TwitterStatus/Decode/Token/Streaming-32                                               184.3Mi ±  2%
+Testdata/TwitterStatus/Decode/Token/Buffered-32                                                197.9Mi ±  1%
+Testdata/TwitterStatus/Decode/Value/Streaming-32                                               190.1Mi ±  1%
+Testdata/TwitterStatus/Decode/Value/Buffered-32                                                260.2Mi ±  0%
+SlowStreamingDecode/LargeString/Token-32                                                       18.36Mi ±  0%
+SlowStreamingDecode/LargeString/Value-32                                                       17.91Mi ±  1%
+SlowStreamingDecode/LargeNumber/Token-32                                                       23.99Mi ±  0%
+SlowStreamingDecode/LargeNumber/Value-32                                                       22.94Mi ±  1%
+SlowStreamingDecode/LargeWhitespace/Null/Token-32                                              27.16Mi ±  1%
+SlowStreamingDecode/LargeWhitespace/Null/Value-32                                              53.25Mi ±  1%
+SlowStreamingDecode/LargeWhitespace/Object/Token-32                                            29.41Mi ±  0%
+SlowStreamingDecode/LargeWhitespace/Object/Value-32                                            31.53Mi ±  1%
+SlowStreamingDecode/LargeWhitespace/Array/Token-32                                             28.70Mi ±  0%
+SlowStreamingDecode/LargeWhitespace/Array/Value-32                                             32.84Mi ±  2%
+TextValue/IsValid-32                                                                           399.8Mi ±  0%
+TextValue/Compact-32                                                                           392.3Mi ±  2%
+TextValue/Compact/Noop-32                                                                      760.8Mi ±  3%
+TextValue/Indent-32                                                                            259.3Mi ±  4%
+TextValue/Indent/Noop-32                                                                       313.1Mi ±  2%
+TextValue/Canonicalize-32                                                                      145.7Mi ±  0%
+TextValue/Canonicalize/Noop-32                                                                 180.6Mi ±  2%
+geomean                                                                                        80.22Mi
+
+                                                    │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                                    │                          B/op                          │
+Intern/Best/Alloc-32                                                                          15.62Ki ±   0%
+Intern/Best/Cache-32                                                                            16.00 ±   0%
+Intern/Best/GoMap-32                                                                            16.00 ±   0%
+Intern/Repeat/Alloc-32                                                                        9.375Ki ±   0%
+Intern/Repeat/Cache-32                                                                          96.00 ±   0%
+Intern/Repeat/GoMap-32                                                                          712.0 ±   0%
+Intern/Synthea/Alloc-32                                                                       693.2Ki ±   0%
+Intern/Synthea/Cache-32                                                                       235.1Ki ±   0%
+Intern/Synthea/GoMap-32                                                                       421.1Ki ±   0%
+Intern/Twitter/Alloc-32                                                                       212.5Ki ±   0%
+Intern/Twitter/Cache-32                                                                       153.9Ki ±   0%
+Intern/Twitter/GoMap-32                                                                       247.2Ki ±   0%
+Intern/Worst/Alloc-32                                                                         15.62Ki ±   0%
+Intern/Worst/Cache-32                                                                         15.62Ki ±   0%
+Intern/Worst/GoMap-32                                                                         171.9Ki ±   0%
+Unmarshal/Bool-32                                                                               1.000 ±   0%
+Unmarshal/String-32                                                                             16.00 ±   0%
+Unmarshal/Int-32                                                                                8.000 ±   0%
+Unmarshal/Uint-32                                                                               8.000 ±   0%
+Unmarshal/Float-32                                                                              8.000 ±   0%
+Unmarshal/Map/ManyEmpty-32                                                                    9.967Ki ±   0%
+Unmarshal/Map/OneLarge-32                                                                     2.128Ki ±   0%
+Unmarshal/Map/ManySmall-32                                                                    10.99Ki ±   0%
+Unmarshal/Struct/ManyEmpty-32                                                                   24.00 ±   0%
+Unmarshal/Struct/OneLarge-32                                                                    416.0 ±   0%
+Unmarshal/Struct/ManySmall-32                                                                   416.0 ±   0%
+Unmarshal/Slice/ManyEmpty-32                                                                  7.385Ki ±   0%
+Unmarshal/Slice/OneLarge-32                                                                   1.009Ki ±   0%
+Unmarshal/Slice/ManySmall-32                                                                  2.034Ki ±   0%
+Unmarshal/Array/OneLarge-32                                                                     416.0 ±   0%
+Unmarshal/Array/ManySmall-32                                                                    416.0 ±   0%
+Unmarshal/Bytes/Slice-32                                                                        56.00 ±   0%
+Unmarshal/Bytes/Array-32                                                                        32.00 ±   0%
+Unmarshal/Pointer-32                                                                            81.00 ±   0%
+Unmarshal/TextArshal-32                                                                         32.00 ±   0%
+Unmarshal/JSONArshalV1-32                                                                       32.00 ±   0%
+Unmarshal/JSONArshalV2-32                                                                       32.00 ±   0%
+Unmarshal/Time-32                                                                               24.00 ±   0%
+Marshal/Bool-32                                                                                 8.000 ±   0%
+Marshal/String-32                                                                               16.00 ±   0%
+Marshal/Int-32                                                                                  8.000 ±   0%
+Marshal/Uint-32                                                                                 8.000 ±   0%
+Marshal/Float-32                                                                                8.000 ±   0%
+Marshal/Map/ManyEmpty-32                                                                        320.0 ±   0%
+Marshal/Map/OneLarge-32                                                                         256.0 ±   0%
+Marshal/Map/ManySmall-32                                                                      1.212Ki ±   0%
+Marshal/Struct/ManyEmpty-32                                                                     320.0 ±   0%
+Marshal/Struct/OneLarge-32                                                                      224.0 ±   0%
+Marshal/Struct/ManySmall-32                                                                     384.0 ±   0%
+Marshal/Slice/ManyEmpty-32                                                                      320.0 ±   0%
+Marshal/Slice/OneLarge-32                                                                       112.0 ±   0%
+Marshal/Slice/ManySmall-32                                                                      160.0 ±   0%
+Marshal/Array/OneLarge-32                                                                       112.0 ±   0%
+Marshal/Array/ManySmall-32                                                                      160.0 ±   0%
+Marshal/Bytes/Slice-32                                                                          48.00 ±   0%
+Marshal/Bytes/Array-32                                                                          48.00 ±   0%
+Marshal/Pointer-32                                                                              8.000 ±   0%
+Marshal/TextArshal-32                                                                           16.00 ±   0%
+Marshal/JSONArshalV1-32                                                                         16.00 ±   0%
+Marshal/JSONArshalV2-32                                                                         8.000 ±   0%
+Marshal/Time-32                                                                                 24.00 ±   0%
+Testdata/CanadaGeometry/Marshal/Concrete-32                                                   275.2Ki ±   1%
+Testdata/CanadaGeometry/Marshal/Interface-32                                                  275.4Ki ±   1%
+Testdata/CanadaGeometry/Unmarshal/Concrete-32                                                 340.4Ki ±   0%
+Testdata/CanadaGeometry/Unmarshal/Interface-32                                                988.8Ki ±   0%
+Testdata/CanadaGeometry/Encode/Token/Streaming-32                                             9.164Ki ±   0%
+Testdata/CanadaGeometry/Encode/Token/Buffered-32                                              1.133Ki ±   0%
+Testdata/CanadaGeometry/Encode/Value/Streaming-32                                             1.133Mi ±   0%
+Testdata/CanadaGeometry/Encode/Value/Buffered-32                                                984.0 ±   0%
+Testdata/CanadaGeometry/Decode/Token/Streaming-32                                             9.117Ki ±   0%
+Testdata/CanadaGeometry/Decode/Token/Buffered-32                                              1.125Ki ±   0%
+Testdata/CanadaGeometry/Decode/Value/Streaming-32                                             1.001Mi ±   0%
+Testdata/CanadaGeometry/Decode/Value/Buffered-32                                                984.0 ±   0%
+Testdata/CitmCatalog/Marshal/Concrete-32                                                      508.9Ki ±   2%
+Testdata/CitmCatalog/Marshal/Interface-32                                                     512.5Ki ±   0%
+Testdata/CitmCatalog/Unmarshal/Concrete-32                                                    976.0Ki ±   0%
+Testdata/CitmCatalog/Unmarshal/Interface-32                                                   4.737Mi ±   0%
+Testdata/CitmCatalog/Encode/Token/Streaming-32                                                38.03Ki ±   0%
+Testdata/CitmCatalog/Encode/Token/Buffered-32                                                 29.93Ki ±   0%
+Testdata/CitmCatalog/Encode/Value/Streaming-32                                                2.449Mi ±   0%
+Testdata/CitmCatalog/Encode/Value/Buffered-32                                                 28.79Ki ±   0%
+Testdata/CitmCatalog/Decode/Token/Streaming-32                                                37.98Ki ±   0%
+Testdata/CitmCatalog/Decode/Token/Buffered-32                                                 29.94Ki ±   0%
+Testdata/CitmCatalog/Decode/Value/Streaming-32                                                4.028Mi ±   0%
+Testdata/CitmCatalog/Decode/Value/Buffered-32                                                 28.79Ki ±   0%
+Testdata/GolangSource/Marshal/Concrete-32                                                     2.019Mi ±   1%
+Testdata/GolangSource/Marshal/Interface-32                                                    2.067Mi ±   1%
+Testdata/GolangSource/Unmarshal/Concrete-32                                                   3.089Mi ±   0%
+Testdata/GolangSource/Unmarshal/Interface-32                                                  6.668Mi ±   0%
+Testdata/GolangSource/Encode/Token/Streaming-32                                               15.70Ki ±   0%
+Testdata/GolangSource/Encode/Token/Buffered-32                                                7.469Ki ±   0%
+Testdata/GolangSource/Encode/Value/Streaming-32                                               10.11Mi ±   0%
+Testdata/GolangSource/Encode/Value/Buffered-32                                                5.859Ki ±   0%
+Testdata/GolangSource/Decode/Token/Streaming-32                                               15.02Ki ±   0%
+Testdata/GolangSource/Decode/Token/Buffered-32                                                6.844Ki ±   0%
+Testdata/GolangSource/Decode/Value/Streaming-32                                               4.006Mi ±   0%
+Testdata/GolangSource/Decode/Value/Buffered-32                                                5.859Ki ±   0%
+Testdata/StringEscaped/Marshal/Concrete-32                                                    18.02Ki ±   0%
+Testdata/StringEscaped/Marshal/Interface-32                                                   18.02Ki ±   0%
+Testdata/StringEscaped/Unmarshal/Concrete-32                                                  59.22Ki ±   0%
+Testdata/StringEscaped/Unmarshal/Interface-32                                                 69.41Ki ±   0%
+Testdata/StringEscaped/Encode/Token/Streaming-32                                              12.30Ki ±   0%
+Testdata/StringEscaped/Encode/Token/Buffered-32                                               3.953Ki ±   0%
+Testdata/StringEscaped/Encode/Value/Streaming-32                                              130.0Ki ±   0%
+Testdata/StringEscaped/Encode/Value/Buffered-32                                               48.59Ki ±   0%
+Testdata/StringEscaped/Decode/Token/Streaming-32                                              14.96Ki ±   0%
+Testdata/StringEscaped/Decode/Token/Buffered-32                                               5.117Ki ±   0%
+Testdata/StringEscaped/Decode/Value/Streaming-32                                              133.0Ki ±   0%
+Testdata/StringEscaped/Decode/Value/Buffered-32                                               5.109Ki ±   0%
+Testdata/StringUnicode/Marshal/Concrete-32                                                    18.02Ki ±   0%
+Testdata/StringUnicode/Marshal/Interface-32                                                   18.02Ki ±   0%
+Testdata/StringUnicode/Unmarshal/Concrete-32                                                  16.12Ki ±   0%
+Testdata/StringUnicode/Unmarshal/Interface-32                                                 26.32Ki ±   0%
+Testdata/StringUnicode/Encode/Token/Streaming-32                                              12.30Ki ±   0%
+Testdata/StringUnicode/Encode/Token/Buffered-32                                               3.953Ki ±   0%
+Testdata/StringUnicode/Encode/Value/Streaming-32                                              85.38Ki ±   0%
+Testdata/StringUnicode/Encode/Value/Buffered-32                                               3.945Ki ±   0%
+Testdata/StringUnicode/Decode/Token/Streaming-32                                              11.99Ki ±   0%
+Testdata/StringUnicode/Decode/Token/Buffered-32                                               3.953Ki ±   0%
+Testdata/StringUnicode/Decode/Value/Streaming-32                                              67.88Ki ±   0%
+Testdata/StringUnicode/Decode/Value/Buffered-32                                               3.945Ki ±   0%
+Testdata/SyntheaFhir/Marshal/Concrete-32                                                      3.428Mi ±   0%
+Testdata/SyntheaFhir/Marshal/Interface-32                                                     1.162Mi ±   0%
+Testdata/SyntheaFhir/Unmarshal/Concrete-32                                                    3.028Mi ±   0%
+Testdata/SyntheaFhir/Unmarshal/Interface-32                                                   6.601Mi ±   0%
+Testdata/SyntheaFhir/Encode/Token/Streaming-32                                                11.52Ki ±   0%
+Testdata/SyntheaFhir/Encode/Token/Buffered-32                                                 3.414Ki ±   0%
+Testdata/SyntheaFhir/Encode/Value/Streaming-32                                                6.338Mi ±   0%
+Testdata/SyntheaFhir/Encode/Value/Buffered-32                                                 3.758Ki ±   0%
+Testdata/SyntheaFhir/Decode/Token/Streaming-32                                                11.48Ki ±   0%
+Testdata/SyntheaFhir/Decode/Token/Buffered-32                                                 3.422Ki ±   0%
+Testdata/SyntheaFhir/Decode/Value/Streaming-32                                                4.004Mi ±   0%
+Testdata/SyntheaFhir/Decode/Value/Buffered-32                                                 3.758Ki ±   0%
+Testdata/TwitterStatus/Marshal/Concrete-32                                                    495.9Ki ±   1%
+Testdata/TwitterStatus/Marshal/Interface-32                                                   464.0Ki ±   2%
+Testdata/TwitterStatus/Unmarshal/Concrete-32                                                  554.5Ki ±   0%
+Testdata/TwitterStatus/Unmarshal/Interface-32                                                 1.907Mi ±   0%
+Testdata/TwitterStatus/Encode/Token/Streaming-32                                              17.02Ki ±   0%
+Testdata/TwitterStatus/Encode/Token/Buffered-32                                               9.547Ki ±   0%
+Testdata/TwitterStatus/Encode/Value/Streaming-32                                              2.434Mi ±   0%
+Testdata/TwitterStatus/Encode/Value/Buffered-32                                               12.84Ki ±   0%
+Testdata/TwitterStatus/Decode/Token/Streaming-32                                              17.46Ki ±   0%
+Testdata/TwitterStatus/Decode/Token/Buffered-32                                               9.359Ki ±   0%
+Testdata/TwitterStatus/Decode/Value/Streaming-32                                              2.012Mi ±   0%
+Testdata/TwitterStatus/Decode/Value/Buffered-32                                               12.84Ki ±   0%
+SlowStreamingDecode/LargeString/Token-32                                                      16.31Ki ±   0%
+SlowStreamingDecode/LargeString/Value-32                                                      16.31Ki ±   0%
+SlowStreamingDecode/LargeNumber/Token-32                                                      16.31Ki ±   0%
+SlowStreamingDecode/LargeNumber/Value-32                                                      16.31Ki ±   0%
+SlowStreamingDecode/LargeWhitespace/Null/Token-32                                             16.31Ki ±   0%
+SlowStreamingDecode/LargeWhitespace/Null/Value-32                                             16.31Ki ±   0%
+SlowStreamingDecode/LargeWhitespace/Object/Token-32                                           32.45Ki ±   0%
+SlowStreamingDecode/LargeWhitespace/Object/Value-32                                           128.4Ki ±   0%
+SlowStreamingDecode/LargeWhitespace/Array/Token-32                                            32.32Ki ±   0%
+SlowStreamingDecode/LargeWhitespace/Array/Value-32                                            64.32Ki ±   0%
+TextValue/IsValid-32                                                                          25.33Ki ±   0%
+TextValue/Compact-32                                                                          8.730Ki ±   2%
+TextValue/Compact/Noop-32                                                                     4.467Ki ±  44%
+TextValue/Indent-32                                                                           21.41Ki ± 100%
+TextValue/Indent/Noop-32                                                                      17.47Ki ± 100%
+TextValue/Canonicalize-32                                                                     52.21Ki ±   3%
+TextValue/Canonicalize/Noop-32                                                                44.91Ki ±  43%
+geomean                                                                                       7.760Ki
+
+                                                    │ /home/ubuntu/bench-out/results/stdlib-go1.27.0-all.txt │
+                                                    │                       allocs/op                        │
+Intern/Best/Alloc-32                                                                           1.000k ± 0%
+Intern/Best/Cache-32                                                                            1.000 ± 0%
+Intern/Best/GoMap-32                                                                            1.000 ± 0%
+Intern/Repeat/Alloc-32                                                                         1.000k ± 0%
+Intern/Repeat/Cache-32                                                                          10.00 ± 0%
+Intern/Repeat/GoMap-32                                                                          13.00 ± 0%
+Intern/Synthea/Alloc-32                                                                        24.67k ± 0%
+Intern/Synthea/Cache-32                                                                        7.406k ± 0%
+Intern/Synthea/GoMap-32                                                                        2.510k ± 0%
+Intern/Twitter/Alloc-32                                                                        4.609k ± 0%
+Intern/Twitter/Cache-32                                                                        2.142k ± 0%
+Intern/Twitter/GoMap-32                                                                        1.536k ± 0%
+Intern/Worst/Alloc-32                                                                          1.000k ± 0%
+Intern/Worst/Cache-32                                                                          1.000k ± 0%
+Intern/Worst/GoMap-32                                                                          1.020k ± 0%
+Unmarshal/Bool-32                                                                               1.000 ± 0%
+Unmarshal/String-32                                                                             1.000 ± 0%
+Unmarshal/Int-32                                                                                1.000 ± 0%
+Unmarshal/Uint-32                                                                               1.000 ± 0%
+Unmarshal/Float-32                                                                              1.000 ± 0%
+Unmarshal/Map/ManyEmpty-32                                                                      309.0 ± 0%
+Unmarshal/Map/OneLarge-32                                                                       10.00 ± 0%
+Unmarshal/Map/ManySmall-32                                                                      114.0 ± 0%
+Unmarshal/Struct/ManyEmpty-32                                                                   1.000 ± 0%
+Unmarshal/Struct/OneLarge-32                                                                    1.000 ± 0%
+Unmarshal/Struct/ManySmall-32                                                                   1.000 ± 0%
+Unmarshal/Slice/ManyEmpty-32                                                                    9.000 ± 0%
+Unmarshal/Slice/OneLarge-32                                                                     7.000 ± 0%
+Unmarshal/Slice/ManySmall-32                                                                    33.00 ± 0%
+Unmarshal/Array/OneLarge-32                                                                     1.000 ± 0%
+Unmarshal/Array/ManySmall-32                                                                    1.000 ± 0%
+Unmarshal/Bytes/Slice-32                                                                        2.000 ± 0%
+Unmarshal/Bytes/Array-32                                                                        1.000 ± 0%
+Unmarshal/Pointer-32                                                                            11.00 ± 0%
+Unmarshal/TextArshal-32                                                                         1.000 ± 0%
+Unmarshal/JSONArshalV1-32                                                                       1.000 ± 0%
+Unmarshal/JSONArshalV2-32                                                                       1.000 ± 0%
+Unmarshal/Time-32                                                                               1.000 ± 0%
+Marshal/Bool-32                                                                                 1.000 ± 0%
+Marshal/String-32                                                                               1.000 ± 0%
+Marshal/Int-32                                                                                  1.000 ± 0%
+Marshal/Uint-32                                                                                 1.000 ± 0%
+Marshal/Float-32                                                                                1.000 ± 0%
+Marshal/Map/ManyEmpty-32                                                                        1.000 ± 0%
+Marshal/Map/OneLarge-32                                                                         3.000 ± 0%
+Marshal/Map/ManySmall-32                                                                        55.00 ± 0%
+Marshal/Struct/ManyEmpty-32                                                                     1.000 ± 0%
+Marshal/Struct/OneLarge-32                                                                      1.000 ± 0%
+Marshal/Struct/ManySmall-32                                                                     1.000 ± 0%
+Marshal/Slice/ManyEmpty-32                                                                      1.000 ± 0%
+Marshal/Slice/OneLarge-32                                                                       1.000 ± 0%
+Marshal/Slice/ManySmall-32                                                                      1.000 ± 0%
+Marshal/Array/OneLarge-32                                                                       1.000 ± 0%
+Marshal/Array/ManySmall-32                                                                      1.000 ± 0%
+Marshal/Bytes/Slice-32                                                                          1.000 ± 0%
+Marshal/Bytes/Array-32                                                                          1.000 ± 0%
+Marshal/Pointer-32                                                                              1.000 ± 0%
+Marshal/TextArshal-32                                                                           2.000 ± 0%
+Marshal/JSONArshalV1-32                                                                         2.000 ± 0%
+Marshal/JSONArshalV2-32                                                                         1.000 ± 0%
+Marshal/Time-32                                                                                 1.000 ± 0%
+Testdata/CanadaGeometry/Marshal/Concrete-32                                                     1.000 ± 0%
+Testdata/CanadaGeometry/Marshal/Interface-32                                                    2.000 ± 0%
+Testdata/CanadaGeometry/Unmarshal/Concrete-32                                                  1.628k ± 0%
+Testdata/CanadaGeometry/Unmarshal/Interface-32                                                 37.90k ± 0%
+Testdata/CanadaGeometry/Encode/Token/Streaming-32                                               38.00 ± 0%
+Testdata/CanadaGeometry/Encode/Token/Buffered-32                                                26.00 ± 0%
+Testdata/CanadaGeometry/Encode/Value/Streaming-32                                               46.00 ± 0%
+Testdata/CanadaGeometry/Encode/Value/Buffered-32                                                20.00 ± 0%
+Testdata/CanadaGeometry/Decode/Token/Streaming-32                                               36.00 ± 0%
+Testdata/CanadaGeometry/Decode/Token/Buffered-32                                                26.00 ± 0%
+Testdata/CanadaGeometry/Decode/Value/Streaming-32                                               34.00 ± 0%
+Testdata/CanadaGeometry/Decode/Value/Buffered-32                                                20.00 ± 0%
+Testdata/CitmCatalog/Marshal/Concrete-32                                                        125.0 ± 0%
+Testdata/CitmCatalog/Marshal/Interface-32                                                       2.000 ± 0%
+Testdata/CitmCatalog/Unmarshal/Concrete-32                                                     7.285k ± 0%
+Testdata/CitmCatalog/Unmarshal/Interface-32                                                    81.01k ± 0%
+Testdata/CitmCatalog/Encode/Token/Streaming-32                                                  274.0 ± 0%
+Testdata/CitmCatalog/Encode/Token/Buffered-32                                                   261.0 ± 0%
+Testdata/CitmCatalog/Encode/Value/Streaming-32                                                  274.0 ± 0%
+Testdata/CitmCatalog/Encode/Value/Buffered-32                                                   244.0 ± 0%
+Testdata/CitmCatalog/Decode/Token/Streaming-32                                                  272.0 ± 0%
+Testdata/CitmCatalog/Decode/Token/Buffered-32                                                   262.0 ± 0%
+Testdata/CitmCatalog/Decode/Value/Streaming-32                                                  260.0 ± 0%
+Testdata/CitmCatalog/Decode/Value/Buffered-32                                                   244.0 ± 0%
+Testdata/GolangSource/Marshal/Concrete-32                                                       2.000 ± 0%
+Testdata/GolangSource/Marshal/Interface-32                                                      3.000 ± 0%
+Testdata/GolangSource/Unmarshal/Concrete-32                                                    13.95k ± 0%
+Testdata/GolangSource/Unmarshal/Interface-32                                                   218.8k ± 0%
+Testdata/GolangSource/Encode/Token/Streaming-32                                                 167.0 ± 0%
+Testdata/GolangSource/Encode/Token/Buffered-32                                                  152.0 ± 0%
+Testdata/GolangSource/Encode/Value/Streaming-32                                                 172.0 ± 0%
+Testdata/GolangSource/Encode/Value/Buffered-32                                                  136.0 ± 0%
+Testdata/GolangSource/Decode/Token/Streaming-32                                                 148.0 ± 0%
+Testdata/GolangSource/Decode/Token/Buffered-32                                                  136.0 ± 0%
+Testdata/GolangSource/Decode/Value/Streaming-32                                                 152.0 ± 0%
+Testdata/GolangSource/Decode/Value/Buffered-32                                                  136.0 ± 0%
+Testdata/StringEscaped/Marshal/Concrete-32                                                      1.000 ± 0%
+Testdata/StringEscaped/Marshal/Interface-32                                                     2.000 ± 0%
+Testdata/StringEscaped/Unmarshal/Concrete-32                                                    168.0 ± 0%
+Testdata/StringEscaped/Unmarshal/Interface-32                                                   299.0 ± 0%
+Testdata/StringEscaped/Encode/Token/Streaming-32                                                29.00 ± 0%
+Testdata/StringEscaped/Encode/Token/Buffered-32                                                 19.00 ± 0%
+Testdata/StringEscaped/Encode/Value/Streaming-32                                                152.0 ± 0%
+Testdata/StringEscaped/Encode/Value/Buffered-32                                                 137.0 ± 0%
+Testdata/StringEscaped/Decode/Token/Streaming-32                                                42.00 ± 0%
+Testdata/StringEscaped/Decode/Token/Buffered-32                                                 18.00 ± 0%
+Testdata/StringEscaped/Decode/Value/Streaming-32                                                28.00 ± 0%
+Testdata/StringEscaped/Decode/Value/Buffered-32                                                 17.00 ± 0%
+Testdata/StringUnicode/Marshal/Concrete-32                                                      1.000 ± 0%
+Testdata/StringUnicode/Marshal/Interface-32                                                     2.000 ± 0%
+Testdata/StringUnicode/Unmarshal/Concrete-32                                                    50.00 ± 0%
+Testdata/StringUnicode/Unmarshal/Interface-32                                                   181.0 ± 0%
+Testdata/StringUnicode/Encode/Token/Streaming-32                                                29.00 ± 0%
+Testdata/StringUnicode/Encode/Token/Buffered-32                                                 19.00 ± 0%
+Testdata/StringUnicode/Encode/Value/Streaming-32                                                33.00 ± 0%
+Testdata/StringUnicode/Encode/Value/Buffered-32                                                 18.00 ± 0%
+Testdata/StringUnicode/Decode/Token/Streaming-32                                                29.00 ± 0%
+Testdata/StringUnicode/Decode/Token/Buffered-32                                                 19.00 ± 0%
+Testdata/StringUnicode/Decode/Value/Streaming-32                                                28.00 ± 0%
+Testdata/StringUnicode/Decode/Value/Buffered-32                                                 18.00 ± 0%
+Testdata/SyntheaFhir/Marshal/Concrete-32                                                       2.558k ± 0%
+Testdata/SyntheaFhir/Marshal/Interface-32                                                       2.000 ± 0%
+Testdata/SyntheaFhir/Unmarshal/Concrete-32                                                     14.56k ± 0%
+Testdata/SyntheaFhir/Unmarshal/Interface-32                                                    117.5k ± 0%
+Testdata/SyntheaFhir/Encode/Token/Streaming-32                                                  77.00 ± 0%
+Testdata/SyntheaFhir/Encode/Token/Buffered-32                                                   63.00 ± 0%
+Testdata/SyntheaFhir/Encode/Value/Streaming-32                                                  97.00 ± 0%
+Testdata/SyntheaFhir/Encode/Value/Buffered-32                                                   63.00 ± 0%
+Testdata/SyntheaFhir/Decode/Token/Streaming-32                                                  75.00 ± 0%
+Testdata/SyntheaFhir/Decode/Token/Buffered-32                                                   64.00 ± 0%
+Testdata/SyntheaFhir/Decode/Value/Streaming-32                                                  79.00 ± 0%
+Testdata/SyntheaFhir/Decode/Value/Buffered-32                                                   63.00 ± 0%
+Testdata/TwitterStatus/Marshal/Concrete-32                                                      49.00 ± 0%
+Testdata/TwitterStatus/Marshal/Interface-32                                                     2.000 ± 0%
+Testdata/TwitterStatus/Unmarshal/Concrete-32                                                   2.981k ± 0%
+Testdata/TwitterStatus/Unmarshal/Interface-32                                                  28.10k ± 0%
+Testdata/TwitterStatus/Encode/Token/Streaming-32                                                94.00 ± 0%
+Testdata/TwitterStatus/Encode/Token/Buffered-32                                                 81.00 ± 0%
+Testdata/TwitterStatus/Encode/Value/Streaming-32                                                122.0 ± 0%
+Testdata/TwitterStatus/Encode/Value/Buffered-32                                                 92.00 ± 0%
+Testdata/TwitterStatus/Decode/Token/Streaming-32                                                94.00 ± 0%
+Testdata/TwitterStatus/Decode/Token/Buffered-32                                                 83.00 ± 0%
+Testdata/TwitterStatus/Decode/Value/Streaming-32                                                107.0 ± 0%
+Testdata/TwitterStatus/Decode/Value/Buffered-32                                                 92.00 ± 0%
+SlowStreamingDecode/LargeString/Token-32                                                        11.00 ± 0%
+SlowStreamingDecode/LargeString/Value-32                                                        11.00 ± 0%
+SlowStreamingDecode/LargeNumber/Token-32                                                        11.00 ± 0%
+SlowStreamingDecode/LargeNumber/Value-32                                                        11.00 ± 0%
+SlowStreamingDecode/LargeWhitespace/Null/Token-32                                               11.00 ± 0%
+SlowStreamingDecode/LargeWhitespace/Null/Value-32                                               11.00 ± 0%
+SlowStreamingDecode/LargeWhitespace/Object/Token-32                                             20.00 ± 0%
+SlowStreamingDecode/LargeWhitespace/Object/Value-32                                             20.00 ± 0%
+SlowStreamingDecode/LargeWhitespace/Array/Token-32                                              13.00 ± 0%
+SlowStreamingDecode/LargeWhitespace/Array/Value-32                                              14.00 ± 0%
+TextValue/IsValid-32                                                                            216.0 ± 0%
+TextValue/Compact-32                                                                            0.000 ± 0%
+TextValue/Compact/Noop-32                                                                       0.000 ± 0%
+TextValue/Indent-32                                                                             0.000 ± 0%
+TextValue/Indent/Noop-32                                                                        0.000 ± 0%
+TextValue/Canonicalize-32                                                                       216.0 ± 0%
+TextValue/Canonicalize/Noop-32                                                                  216.0 ± 0%
+geomean                                                                                                    ¹
+¹ summaries must be >0 to compute geomean

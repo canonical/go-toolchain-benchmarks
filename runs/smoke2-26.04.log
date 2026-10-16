@@ -1,0 +1,31 @@
+***********************************************
+* Starting testflinger setup phase on chakron *
+***********************************************
+Cleaning up container if it exists...
+***************************************************
+* Starting testflinger provision phase on chakron *
+***************************************************
+2026-10-08 07:35:11,541 chakron INFO: DEVICE CONNECTOR: Running pre-provision hook
+2026-10-08 07:35:11,541 chakron INFO: DEVICE CONNECTOR: MAAS: Reading node's block device information
+2026-10-08 07:35:13,157 chakron INFO: DEVICE CONNECTOR: BEGIN provision
+2026-10-08 07:35:13,158 chakron INFO: DEVICE CONNECTOR: Provisioning device
+2026-10-08 07:35:13,158 chakron INFO: DEVICE CONNECTOR: MAAS: Fixing EFI boot order before provisioning
+State 'provision' lasted 2 minutes 3 seconds
+2026-10-08 07:37:13,304 chakron INFO: DEVICE CONNECTOR: MAAS: Fixing EFI boot order before provisioning
+State 'unknown' lasted 0 minutes 10 seconds
+State 'provision' lasted 0 minutes 45 seconds
+State 'unknown' lasted 0 minutes 10 seconds
+2026-10-08 07:39:13,446 chakron INFO: DEVICE CONNECTOR: MAAS: Releasing node chakron
+2026-10-08 07:39:27,505 chakron INFO: DEVICE CONNECTOR: MAAS: Successfully released node chakron
+2026-10-08 07:39:29,384 chakron WARNING: DEVICE CONNECTOR: MAAS: 'default_disks' and/or 'disks' unspecified; setting default storage layout to flat
+2026-10-08 07:39:31,329 chakron INFO: DEVICE CONNECTOR: MAAS: Acquiring node
+2026-10-08 07:39:36,325 chakron INFO: DEVICE CONNECTOR: MAAS: Starting node chakron with distro resolute
+2026-10-08 07:39:41,444 chakron INFO: DEVICE CONNECTOR: MAAS: Timeout value: 60 minutes.
+2026-10-08 07:40:41,503 chakron INFO: DEVICE CONNECTOR: MAAS: 1 minutes passed since deployment.
+2026-10-08 07:41:43,288 chakron INFO: DEVICE CONNECTOR: MAAS: 2 minutes passed since deployment.
+State 'provision' lasted 3 minutes 41 seconds
+State 'unknown' lasted 0 minutes 22 seconds
+2026-10-08 07:42:46,905 chakron INFO: DEVICE CONNECTOR: MAAS: 3 minutes passed since deployment.
+2026-10-08 07:43:48,930 chakron INFO: DEVICE CONNECTOR: MAAS: 4 minutes passed since deployment.
+2026-10-08 07:44:50,697 chakron INFO: DEVICE CONNECTOR: MAAS: 5 minutes passed since deployment.
+Connection timed out while refreshing authentication token.

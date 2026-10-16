@@ -1,0 +1,19 @@
+                       │ go-build//go1.26.7.results │    go-build//go1.27.0.results     │
+                       │           sec/op           │   sec/op    vs base               │
+GoBuildKubelet-32                        49.93 ± 1%   48.98 ± 1%  -1.91% (p=0.000 n=10)
+GoBuildKubeletLink-32                    7.285 ± 4%   6.885 ± 2%  -5.48% (p=0.001 n=10)
+GoBuildIstioctl-32                       66.12 ± 1%   65.13 ± 2%  -1.49% (p=0.000 n=10)
+GoBuildIstioctlLink-32                   15.68 ± 2%   15.26 ± 3%  -2.62% (p=0.011 n=10)
+GoBuildFrontend-32                       18.14 ± 2%   17.26 ± 3%  -4.83% (p=0.000 n=10)
+GoBuildFrontendLink-32                   3.037 ± 3%   2.896 ± 2%  -4.63% (p=0.000 n=10)
+GoBuildTsgo-32                           140.3 ± 1%   138.1 ± 0%  -1.52% (p=0.000 n=10)
+GoBuildTsgoLink-32                       3.824 ± 1%   3.640 ± 5%  -4.81% (p=0.005 n=10)
+geomean                                  18.02        17.41       -3.42%
+
+                   │ go-build//go1.26.7.results │        go-build//go1.27.0.results        │
+                   │     average-RSS-bytes      │ average-RSS-bytes  vs base               │
+GoBuildKubelet-32                  2.947Gi ± 1%        2.920Gi ± 1%  -0.90% (p=0.000 n=10)
+GoBuildIstioctl-32                 3.430Gi ± 1%        3.395Gi ± 0%  -1.01% (p=0.000 n=10)
+GoBuildFrontend-32                 926.5Mi ± 1%        914.2Mi ± 0%  -1.33% (p=0.000 n=10)
+GoBuildTsgo-32                     2.429Gi ± 1%        2.418Gi ± 0%       ~ (p=0.075 n=10)
+geomean                            2.171Gi             2.151Gi       -0.92%

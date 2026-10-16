@@ -1,0 +1,22 @@
+unknown subcommand: "version"
+
+Sweet v0.3.0: Go Benchmarking Suite
+
+Sweet is a set of benchmarks derived from the Go community which are intended
+to represent a breadth of real-world applications. The primary use-case of this
+suite is to perform an evaluation of the difference in CPU and memory
+performance between two Go implementations.
+
+If you use this benchmarking suite for any measurements, please ensure you use
+a versioned release and note the version in the release.
+
+All results are reported in the standard Go testing package format, such that
+results may be compared using the benchstat tool.
+
+Usage: sweet <subcommand> [subcommand flags] [subcommand args]
+
+Subcommands:
+         get: Retrieves assets for benchmarks.
+         put: Uploads a new version of the benchmark assets.
+         run: Executes benchmarks in the suite.
+         gen: Generate dynamic binary assets.

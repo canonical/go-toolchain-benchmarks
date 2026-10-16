@@ -1,0 +1,15 @@
+                      │ bleve-index//go1.26.7.results │   bleve-index//go1.27.0.results    │
+                      │            sec/op             │   sec/op    vs base                │
+BleveIndexBatch100-32                      9.472 ± 1%   8.435 ± 2%  -10.95% (p=0.000 n=10)
+
+                      │ bleve-index//go1.26.7.results │    bleve-index//go1.27.0.results    │
+                      │       average-RSS-bytes       │ average-RSS-bytes  vs base          │
+BleveIndexBatch100-32                    180.9Mi ± 1%        180.9Mi ± 2%  ~ (p=0.739 n=10)
+
+                      │ bleve-index//go1.26.7.results │  bleve-index//go1.27.0.results   │
+                      │        peak-RSS-bytes         │ peak-RSS-bytes  vs base          │
+BleveIndexBatch100-32                    260.0Mi ± 4%     250.0Mi ± 6%  ~ (p=0.684 n=10)
+
+                      │ bleve-index//go1.26.7.results │  bleve-index//go1.27.0.results  │
+                      │         peak-VM-bytes         │ peak-VM-bytes  vs base          │
+BleveIndexBatch100-32                    3.942Gi ± 2%    3.941Gi ± 2%  ~ (p=0.796 n=10)

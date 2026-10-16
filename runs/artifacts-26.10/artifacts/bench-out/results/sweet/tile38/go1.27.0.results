@@ -1,0 +1,10 @@
+BenchmarkTile38QueryLoad-32 2000000 1292104 ns/op 4197439377 average-RSS-bytes 4260466688 peak-RSS-bytes 5534941184 peak-VM-bytes 596615 p50-latency-ns 1654711 p90-latency-ns 11418948 p99-latency-ns 18574 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1264362 ns/op 4120679510 average-RSS-bytes 4192931840 peak-RSS-bytes 5464219648 peak-VM-bytes 586777 p50-latency-ns 1633352 p90-latency-ns 11193365 p99-latency-ns 18981 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1284387 ns/op 4128453499 average-RSS-bytes 4195356672 peak-RSS-bytes 5532876800 peak-VM-bytes 594763 p50-latency-ns 1655356 p90-latency-ns 11412196 p99-latency-ns 18685 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1296940 ns/op 4153661949 average-RSS-bytes 4221018112 peak-RSS-bytes 5531418624 peak-VM-bytes 596566 p50-latency-ns 1656598 p90-latency-ns 11287193 p99-latency-ns 18505 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1297532 ns/op 4130824169 average-RSS-bytes 4198432768 peak-RSS-bytes 5532024832 peak-VM-bytes 595011 p50-latency-ns 1654913 p90-latency-ns 11463385 p99-latency-ns 18496 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1298035 ns/op 4149618260 average-RSS-bytes 4216983552 peak-RSS-bytes 5533761536 peak-VM-bytes 594441 p50-latency-ns 1644473 p90-latency-ns 11409091 p99-latency-ns 18489 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1303607 ns/op 4126047905 average-RSS-bytes 4203028480 peak-RSS-bytes 5531697152 peak-VM-bytes 595703 p50-latency-ns 1655143 p90-latency-ns 11441838 p99-latency-ns 18410 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1289402 ns/op 4145063133 average-RSS-bytes 4211363840 peak-RSS-bytes 5531615232 peak-VM-bytes 585995 p50-latency-ns 1629667 p90-latency-ns 11338050 p99-latency-ns 18613 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1303227 ns/op 4119301996 average-RSS-bytes 4204310528 peak-RSS-bytes 5531435008 peak-VM-bytes 589302 p50-latency-ns 1640900 p90-latency-ns 11580815 p99-latency-ns 18415 ops/s
+BenchmarkTile38QueryLoad-32 2000000 1311935 ns/op 4117655780 average-RSS-bytes 4197437440 peak-RSS-bytes 5463957504 peak-VM-bytes 598889 p50-latency-ns 1662830 p90-latency-ns 11744685 p99-latency-ns 18293 ops/s

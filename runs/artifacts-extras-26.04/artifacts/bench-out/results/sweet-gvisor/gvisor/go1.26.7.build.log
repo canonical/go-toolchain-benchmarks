@@ -1,0 +1,104 @@
+go: downloading golang.org/x/sys v0.43.0
+go: downloading github.com/google/subcommands v1.0.2-0.20190508160503-636abe8753b8
+go: downloading github.com/opencontainers/runtime-spec v1.2.1
+go: downloading golang.org/x/time v0.15.0
+go: downloading google.golang.org/protobuf v1.36.11
+go: downloading github.com/cenkalti/backoff v2.2.1+incompatible
+go: downloading github.com/mohae/deepcopy v0.0.0-20170308212314-bb9b5e7adda9
+go: downloading github.com/moby/sys/capability v0.4.0
+go: downloading github.com/gofrs/flock v0.8.0
+go: downloading golang.org/x/exp v0.0.0-20250711185948-6ae5c78190dc
+go: downloading github.com/creack/pty v1.1.24
+go: downloading github.com/coreos/go-systemd/v22 v22.6.0
+go: downloading github.com/godbus/dbus/v5 v5.1.0
+go: downloading golang.org/x/sync v0.20.0
+go: downloading github.com/vishvananda/netlink v1.3.1-0.20250303224720-0e7078ed04c8
+go: downloading github.com/google/btree v1.1.2
+go: downloading golang.org/x/mod v0.34.0
+go: downloading cloud.google.com/go/auth v0.20.0
+go: downloading cloud.google.com/go/auth/oauth2adapt v0.2.8
+go: downloading cloud.google.com/go/storage v1.62.1
+go: downloading google.golang.org/api v0.274.0
+go: downloading github.com/vishvananda/netns v0.0.5
+go: downloading cloud.google.com/go v0.123.0
+go: downloading github.com/googleapis/gax-go/v2 v2.21.0
+go: downloading github.com/googleapis/enterprise-certificate-proxy v0.3.14
+go: downloading cloud.google.com/go/compute/metadata v0.9.0
+go: downloading cloud.google.com/go/iam v1.7.0
+go: downloading github.com/google/uuid v1.6.0
+go: downloading github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.55.0
+go: downloading go.opentelemetry.io/contrib/detectors/gcp v1.39.0
+go: downloading go.opentelemetry.io/otel v1.43.0
+go: downloading go.opentelemetry.io/otel/sdk/metric v1.43.0
+go: downloading go.opentelemetry.io/otel/trace v1.43.0
+go: downloading go.opentelemetry.io/otel/sdk v1.43.0
+go: downloading google.golang.org/genproto v0.0.0-20260319201613-d00831a3d3e7
+go: downloading google.golang.org/grpc v1.80.0
+go: downloading google.golang.org/genproto/googleapis/api v0.0.0-20260401024825-9d38bb4040a9
+go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20260401024825-9d38bb4040a9
+go: downloading cloud.google.com/go/monitoring v1.24.3
+go: downloading github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.55.0
+go: downloading github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v1.31.0
+go: downloading go.opentelemetry.io/otel/metric v1.43.0
+go: downloading github.com/go-logr/logr v1.4.3
+go: downloading golang.org/x/net v0.52.0
+go: downloading github.com/go-logr/stdr v1.2.2
+go: downloading go.opentelemetry.io/auto/sdk v1.2.1
+go: downloading github.com/cespare/xxhash/v2 v2.3.0
+go: downloading github.com/envoyproxy/go-control-plane/envoy v1.36.0
+go: downloading github.com/spiffe/go-spiffe/v2 v2.6.0
+go: downloading github.com/cncf/xds/go v0.0.0-20251210132809-ee656c7534f5
+go: downloading github.com/go-jose/go-jose/v4 v4.1.4
+go: downloading cel.dev/expr v0.25.1
+go: downloading github.com/envoyproxy/protoc-gen-validate v1.3.0
+go: downloading golang.org/x/text v0.36.0
+go: downloading github.com/google/s2a-go v0.1.9
+go: downloading go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.67.0
+go: downloading go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.67.0
+go: downloading github.com/felixge/httpsnoop v1.0.4
+go: downloading golang.org/x/crypto v0.49.0
+cli/cli.go:34:2: found packages refs (refcounter.go) and refs_template (refs_template.go) in /tmp/gosweet15443698/gvisor/src/pkg/refs
+../pkg/eventchannel/event.go:30:2: no required module provides package gvisor.dev/gvisor/pkg/eventchannel/eventchannel_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/eventchannel/eventchannel_go_proto
+../pkg/eventfd/eventfd.go:25:2: found packages safecopy (safecopy.go) and safecopy_x (safecopy_amd64_test.go) in /tmp/gosweet15443698/gvisor/src/pkg/safecopy
+../pkg/metric/condmetric.go:20:2: no required module provides package gvisor.dev/gvisor/pkg/metric/metric_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/metric/metric_go_proto
+../pkg/sentry/seccheck/seccheck.go:23:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/seccheck/points/points_go_proto
+../pkg/devutil/devutil.go:26:2: found packages lisafs (channel.go) and connection (connection_test.go) in /tmp/gosweet15443698/gvisor/src/pkg/lisafs
+../pkg/sentry/arch/arch_x86.go:29:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/arch/registers_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/arch/registers_go_proto
+../pkg/sentry/vfs/mount_promise.go:26:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/vfs/events_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/vfs/events_go_proto
+../pkg/sentry/kernel/fscheckpoint.go:29:2: found packages benchmark (benchmark_test.go) and tmpfs (device_file.go) in /tmp/gosweet15443698/gvisor/src/pkg/sentry/fsimpl/tmpfs
+../pkg/sentry/inet/inet.go:21:2: found packages nlmsg (message.go) and message (message_test.go) in /tmp/gosweet15443698/gvisor/src/pkg/sentry/socket/netlink/nlmsg
+../pkg/sentry/inet/inet.go:24:2: found packages stack (addressable_endpoint_state.go) and bridge (bridge_test.go) in /tmp/gosweet15443698/gvisor/src/pkg/tcpip/stack
+../pkg/sentry/kernel/task_signals.go:29:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/kernel/uncaught_signal_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/kernel/uncaught_signal_go_proto
+../pkg/sentry/loader/vdsodata/vdsodata_amd64.go:26:12: pattern vdso_amd64.so: no matching files found
+../pkg/seccomp/precompiledseccomp/example/example.go:23:2: import "gvisor.dev/gvisor/pkg/seccomp/precompiledseccomp" is a program, not an importable package
+../pkg/sentry/platform/platform.go:29:2: found packages main (precompile_gen.go) and precompiled (precompiled_lib.tmpl.go) in /tmp/gosweet15443698/gvisor/src/pkg/seccomp/precompiledseccomp
+../pkg/sentry/platform/platform.go:29:2: import "gvisor.dev/gvisor/pkg/seccomp/precompiledseccomp" is a program, not an importable package
+../pkg/sentry/kernel/kernel.go:81:2: found packages unimpl (events.go) and events (events_test.go) in /tmp/gosweet15443698/gvisor/src/pkg/sentry/unimpl
+../pkg/sentry/kernel/kernel.go:88:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/unimpl/unimplemented_syscall_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/unimpl/unimplemented_syscall_go_proto
+../pkg/sentry/socket/netstack/netstack.go:57:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/socket/netstack/events_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/socket/netstack/events_go_proto
+../pkg/sentry/control/lifecycle.go:29:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/control/control_api_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/control/control_api_go_proto
+../pkg/sentry/control/tpu_control.go:30:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/control/tpu_control_proto_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/control/tpu_control_proto_go_proto
+../pkg/sentry/control/state_cuda.go:29:2: found packages nvproxy (frontend.go) and nvproxy_driver_parity (nvproxy_driver_parity_test.go) in /tmp/gosweet15443698/gvisor/src/pkg/sentry/devices/nvproxy
+../pkg/sentry/strace/strace.go:33:2: no required module provides package gvisor.dev/gvisor/pkg/sentry/strace/strace_go_proto; to add it:
+	go get gvisor.dev/gvisor/pkg/sentry/strace/strace_go_proto
+../pkg/sentry/platform/systrap/sysmsg/sysmsg_amd64.go:30:12: pattern sighandler.built-in.amd64.bin: no matching files found
+../pkg/sentry/platform/systrap/filters.go:23:2: import "gvisor.dev/gvisor/pkg/seccomp/precompiledseccomp" is a program, not an importable package
+boot/network.go:35:2: found packages fifo (fifo.go) and qdisc (qdisc_test.go) in /tmp/gosweet15443698/gvisor/src/pkg/tcpip/link/qdisc/fifo
+boot/filter/config/config.go:27:2: import "gvisor.dev/gvisor/pkg/seccomp/precompiledseccomp" is a program, not an importable package
+boot/loader.go:81:2: found packages filter (filter.go) and filter_bench (filter_bench_test.go) in /tmp/gosweet15443698/gvisor/src/runsc/boot/filter
+sandbox/sandbox.go:63:2: import "gvisor.dev/gvisor/runsc/checkpointgofer" is a program, not an importable package
+metricserver/metricserver.go:43:2: found packages container (console_test.go) and serialization (serialization_test.go) in /tmp/gosweet15443698/gvisor/src/runsc/container
+cmd/gofer.go:38:2: found packages fsgofer (lisafs.go) and lisafs (lisafs_test.go) in /tmp/gosweet15443698/gvisor/src/runsc/fsgofer
+cmd/sandboxexec.go:36:2: no required module provides package gvisor.dev/gvisor/sandboxexec/proto/sandbox_options_go_proto; to add it:
+	go get gvisor.dev/gvisor/sandboxexec/proto/sandbox_options_go_proto
+cmd/metric_server_embedded.go:22:2: import "gvisor.dev/gvisor/runsc/cmd/metricserver" is a program, not an importable package

@@ -1,0 +1,10 @@
+# Built binaries used for the size measurement (numbers live in binsize/report.txt)
+runs/*/artifacts/bench-out/results/binsize/sweet-go*
+
+# Transient download artifacts
+*.tgz
+artifacts.tgz
+
+# Watchdog/poll scratch
+runs/*.done
+runs/campaign-progress.txt

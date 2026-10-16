@@ -1,0 +1,41 @@
+***********************************************
+* Starting testflinger setup phase on chakron *
+***********************************************
+Cleaning up container if it exists...
+***************************************************
+State 'setup' lasted 0 minutes 11 seconds
+* Starting testflinger provision phase on chakron *
+***************************************************
+2026-10-08 07:22:45,901 chakron INFO: DEVICE CONNECTOR: Running pre-provision hook
+2026-10-08 07:22:45,902 chakron INFO: DEVICE CONNECTOR: MAAS: Reading node's block device information
+2026-10-08 07:22:47,310 chakron INFO: DEVICE CONNECTOR: BEGIN provision
+2026-10-08 07:22:47,310 chakron INFO: DEVICE CONNECTOR: Provisioning device
+2026-10-08 07:22:47,310 chakron INFO: DEVICE CONNECTOR: MAAS: Fixing EFI boot order before provisioning
+State 'provision' lasted 1 minutes 1 seconds
+State 'unknown' lasted 0 minutes 30 seconds
+2026-10-08 07:24:47,453 chakron INFO: DEVICE CONNECTOR: MAAS: Fixing EFI boot order before provisioning
+WARNING: 2026-10-08 12:56:07 client.py:173 -- Error communicating with the server for the past 3 requests, but will continue to retry. Last error: HTTPSConnectionPool(host='testflinger.canonical.com', port=443): Max retries exceeded with url: /v1/result/417e0fc1-1363-4d75-b43f-d72bff358576/log/output?start_fragment=9 (Caused by NewConnectionError("HTTPSConnection(host='testflinger.canonical.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-10-08 07:26:47,597 chakron INFO: DEVICE CONNECTOR: MAAS: Releasing node chakron
+2026-10-08 07:27:01,467 chakron INFO: DEVICE CONNECTOR: MAAS: Successfully released node chakron
+2026-10-08 07:27:03,186 chakron WARNING: DEVICE CONNECTOR: MAAS: 'default_disks' and/or 'disks' unspecified; setting default storage layout to flat
+2026-10-08 07:27:05,298 chakron INFO: DEVICE CONNECTOR: MAAS: Acquiring node
+2026-10-08 07:27:09,182 chakron INFO: DEVICE CONNECTOR: MAAS: Starting node chakron with distro stonking
+2026-10-08 07:27:10,524 chakron INFO: DEVICE CONNECTOR: MAAS: MAAS version detected: 3.7.2
+2026-10-08 07:27:10,525 chakron INFO: DEVICE CONNECTOR: MAAS: Deployment set to ephemeral
+2026-10-08 07:27:14,257 chakron WARNING: DEVICE CONNECTOR: MAAS: maas error running: maas cert-maas-tel-01 machine deploy par84g distro_series=stonking ephemeral_deploy=true; trying again in 10 seconds
+2026-10-08 07:27:27,472 chakron WARNING: DEVICE CONNECTOR: MAAS: maas error running: maas cert-maas-tel-01 machine deploy par84g distro_series=stonking ephemeral_deploy=true; trying again in 20 seconds
+2026-10-08 07:27:50,237 chakron WARNING: DEVICE CONNECTOR: MAAS: maas error running: maas cert-maas-tel-01 machine deploy par84g distro_series=stonking ephemeral_deploy=true; trying again in 40 seconds
+2026-10-08 07:28:42,047 chakron ERROR: DEVICE CONNECTOR: MAAS: maas error running: maas cert-maas-tel-01 machine deploy par84g distro_series=stonking ephemeral_deploy=true; maximum retries reached
+2026-10-08 07:28:42,047 chakron ERROR: DEVICE CONNECTOR: Provisioning failed: [(2, '{"distro_series": ["\'stonking\' is not a valid distro_series.  It should be one of: \'\', \'custom/alma8\', \'custom/bf3-imagecraft-doca350-v0-1-96cb9c3\', \'custom/bf3-imagecraft-v0-1-8d3572a\', \'custom/bf3-packer-maas-doca323-v0-1\', \'custom/ubuntu-bf3\', \'custom/ubuntu-oracular-arm8.2-a-final2\', \'ubuntu/xenial\', \'ubuntu/bionic\', \'ubuntu/focal\', \'ubuntu/jammy\', \'ubuntu/noble\', \'ubuntu/oracular\', \'ubuntu/plucky\', \'ubuntu/questing\', \'ubuntu/resolute\', \'ubuntu-core/bf3-core-doca321-v0-1\'."]}'), (2, '{"distro_series": ["\'stonking\' is not a valid distro_series.  It should be one of: \'\', \'custom/alma8\', \'custom/bf3-imagecraft-doca350-v0-1-96cb9c3\', \'custom/bf3-imagecraft-v0-1-8d3572a\', \'custom/bf3-packer-maas-doca323-v0-1\', \'custom/ubuntu-bf3\', \'custom/ubuntu-oracular-arm8.2-a-final2\', \'ubuntu/xenial\', \'ubuntu/bionic\', \'ubuntu/focal\', \'ubuntu/jammy\', \'ubuntu/noble\', \'ubuntu/oracular\', \'ubuntu/plucky\', \'ubuntu/questing\', \'ubuntu/resolute\', \'ubuntu-core/bf3-core-doca321-v0-1\'."]}'), (2, '{"distro_series": ["\'stonking\' is not a valid distro_series.  It should be one of: \'\', \'custom/alma8\', \'custom/bf3-imagecraft-doca350-v0-1-96cb9c3\', \'custom/bf3-imagecraft-v0-1-8d3572a\', \'custom/bf3-packer-maas-doca323-v0-1\', \'custom/ubuntu-bf3\', \'custom/ubuntu-oracular-arm8.2-a-final2\', \'ubuntu/xenial\', \'ubuntu/bionic\', \'ubuntu/focal\', \'ubuntu/jammy\', \'ubuntu/noble\', \'ubuntu/oracular\', \'ubuntu/plucky\', \'ubuntu/questing\', \'ubuntu/resolute\', \'ubuntu-core/bf3-core-doca321-v0-1\'."]}'), (2, '{"distro_series": ["\'stonking\' is not a valid distro_series.  It should be one of: \'\', \'custom/alma8\', \'custom/bf3-imagecraft-doca350-v0-1-96cb9c3\', \'custom/bf3-imagecraft-v0-1-8d3572a\', \'custom/bf3-packer-maas-doca323-v0-1\', \'custom/ubuntu-bf3\', \'custom/ubuntu-oracular-arm8.2-a-final2\', \'ubuntu/xenial\', \'ubuntu/bionic\', \'ubuntu/focal\', \'ubuntu/jammy\', \'ubuntu/noble\', \'ubuntu/oracular\', \'ubuntu/plucky\', \'ubuntu/questing\', \'ubuntu/resolute\', \'ubuntu-core/bf3-core-doca321-v0-1\'."]}')]
+2026-10-08 07:28:42,047 chakron INFO: DEVICE CONNECTOR: END provision
+2026-10-08 07:28:42,048 chakron ERROR: DEVICE CONNECTOR: [(2, '{"distro_series": ["\'stonking\' is not a valid distro_series.  It should be one of: \'\', \'custom/alma8\', \'custom/bf3-imagecraft-doca350-v0-1-96cb9c3\', \'custom/bf3-imagecraft-v0-1-8d3572a\', \'custom/bf3-packer-maas-doca323-v0-1\', \'custom/ubuntu-bf3\', \'custom/ubuntu-oracular-arm8.2-a-final2\', \'ubuntu/xenial\', \'ubuntu/bionic\', \'ubuntu/focal\', \'ubuntu/jammy\', \'ubuntu/noble\', \'ubuntu/oracular\', \'ubuntu/plucky\', \'ubuntu/questing\', \'ubuntu/resolute\', \'ubuntu-core/bf3-core-doca321-v0-1\'."]}'), (2, '{"distro_series": ["\'stonking\' is not a valid distro_series.  It should be one of: \'\', \'custom/alma8\', \'custom/bf3-imagecraft-doca350-v0-1-96cb9c3\', \'custom/bf3-imagecraft-v0-1-8d3572a\', \'custom/bf3-packer-maas-doca323-v0-1\', \'custom/ubuntu-bf3\', \'custom/ubuntu-oracular-arm8.2-a-final2\', \'ubuntu/xenial\', \'ubuntu/bionic\', \'ubuntu/focal\', \'ubuntu/jammy\', \'ubuntu/noble\', \'ubuntu/oracular\', \'ubuntu/plucky\', \'ubuntu/questing\', \'ubuntu/resolute\', \'ubuntu-core/bf3-core-doca321-v0-1\'."]}'), (2, '{"distro_series": ["\'stonking\' is not a valid distro_series.  It should be one of: \'\', \'custom/alma8\', \'custom/bf3-imagecraft-doca350-v0-1-96cb9c3\', \'custom/bf3-imagecraft-v0-1-8d3572a\', \'custom/bf3-packer-maas-doca323-v0-1\', \'custom/ubuntu-bf3\', \'custom/ubuntu-oracular-arm8.2-a-final2\', \'ubuntu/xenial\', \'ubuntu/bionic\', \'ubuntu/focal\', \'ubuntu/jammy\', \'ubuntu/noble\', \'ubuntu/oracular\', \'ubuntu/plucky\', \'ubuntu/questing\', \'ubuntu/resolute\', \'ubuntu-core/bf3-core-doca321-v0-1\'."]}'), (2, '{"distro_series": ["\'stonking\' is not a valid distro_series.  It should be one of: \'\', \'custom/alma8\', \'custom/bf3-imagecraft-doca350-v0-1-96cb9c3\', \'custom/bf3-imagecraft-v0-1-8d3572a\', \'custom/bf3-packer-maas-doca323-v0-1\', \'custom/ubuntu-bf3\', \'custom/ubuntu-oracular-arm8.2-a-final2\', \'ubuntu/xenial\', \'ubuntu/bionic\', \'ubuntu/focal\', \'ubuntu/jammy\', \'ubuntu/noble\', \'ubuntu/oracular\', \'ubuntu/plucky\', \'ubuntu/questing\', \'ubuntu/resolute\', \'ubuntu-core/bf3-core-doca321-v0-1\'."]}')]
+*************************************************
+* Starting testflinger cleanup phase on chakron *
+*************************************************
+Cleaning up container if it exists...
+Error response from daemon: No such container: chakron
+2026-10-08 07:28:53,060 chakron INFO: DEVICE CONNECTOR: MAAS: Reading node's block device information
+2026-10-08 07:28:54,531 chakron INFO: DEVICE CONNECTOR: MAAS: Fixing EFI boot order before provisioning
+2026-10-08 07:30:54,671 chakron INFO: DEVICE CONNECTOR: MAAS: Releasing node chakron
+2026-10-08 07:31:08,205 chakron INFO: DEVICE CONNECTOR: MAAS: Successfully released node chakron
+State 'provision' lasted 7 minutes 5 seconds

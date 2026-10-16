@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-7.0.0-38-generic root=UUID=ec9a3aca-d780-46f2-bd42-1375247fba68 ro verbose loglevel=7 console=tty0 console=ttyS0,115200

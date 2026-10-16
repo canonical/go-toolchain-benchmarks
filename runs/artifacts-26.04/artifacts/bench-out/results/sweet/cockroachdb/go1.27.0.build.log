@@ -1,0 +1,5 @@
+# github.com/knz/strtime
+gmtime_r.c: In function ‘timesub’:
+gmtime_r.c:47:1: warning: old-style function definition [-Wold-style-definition]
+   47 | timesub(timep, offset, tmp)
+      | ^~~~~~~

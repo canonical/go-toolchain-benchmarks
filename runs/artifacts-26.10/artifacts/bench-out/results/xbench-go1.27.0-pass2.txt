@@ -1,0 +1,66 @@
+?   	golang.org/x/benchmarks/build	[no test files]
+?   	golang.org/x/benchmarks/cmd/bench	[no test files]
+PASS
+ok  	golang.org/x/benchmarks/cmd/bent	0.007s
+?   	golang.org/x/benchmarks/cmd/bent/logtobench	[no test files]
+?   	golang.org/x/benchmarks/driver	[no test files]
+?   	golang.org/x/benchmarks/garbage	[no test files]
+goos: linux
+goarch: amd64
+pkg: golang.org/x/benchmarks/gc_latency
+cpu: AMD EPYC 7302 16-Core Processor                
+BenchmarkGCLatency
+BenchmarkGCLatency/how=stack/fluff=false
+BenchmarkGCLatency/how=stack/fluff=false-32         	       1	    172622 p99.999-ns	    462224 p99.9999-ns
+BenchmarkGCLatency/how=stack/fluff=false-32         	       1	    171701 p99.999-ns	    372817 p99.9999-ns
+BenchmarkGCLatency/how=stack/fluff=false-32         	       1	    182882 p99.999-ns	    411509 p99.9999-ns
+BenchmarkGCLatency/how=heap/fluff=false
+BenchmarkGCLatency/how=heap/fluff=false-32          	       1	    186810 p99.999-ns	    342060 p99.9999-ns
+BenchmarkGCLatency/how=heap/fluff=false-32          	       1	    177312 p99.999-ns	    314718 p99.9999-ns
+BenchmarkGCLatency/how=heap/fluff=false-32          	       1	    187510 p99.999-ns	    351286 p99.9999-ns
+BenchmarkGCLatency/how=global/fluff=false
+BenchmarkGCLatency/how=global/fluff=false-32        	       1	    196417 p99.999-ns	   1018403 p99.9999-ns
+BenchmarkGCLatency/how=global/fluff=false-32        	       1	    218017 p99.999-ns	    924427 p99.9999-ns
+BenchmarkGCLatency/how=global/fluff=false-32        	       1	    215443 p99.999-ns	    936399 p99.9999-ns
+PASS
+ok  	golang.org/x/benchmarks/gc_latency	100.878s
+?   	golang.org/x/benchmarks/http	[no test files]
+?   	golang.org/x/benchmarks/json	[no test files]
+PASS
+ok  	golang.org/x/benchmarks/stats	0.007s
+?   	golang.org/x/benchmarks/sweet/benchmarks/biogo-igor	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/biogo-krishna	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/bleve-index	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/cockroachdb	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/esbuild	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/etcd	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/go-build	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/gopher-lua	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/gvisor	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/internal/cgroups	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/internal/driver	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/internal/par	[no test files]
+PASS
+ok  	golang.org/x/benchmarks/sweet/benchmarks/internal/pool	0.007s
+?   	golang.org/x/benchmarks/sweet/benchmarks/internal/server	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/markdown	[no test files]
+?   	golang.org/x/benchmarks/sweet/benchmarks/tile38	[no test files]
+?   	golang.org/x/benchmarks/sweet/cli/assets	[no test files]
+?   	golang.org/x/benchmarks/sweet/cli/subcommands	[no test files]
+PASS
+ok  	golang.org/x/benchmarks/sweet/cmd/sweet	0.018s
+PASS
+ok  	golang.org/x/benchmarks/sweet/common	0.007s
+?   	golang.org/x/benchmarks/sweet/common/diagnostics	[no test files]
+PASS
+ok  	golang.org/x/benchmarks/sweet/common/fileutil	0.007s
+?   	golang.org/x/benchmarks/sweet/common/log	[no test files]
+?   	golang.org/x/benchmarks/sweet/common/profile	[no test files]
+?   	golang.org/x/benchmarks/sweet/generators	[no test files]
+?   	golang.org/x/benchmarks/sweet/harnesses	[no test files]
+?   	golang.org/x/benchmarks/sweet/source-assets/gvisor/http	[no test files]
+?   	golang.org/x/benchmarks/sweet/source-assets/gvisor/syscall	[no test files]
+?   	golang.org/x/benchmarks/third_party/biogo-examples/igor/igor	[no test files]
+?   	golang.org/x/benchmarks/third_party/biogo-examples/igor/turner	[no test files]
+?   	golang.org/x/benchmarks/third_party/biogo-examples/krishna	[no test files]
+?   	golang.org/x/benchmarks/third_party/bleve-bench	[no test files]

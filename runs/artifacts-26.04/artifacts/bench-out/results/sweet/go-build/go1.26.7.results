@@ -1,0 +1,80 @@
+BenchmarkGoBuildKubelet-32 1 50059288449 ns/op 3182218786 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 7410989649 ns/op
+BenchmarkGoBuildIstioctl-32 1 66340355795 ns/op 3684937045 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15711719609 ns/op
+BenchmarkGoBuildFrontend-32 1 17847837321 ns/op 964159545 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 2982907970 ns/op
+BenchmarkGoBuildTsgo-32 1 139399231485 ns/op 2609568187 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3845977787 ns/op
+BenchmarkGoBuildKubelet-32 1 49689700462 ns/op 3146399785 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 6971816602 ns/op
+BenchmarkGoBuildIstioctl-32 1 66122119846 ns/op 3704180132 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15913316526 ns/op
+BenchmarkGoBuildFrontend-32 1 17995952597 ns/op 974041225 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 3019770305 ns/op
+BenchmarkGoBuildTsgo-32 1 138690983092 ns/op 2616002986 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3790891143 ns/op
+BenchmarkGoBuildKubelet-32 1 50248019244 ns/op 3163796537 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 7466253671 ns/op
+BenchmarkGoBuildIstioctl-32 1 65405194474 ns/op 3688054488 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15935898361 ns/op
+BenchmarkGoBuildFrontend-32 1 17689886902 ns/op 974558417 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 3100083084 ns/op
+BenchmarkGoBuildTsgo-32 1 140854748150 ns/op 2606019222 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3895579970 ns/op
+BenchmarkGoBuildKubelet-32 1 50429291773 ns/op 3173340898 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 7468089771 ns/op
+BenchmarkGoBuildIstioctl-32 1 66740580183 ns/op 3674042164 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15883507744 ns/op
+BenchmarkGoBuildFrontend-32 1 18452046541 ns/op 974044490 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 2975031970 ns/op
+BenchmarkGoBuildTsgo-32 1 140527370974 ns/op 2592584510 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3837042441 ns/op
+BenchmarkGoBuildKubelet-32 1 49559228564 ns/op 3182830390 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 7480761024 ns/op
+BenchmarkGoBuildIstioctl-32 1 65747783666 ns/op 3680588407 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15639355686 ns/op
+BenchmarkGoBuildFrontend-32 1 18399036889 ns/op 970192123 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 3114503420 ns/op
+BenchmarkGoBuildTsgo-32 1 138274738609 ns/op 2630947006 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3810837455 ns/op
+BenchmarkGoBuildKubelet-32 1 50124756423 ns/op 3164331440 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 7286616594 ns/op
+BenchmarkGoBuildIstioctl-32 1 65350609473 ns/op 3677233139 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15242403809 ns/op
+BenchmarkGoBuildFrontend-32 1 18489150008 ns/op 974712854 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 3210423856 ns/op
+BenchmarkGoBuildTsgo-32 1 139912696345 ns/op 2610487066 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3773465091 ns/op
+BenchmarkGoBuildKubelet-32 1 49111225107 ns/op 3150787020 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 6831663273 ns/op
+BenchmarkGoBuildIstioctl-32 1 65617692469 ns/op 3673124481 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15308168187 ns/op
+BenchmarkGoBuildFrontend-32 1 18008128341 ns/op 972039951 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 3053930273 ns/op
+BenchmarkGoBuildTsgo-32 1 141125241055 ns/op 2621339904 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3741148871 ns/op
+BenchmarkGoBuildKubelet-32 1 50066546525 ns/op 3167014171 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 7283159796 ns/op
+BenchmarkGoBuildIstioctl-32 1 66111550841 ns/op 3675357489 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15427087420 ns/op
+BenchmarkGoBuildFrontend-32 1 17910379440 ns/op 970167445 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 2989455247 ns/op
+BenchmarkGoBuildTsgo-32 1 139984668412 ns/op 2602921093 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3841677073 ns/op
+BenchmarkGoBuildKubelet-32 1 49802764080 ns/op 3156913928 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 7244969802 ns/op
+BenchmarkGoBuildIstioctl-32 1 66385773064 ns/op 3708108954 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15820476367 ns/op
+BenchmarkGoBuildFrontend-32 1 18271147659 ns/op 971041820 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 3119337022 ns/op
+BenchmarkGoBuildTsgo-32 1 141227306050 ns/op 2600590990 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3778309534 ns/op
+BenchmarkGoBuildKubelet-32 1 49250749685 ns/op 3157671601 average-RSS-bytes
+BenchmarkGoBuildKubeletLink-32 1 7177724356 ns/op
+BenchmarkGoBuildIstioctl-32 1 66438658227 ns/op 3689366617 average-RSS-bytes
+BenchmarkGoBuildIstioctlLink-32 1 15617612924 ns/op
+BenchmarkGoBuildFrontend-32 1 18378229167 ns/op 964507927 average-RSS-bytes
+BenchmarkGoBuildFrontendLink-32 1 2990730426 ns/op
+BenchmarkGoBuildTsgo-32 1 140647158663 ns/op 2602324935 average-RSS-bytes
+BenchmarkGoBuildTsgoLink-32 1 3854914023 ns/op

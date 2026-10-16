@@ -1,0 +1,940 @@
+Running as unit: test.scope; invocation ID: bfebc8b923b049cda3410c557753a5a3
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 249ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 242ms
+    Process scanned files: 5ms
+  Compile phase: 252ms
+    Spawn source map tasks: 11ms
+    Link: 234ms
+      Clone linker graph: 8ms
+      Scan imports and exports: 43ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 14ms
+        Step 5: 6ms
+        Step 6: 19ms
+      Tree shaking: 4ms
+      Code splitting: 2ms
+      Compute chunks: 8ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 163ms
+        Generate chunk "out-three.js": 155ms
+          Minify symbols: 32ms
+            Compute reserved names: 5ms
+            Accumulate symbol counts: 18ms
+              Parallel phase: 5ms
+              Serial phase: 12ms
+            Assign names by frequency: 7ms
+          Print JavaScript files: 40ms
+          Join JavaScript files: 12ms
+          Generate source map: 70ms
+        Generate final output files: 7ms
+  Write output files: 22ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 530ms
+Running as unit: test.scope; invocation ID: 63bf91cb16ee478ab09e69227ccc2228
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 84ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 80ms
+    Process scanned files: 1ms
+  Compile phase: 67ms
+    Spawn source map tasks: 2ms
+    Link: 63ms
+      Clone linker graph: 3ms
+      Scan imports and exports: 15ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 1ms
+        Step 4: 4ms
+        Step 5: 1ms
+        Step 6: 7ms
+      Tree shaking: 0ms
+      Code splitting: 3ms
+      Compute chunks: 2ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 36ms
+        Generate chunk "out-rome.js": 35ms
+          Minify symbols: 10ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 7ms
+              Parallel phase: 2ms
+              Serial phase: 4ms
+            Assign names by frequency: 2ms
+          Print JavaScript files: 11ms
+          Join JavaScript files: 0ms
+          Generate source map: 12ms
+        Generate final output files: 0ms
+  Write output files: 3ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 156ms
+Running as unit: test.scope; invocation ID: e87c7b90a9214ae2bd41e199a14821b5
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 237ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 229ms
+    Process scanned files: 6ms
+  Compile phase: 239ms
+    Spawn source map tasks: 10ms
+    Link: 220ms
+      Clone linker graph: 8ms
+      Scan imports and exports: 41ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 11ms
+        Step 5: 6ms
+        Step 6: 20ms
+      Tree shaking: 4ms
+      Code splitting: 2ms
+      Compute chunks: 8ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 152ms
+        Generate chunk "out-three.js": 144ms
+          Minify symbols: 32ms
+            Compute reserved names: 5ms
+            Accumulate symbol counts: 18ms
+              Parallel phase: 5ms
+              Serial phase: 12ms
+            Assign names by frequency: 7ms
+          Print JavaScript files: 38ms
+          Join JavaScript files: 4ms
+          Generate source map: 69ms
+        Generate final output files: 7ms
+  Write output files: 19ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 503ms
+Running as unit: test.scope; invocation ID: be6265129c6d4101925654ffd8cd7c1f
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 85ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 81ms
+    Process scanned files: 1ms
+  Compile phase: 71ms
+    Spawn source map tasks: 2ms
+    Link: 66ms
+      Clone linker graph: 2ms
+      Scan imports and exports: 15ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 0ms
+        Step 4: 4ms
+        Step 5: 2ms
+        Step 6: 6ms
+      Tree shaking: 0ms
+      Code splitting: 3ms
+      Compute chunks: 2ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 40ms
+        Generate chunk "out-rome.js": 39ms
+          Minify symbols: 10ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 6ms
+              Parallel phase: 1ms
+              Serial phase: 4ms
+            Assign names by frequency: 1ms
+          Print JavaScript files: 12ms
+          Join JavaScript files: 1ms
+          Generate source map: 15ms
+        Generate final output files: 1ms
+  Write output files: 4ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 162ms
+Running as unit: test.scope; invocation ID: 726bf1f6c0ae458a93ee4793fd3adb13
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 249ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 242ms
+    Process scanned files: 5ms
+  Compile phase: 255ms
+    Spawn source map tasks: 9ms
+    Link: 238ms
+      Clone linker graph: 9ms
+      Scan imports and exports: 48ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 17ms
+        Step 5: 8ms
+        Step 6: 19ms
+      Tree shaking: 3ms
+      Code splitting: 2ms
+      Compute chunks: 8ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 1ms
+      Mangle local CSS: 0ms
+      Generate chunks: 160ms
+        Generate chunk "out-three.js": 153ms
+          Minify symbols: 34ms
+            Compute reserved names: 6ms
+            Accumulate symbol counts: 19ms
+              Parallel phase: 6ms
+              Serial phase: 13ms
+            Assign names by frequency: 8ms
+          Print JavaScript files: 39ms
+          Join JavaScript files: 5ms
+          Generate source map: 74ms
+        Generate final output files: 7ms
+  Write output files: 19ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 531ms
+Running as unit: test.scope; invocation ID: 9930e2c600d249b38cdf755e6d6bf937
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 86ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 82ms
+    Process scanned files: 1ms
+  Compile phase: 71ms
+    Spawn source map tasks: 2ms
+    Link: 66ms
+      Clone linker graph: 2ms
+      Scan imports and exports: 14ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 0ms
+        Step 4: 4ms
+        Step 5: 1ms
+        Step 6: 6ms
+      Tree shaking: 0ms
+      Code splitting: 3ms
+      Compute chunks: 2ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 42ms
+        Generate chunk "out-rome.js": 40ms
+          Minify symbols: 10ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 6ms
+              Parallel phase: 1ms
+              Serial phase: 4ms
+            Assign names by frequency: 1ms
+          Print JavaScript files: 13ms
+          Join JavaScript files: 1ms
+          Generate source map: 15ms
+        Generate final output files: 1ms
+  Write output files: 4ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 163ms
+Running as unit: test.scope; invocation ID: e7d8c03428664018ba0a8352df6abe6b
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 244ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 237ms
+    Process scanned files: 5ms
+  Compile phase: 256ms
+    Spawn source map tasks: 7ms
+    Link: 241ms
+      Clone linker graph: 12ms
+      Scan imports and exports: 47ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 15ms
+        Step 5: 9ms
+        Step 6: 19ms
+      Tree shaking: 4ms
+      Code splitting: 2ms
+      Compute chunks: 8ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 162ms
+        Generate chunk "out-three.js": 154ms
+          Minify symbols: 32ms
+            Compute reserved names: 6ms
+            Accumulate symbol counts: 18ms
+              Parallel phase: 5ms
+              Serial phase: 13ms
+            Assign names by frequency: 7ms
+          Print JavaScript files: 39ms
+          Join JavaScript files: 6ms
+          Generate source map: 75ms
+        Generate final output files: 7ms
+  Write output files: 19ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 526ms
+Running as unit: test.scope; invocation ID: 2f87860f449f4e6ba2d0512545df09b9
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 88ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 85ms
+    Process scanned files: 1ms
+  Compile phase: 71ms
+    Spawn source map tasks: 2ms
+    Link: 67ms
+      Clone linker graph: 3ms
+      Scan imports and exports: 14ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 1ms
+        Step 4: 4ms
+        Step 5: 2ms
+        Step 6: 6ms
+      Tree shaking: 0ms
+      Code splitting: 3ms
+      Compute chunks: 2ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 41ms
+        Generate chunk "out-rome.js": 39ms
+          Minify symbols: 10ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 7ms
+              Parallel phase: 2ms
+              Serial phase: 4ms
+            Assign names by frequency: 1ms
+          Print JavaScript files: 12ms
+          Join JavaScript files: 1ms
+          Generate source map: 15ms
+        Generate final output files: 1ms
+  Write output files: 4ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 165ms
+Running as unit: test.scope; invocation ID: a991fa5102304daf82ef6fb87873ae74
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 245ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 238ms
+    Process scanned files: 5ms
+  Compile phase: 245ms
+    Spawn source map tasks: 12ms
+    Link: 225ms
+      Clone linker graph: 7ms
+      Scan imports and exports: 45ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 14ms
+        Step 5: 6ms
+        Step 6: 20ms
+      Tree shaking: 4ms
+      Code splitting: 2ms
+      Compute chunks: 9ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 1ms
+      Mangle local CSS: 0ms
+      Generate chunks: 151ms
+        Generate chunk "out-three.js": 144ms
+          Minify symbols: 27ms
+            Compute reserved names: 6ms
+            Accumulate symbol counts: 15ms
+              Parallel phase: 5ms
+              Serial phase: 10ms
+            Assign names by frequency: 5ms
+          Print JavaScript files: 40ms
+          Join JavaScript files: 6ms
+          Generate source map: 70ms
+        Generate final output files: 7ms
+  Write output files: 20ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 518ms
+Running as unit: test.scope; invocation ID: 4c65ba36a7cc4df6ad5f08d358235540
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 87ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 84ms
+    Process scanned files: 1ms
+  Compile phase: 65ms
+    Spawn source map tasks: 2ms
+    Link: 62ms
+      Clone linker graph: 2ms
+      Scan imports and exports: 15ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 1ms
+        Step 4: 4ms
+        Step 5: 1ms
+        Step 6: 7ms
+      Tree shaking: 0ms
+      Code splitting: 3ms
+      Compute chunks: 2ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 35ms
+        Generate chunk "out-rome.js": 34ms
+          Minify symbols: 11ms
+            Compute reserved names: 2ms
+            Accumulate symbol counts: 7ms
+              Parallel phase: 2ms
+              Serial phase: 4ms
+            Assign names by frequency: 1ms
+          Print JavaScript files: 10ms
+          Join JavaScript files: 0ms
+          Generate source map: 12ms
+        Generate final output files: 0ms
+  Write output files: 4ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 159ms
+Running as unit: test.scope; invocation ID: e0b28f43a56a42f1aa557835f1d794e8
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 239ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 232ms
+    Process scanned files: 5ms
+  Compile phase: 251ms
+    Spawn source map tasks: 9ms
+    Link: 233ms
+      Clone linker graph: 9ms
+      Scan imports and exports: 47ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 16ms
+        Step 5: 8ms
+        Step 6: 18ms
+      Tree shaking: 3ms
+      Code splitting: 2ms
+      Compute chunks: 8ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 159ms
+        Generate chunk "out-three.js": 151ms
+          Minify symbols: 33ms
+            Compute reserved names: 6ms
+            Accumulate symbol counts: 18ms
+              Parallel phase: 5ms
+              Serial phase: 13ms
+            Assign names by frequency: 7ms
+          Print JavaScript files: 38ms
+          Join JavaScript files: 5ms
+          Generate source map: 74ms
+        Generate final output files: 7ms
+  Write output files: 20ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 518ms
+Running as unit: test.scope; invocation ID: 22c8c5a3ef7d414b91eafa71509a7afe
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 88ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 85ms
+    Process scanned files: 1ms
+  Compile phase: 70ms
+    Spawn source map tasks: 2ms
+    Link: 66ms
+      Clone linker graph: 3ms
+      Scan imports and exports: 13ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 0ms
+        Step 4: 4ms
+        Step 5: 1ms
+        Step 6: 6ms
+      Tree shaking: 0ms
+      Code splitting: 3ms
+      Compute chunks: 2ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 42ms
+        Generate chunk "out-rome.js": 40ms
+          Minify symbols: 10ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 6ms
+              Parallel phase: 2ms
+              Serial phase: 4ms
+            Assign names by frequency: 1ms
+          Print JavaScript files: 13ms
+          Join JavaScript files: 1ms
+          Generate source map: 15ms
+        Generate final output files: 1ms
+  Write output files: 4ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 165ms
+Running as unit: test.scope; invocation ID: 22d53287a4cb48c1bb3d8d24812e3a5f
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 251ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 244ms
+    Process scanned files: 5ms
+  Compile phase: 247ms
+    Spawn source map tasks: 8ms
+    Link: 232ms
+      Clone linker graph: 12ms
+      Scan imports and exports: 42ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 13ms
+        Step 5: 6ms
+        Step 6: 19ms
+      Tree shaking: 4ms
+      Code splitting: 2ms
+      Compute chunks: 8ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 157ms
+        Generate chunk "out-three.js": 149ms
+          Minify symbols: 32ms
+            Compute reserved names: 5ms
+            Accumulate symbol counts: 19ms
+              Parallel phase: 5ms
+              Serial phase: 13ms
+            Assign names by frequency: 7ms
+          Print JavaScript files: 40ms
+          Join JavaScript files: 4ms
+          Generate source map: 71ms
+        Generate final output files: 7ms
+  Write output files: 19ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 525ms
+Running as unit: test.scope; invocation ID: 2503bfd516674016ad1cfe77c7048132
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 83ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 80ms
+    Process scanned files: 1ms
+  Compile phase: 68ms
+    Spawn source map tasks: 2ms
+    Link: 64ms
+      Clone linker graph: 2ms
+      Scan imports and exports: 13ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 0ms
+        Step 4: 3ms
+        Step 5: 1ms
+        Step 6: 6ms
+      Tree shaking: 0ms
+      Code splitting: 3ms
+      Compute chunks: 2ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 41ms
+        Generate chunk "out-rome.js": 39ms
+          Minify symbols: 9ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 6ms
+              Parallel phase: 1ms
+              Serial phase: 4ms
+            Assign names by frequency: 1ms
+          Print JavaScript files: 12ms
+          Join JavaScript files: 1ms
+          Generate source map: 16ms
+        Generate final output files: 1ms
+  Write output files: 4ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 157ms
+Running as unit: test.scope; invocation ID: 463fa8d4eb4148c58824ac0f3566ffeb
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 238ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 231ms
+    Process scanned files: 5ms
+  Compile phase: 247ms
+    Spawn source map tasks: 11ms
+    Link: 228ms
+      Clone linker graph: 7ms
+      Scan imports and exports: 42ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 13ms
+        Step 5: 6ms
+        Step 6: 18ms
+      Tree shaking: 3ms
+      Code splitting: 2ms
+      Compute chunks: 8ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 1ms
+      Mangle local CSS: 0ms
+      Generate chunks: 159ms
+        Generate chunk "out-three.js": 152ms
+          Minify symbols: 31ms
+            Compute reserved names: 5ms
+            Accumulate symbol counts: 18ms
+              Parallel phase: 5ms
+              Serial phase: 12ms
+            Assign names by frequency: 6ms
+          Print JavaScript files: 40ms
+          Join JavaScript files: 9ms
+          Generate source map: 70ms
+        Generate final output files: 7ms
+  Write output files: 16ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 508ms
+Running as unit: test.scope; invocation ID: 9487532428994a5db5fc1d8cc36a9d9d
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 87ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 83ms
+    Process scanned files: 1ms
+  Compile phase: 70ms
+    Spawn source map tasks: 2ms
+    Link: 65ms
+      Clone linker graph: 3ms
+      Scan imports and exports: 14ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 1ms
+        Step 4: 4ms
+        Step 5: 1ms
+        Step 6: 5ms
+      Tree shaking: 0ms
+      Code splitting: 2ms
+      Compute chunks: 1ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 42ms
+        Generate chunk "out-rome.js": 40ms
+          Minify symbols: 9ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 6ms
+              Parallel phase: 1ms
+              Serial phase: 4ms
+            Assign names by frequency: 2ms
+          Print JavaScript files: 11ms
+          Join JavaScript files: 1ms
+          Generate source map: 18ms
+        Generate final output files: 1ms
+  Write output files: 4ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 163ms
+Running as unit: test.scope; invocation ID: fbfe065a0a714b53a460b0456f0e0107
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 258ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 251ms
+    Process scanned files: 5ms
+  Compile phase: 259ms
+    Spawn source map tasks: 13ms
+    Link: 238ms
+      Clone linker graph: 6ms
+      Scan imports and exports: 48ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 16ms
+        Step 5: 8ms
+        Step 6: 20ms
+      Tree shaking: 4ms
+      Code splitting: 2ms
+      Compute chunks: 10ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 162ms
+        Generate chunk "out-three.js": 154ms
+          Minify symbols: 34ms
+            Compute reserved names: 6ms
+            Accumulate symbol counts: 19ms
+              Parallel phase: 6ms
+              Serial phase: 13ms
+            Assign names by frequency: 8ms
+          Print JavaScript files: 39ms
+          Join JavaScript files: 6ms
+          Generate source map: 74ms
+        Generate final output files: 7ms
+  Write output files: 20ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 545ms
+Running as unit: test.scope; invocation ID: 8582e46077b9435ba85bcb6ac805f9d9
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 84ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 80ms
+    Process scanned files: 1ms
+  Compile phase: 71ms
+    Spawn source map tasks: 2ms
+    Link: 67ms
+      Clone linker graph: 2ms
+      Scan imports and exports: 14ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 0ms
+        Step 4: 4ms
+        Step 5: 2ms
+        Step 6: 6ms
+      Tree shaking: 0ms
+      Code splitting: 3ms
+      Compute chunks: 2ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 42ms
+        Generate chunk "out-rome.js": 40ms
+          Minify symbols: 10ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 6ms
+              Parallel phase: 1ms
+              Serial phase: 4ms
+            Assign names by frequency: 2ms
+          Print JavaScript files: 12ms
+          Join JavaScript files: 1ms
+          Generate source map: 16ms
+        Generate final output files: 1ms
+  Write output files: 3ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 161ms
+Running as unit: test.scope; invocation ID: 150cc72d06eb47639936ec6b27d9b4a2
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 246ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 239ms
+    Process scanned files: 5ms
+  Compile phase: 252ms
+    Spawn source map tasks: 12ms
+    Link: 232ms
+      Clone linker graph: 6ms
+      Scan imports and exports: 41ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 2ms
+        Step 4: 13ms
+        Step 5: 6ms
+        Step 6: 18ms
+      Tree shaking: 4ms
+      Code splitting: 2ms
+      Compute chunks: 8ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 165ms
+        Generate chunk "out-three.js": 157ms
+          Minify symbols: 35ms
+            Compute reserved names: 7ms
+            Accumulate symbol counts: 20ms
+              Parallel phase: 7ms
+              Serial phase: 13ms
+            Assign names by frequency: 7ms
+          Print JavaScript files: 40ms
+          Join JavaScript files: 9ms
+          Generate source map: 72ms
+        Generate final output files: 7ms
+  Write output files: 21ms
+  On-end callbacks: 0ms
+
+
+  ..../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js   5.8mb ⚠️
+  .../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-three.js.map  19.8mb
+
+⚡ Done in 527ms
+Running as unit: test.scope; invocation ID: 24118d13ef494529a3d0af45327775c9
+▶ [INFO] Timing information (times may not nest hierarchically due to parallelism)
+
+  Scan phase: 84ms
+    On-start callbacks: 0ms
+    Preprocess injected files: 0ms
+    Add entry points: 1ms
+    Scan all dependencies: 81ms
+    Process scanned files: 1ms
+  Compile phase: 67ms
+    Spawn source map tasks: 2ms
+    Link: 63ms
+      Clone linker graph: 2ms
+      Scan imports and exports: 13ms
+        Step 1: 0ms
+        Step 2: 0ms
+        Step 3: 0ms
+        Step 4: 4ms
+        Step 5: 1ms
+        Step 6: 5ms
+      Tree shaking: 0ms
+      Code splitting: 2ms
+      Compute chunks: 1ms
+      Compute cross-chunk dependencies: 0ms
+      Waiting for mangle cache: 0ms
+      Mangle props: 0ms
+      Mangle local CSS: 0ms
+      Generate chunks: 41ms
+        Generate chunk "out-rome.js": 39ms
+          Minify symbols: 9ms
+            Compute reserved names: 1ms
+            Accumulate symbol counts: 5ms
+              Parallel phase: 1ms
+              Serial phase: 4ms
+            Assign names by frequency: 1ms
+          Print JavaScript files: 11ms
+          Join JavaScript files: 1ms
+          Generate source map: 17ms
+        Generate final output files: 1ms
+  Write output files: 4ms
+  On-end callbacks: 0ms
+
+
+  ../../../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js   994.9kb
+  ...../../tmp/gosweet2857175636/esbuild/go1.26.7/tmp/out-rome.js.map    4.1mb
+
+⚡ Done in 158ms

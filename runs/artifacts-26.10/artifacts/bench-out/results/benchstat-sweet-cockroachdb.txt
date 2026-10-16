@@ -1,0 +1,165 @@
+                           │ cockroachdb//go1.26.7.results │    cockroachdb//go1.27.0.results    │
+                           │            sec/op             │    sec/op     vs base               │
+CockroachDBkv0/nodes=1-16                      47.51µ ± 8%   49.66µ ±  9%       ~ (p=0.684 n=10)
+CockroachDBkv50/nodes=1-16                     43.65µ ± 2%   43.27µ ± 10%       ~ (p=0.579 n=10)
+CockroachDBkv95/nodes=1-16                     34.25µ ± 7%   34.45µ ±  5%       ~ (p=0.436 n=10)
+CockroachDBkv0/nodes=3-16                      49.63µ ± 4%   53.28µ ± 10%       ~ (p=0.089 n=10)
+CockroachDBkv50/nodes=3-16                     43.75µ ± 8%   43.38µ ±  6%       ~ (p=1.000 n=10)
+CockroachDBkv95/nodes=3-16                     34.30µ ± 1%   34.36µ ±  0%       ~ (p=0.448 n=10)
+geomean                                        41.74µ        42.48µ        +1.78%
+
+                           │ cockroachdb//go1.26.7.results │      cockroachdb//go1.27.0.results       │
+                           │       average-RSS-bytes       │ average-RSS-bytes  vs base               │
+CockroachDBkv0/nodes=1-16                     4.536Gi ± 2%        4.564Gi ± 2%       ~ (p=0.353 n=10)
+CockroachDBkv50/nodes=1-16                    4.727Gi ± 2%        4.686Gi ± 2%  -0.87% (p=0.029 n=10)
+CockroachDBkv95/nodes=1-16                    3.560Gi ± 2%        3.527Gi ± 2%       ~ (p=0.529 n=10)
+CockroachDBkv0/nodes=3-16                     4.599Gi ± 1%        4.534Gi ± 2%       ~ (p=0.063 n=10)
+CockroachDBkv50/nodes=3-16                    4.697Gi ± 3%        4.682Gi ± 4%       ~ (p=0.280 n=10)
+CockroachDBkv95/nodes=3-16                    3.573Gi ± 2%        3.542Gi ± 3%       ~ (p=0.529 n=10)
+geomean                                       4.250Gi             4.223Gi       -0.63%
+
+                           │ cockroachdb//go1.26.7.results │     cockroachdb//go1.27.0.results     │
+                           │        peak-RSS-bytes         │ peak-RSS-bytes  vs base               │
+CockroachDBkv0/nodes=1-16                     6.412Gi ± 3%     6.262Gi ± 3%       ~ (p=0.105 n=10)
+CockroachDBkv50/nodes=1-16                    6.264Gi ± 1%     6.289Gi ± 2%       ~ (p=0.739 n=10)
+CockroachDBkv95/nodes=1-16                    4.815Gi ± 4%     4.780Gi ± 2%       ~ (p=0.684 n=10)
+CockroachDBkv0/nodes=3-16                     6.379Gi ± 7%     6.265Gi ± 4%       ~ (p=0.143 n=10)
+CockroachDBkv50/nodes=3-16                    6.362Gi ± 7%     6.273Gi ± 3%  -1.40% (p=0.043 n=10)
+CockroachDBkv95/nodes=3-16                    4.797Gi ± 2%     4.740Gi ± 1%  -1.19% (p=0.029 n=10)
+geomean                                       5.789Gi          5.721Gi       -1.18%
+
+                           │ cockroachdb//go1.26.7.results │    cockroachdb//go1.27.0.results     │
+                           │         peak-VM-bytes         │ peak-VM-bytes  vs base               │
+CockroachDBkv0/nodes=1-16                     8.272Gi ± 3%    8.153Gi ± 2%       ~ (p=0.143 n=10)
+CockroachDBkv50/nodes=1-16                    8.623Gi ± 3%    8.589Gi ± 3%       ~ (p=0.393 n=10)
+CockroachDBkv95/nodes=1-16                    6.678Gi ± 3%    6.620Gi ± 1%       ~ (p=0.353 n=10)
+CockroachDBkv0/nodes=3-16                     8.238Gi ± 5%    8.121Gi ± 2%       ~ (p=0.165 n=10)
+CockroachDBkv50/nodes=3-16                    8.628Gi ± 5%    8.454Gi ± 2%       ~ (p=0.143 n=10)
+CockroachDBkv95/nodes=3-16                    6.668Gi ± 3%    6.580Gi ± 1%  -1.33% (p=0.035 n=10)
+geomean                                       7.803Gi         7.706Gi       -1.25%
+
+                           │ cockroachdb//go1.26.7.results │        cockroachdb//go1.27.0.results         │
+                           │     write-avg-latency-sec     │ write-avg-latency-sec  vs base               │
+CockroachDBkv0/nodes=1-16                     213.3m ±  6%            210.7m ±  7%       ~ (p=0.912 n=10)
+CockroachDBkv50/nodes=1-16                    194.7m ±  7%            193.1m ± 35%       ~ (p=0.971 n=10)
+CockroachDBkv95/nodes=1-16                    50.75m ± 43%            56.70m ± 78%       ~ (p=0.165 n=10)
+CockroachDBkv0/nodes=3-16                     211.2m ±  5%            234.2m ± 12%       ~ (p=0.052 n=10)
+CockroachDBkv50/nodes=3-16                    185.2m ± 23%            188.3m ± 16%       ~ (p=0.739 n=10)
+CockroachDBkv95/nodes=3-16                    53.25m ± 40%            63.45m ± 19%       ~ (p=0.280 n=10)
+geomean                                       128.0m                  136.5m        +6.64%
+
+                           │ cockroachdb//go1.26.7.results │         cockroachdb//go1.27.0.results          │
+                           │    write-p100-latency-sec     │ write-p100-latency-sec  vs base                │
+CockroachDBkv0/nodes=1-16                     9.932 ±  35%            10.469 ±  18%        ~ (p=0.926 n=10)
+CockroachDBkv50/nodes=1-16                    13.69 ±   6%             11.27 ±  24%  -17.65% (p=0.019 n=10)
+CockroachDBkv95/nodes=1-16                    2.483 ± 235%             3.490 ± 108%        ~ (p=0.183 n=10)
+CockroachDBkv0/nodes=3-16                     10.20 ±  16%             13.15 ±  22%  +28.95% (p=0.005 n=10)
+CockroachDBkv50/nodes=3-16                    11.81 ±  23%             12.62 ±  19%        ~ (p=0.753 n=10)
+CockroachDBkv95/nodes=3-16                    3.154 ±  62%             3.624 ±  33%        ~ (p=0.642 n=10)
+geomean                                       7.102                    7.925         +11.59%
+
+                           │ cockroachdb//go1.26.7.results │         cockroachdb//go1.27.0.results         │
+                           │     write-p50-latency-sec     │ write-p50-latency-sec  vs base                │
+CockroachDBkv0/nodes=1-16                     113.2m ± 11%            109.1m ± 12%        ~ (p=0.942 n=10)
+CockroachDBkv50/nodes=1-16                    42.95m ± 42%            53.45m ± 41%        ~ (p=0.197 n=10)
+CockroachDBkv95/nodes=1-16                    1.550m ± 10%            1.600m ±  6%        ~ (p=0.341 n=10)
+CockroachDBkv0/nodes=3-16                     109.1m ±  8%            109.1m ±  8%        ~ (p=0.974 n=10)
+CockroachDBkv50/nodes=3-16                    20.45m ± 84%            40.85m ± 23%  +99.76% (p=0.007 n=10)
+CockroachDBkv95/nodes=3-16                    1.500m ±  7%            1.550m ±  3%        ~ (p=0.714 n=10)
+geomean                                       17.12m                  20.02m        +16.92%
+
+                           │ cockroachdb//go1.26.7.results │        cockroachdb//go1.27.0.results         │
+                           │     write-p95-latency-sec     │ write-p95-latency-sec  vs base               │
+CockroachDBkv0/nodes=1-16                      453.0m ± 7%            444.6m ±  6%       ~ (p=0.416 n=10)
+CockroachDBkv50/nodes=1-16                     570.4m ± 6%            570.4m ±  6%       ~ (p=0.374 n=10)
+CockroachDBkv95/nodes=1-16                     213.9m ± 6%            218.1m ± 12%       ~ (p=0.263 n=10)
+CockroachDBkv0/nodes=3-16                      478.2m ± 9%            486.6m ± 24%       ~ (p=0.614 n=10)
+CockroachDBkv50/nodes=3-16                     570.4m ± 6%            570.4m ±  6%       ~ (p=0.920 n=10)
+CockroachDBkv95/nodes=3-16                     218.1m ± 8%            226.5m ±  4%       ~ (p=0.187 n=10)
+geomean                                        385.6m                 389.2m        +0.94%
+
+                           │ cockroachdb//go1.26.7.results │         cockroachdb//go1.27.0.results         │
+                           │     write-p99-latency-sec     │ write-p99-latency-sec  vs base                │
+CockroachDBkv0/nodes=1-16                     1.846 ±  24%            1.879 ±  57%        ~ (p=0.837 n=10)
+CockroachDBkv50/nodes=1-16                   956.3m ± 111%          1174.5m ±  31%        ~ (p=0.540 n=10)
+CockroachDBkv95/nodes=1-16                   335.5m ± 340%           461.4m ± 322%        ~ (p=0.749 n=10)
+CockroachDBkv0/nodes=3-16                     1.812 ±  15%            1.946 ±  17%        ~ (p=0.361 n=10)
+CockroachDBkv50/nodes=3-16                    1.242 ±  32%            1.242 ±  38%        ~ (p=0.897 n=10)
+CockroachDBkv95/nodes=3-16                   444.6m ± 247%           805.3m ±  92%        ~ (p=0.490 n=10)
+geomean                                      916.4m                   1.121         +22.29%
+
+                           │ cockroachdb//go1.26.7.results │    cockroachdb//go1.27.0.results     │
+                           │         write-ops/sec         │ write-ops/sec  vs base               │
+CockroachDBkv0/nodes=1-16                      21.04k ± 8%    20.14k ±  9%       ~ (p=0.684 n=10)
+CockroachDBkv50/nodes=1-16                     11.46k ± 2%    11.58k ±  9%       ~ (p=0.631 n=10)
+CockroachDBkv95/nodes=1-16                     1.460k ± 6%    1.452k ±  4%       ~ (p=0.470 n=10)
+CockroachDBkv0/nodes=3-16                      20.15k ± 4%    18.77k ± 11%       ~ (p=0.089 n=10)
+CockroachDBkv50/nodes=3-16                     11.46k ± 9%    11.54k ±  7%       ~ (p=1.000 n=10)
+CockroachDBkv95/nodes=3-16                     1.455k ± 2%    1.456k ±  1%       ~ (p=0.869 n=10)
+geomean                                        7.007k         6.889k        -1.69%
+
+                           │ cockroachdb//go1.26.7.results │    cockroachdb//go1.27.0.results    │
+                           │           write-ops           │  write-ops    vs base               │
+CockroachDBkv0/nodes=1-16                      1.263M ± 8%   1.208M ±  9%       ~ (p=0.684 n=10)
+CockroachDBkv50/nodes=1-16                     687.7k ± 2%   694.9k ±  9%       ~ (p=0.631 n=10)
+CockroachDBkv95/nodes=1-16                     87.63k ± 6%   87.19k ±  4%       ~ (p=0.481 n=10)
+CockroachDBkv0/nodes=3-16                      1.209M ± 4%   1.126M ± 11%       ~ (p=0.089 n=10)
+CockroachDBkv50/nodes=3-16                     687.4k ± 9%   692.6k ±  7%       ~ (p=1.000 n=10)
+CockroachDBkv95/nodes=3-16                     87.30k ± 2%   87.41k ±  1%       ~ (p=0.971 n=10)
+geomean                                        420.4k        413.4k        -1.67%
+
+                           │ cockroachdb//go1.26.7.results │        cockroachdb//go1.27.0.results        │
+                           │     read-avg-latency-sec      │ read-avg-latency-sec  vs base               │
+CockroachDBkv50/nodes=1-16                    44.65m ± 30%           42.95m ± 15%       ~ (p=0.148 n=10)
+CockroachDBkv95/nodes=1-16                    37.35m ± 26%           37.75m ± 25%       ~ (p=0.424 n=10)
+CockroachDBkv50/nodes=3-16                    42.30m ± 27%           45.95m ± 20%       ~ (p=0.725 n=10)
+CockroachDBkv95/nodes=3-16                    38.30m ±  9%           38.65m ±  9%       ~ (p=0.541 n=10)
+geomean                                       40.54m                 41.19m        +1.61%
+
+                           │ cockroachdb//go1.26.7.results │         cockroachdb//go1.27.0.results         │
+                           │     read-p100-latency-sec     │ read-p100-latency-sec  vs base                │
+CockroachDBkv50/nodes=1-16                    13.42 ±   8%            11.27 ±  19%  -16.00% (p=0.013 n=10)
+CockroachDBkv95/nodes=1-16                    2.819 ± 186%            3.490 ± 108%        ~ (p=0.288 n=10)
+CockroachDBkv50/nodes=3-16                    12.35 ±  35%            12.08 ±  24%        ~ (p=0.956 n=10)
+CockroachDBkv95/nodes=3-16                    3.154 ±  62%            3.691 ±  27%        ~ (p=0.869 n=10)
+geomean                                       6.196                   6.472          +4.46%
+
+                           │ cockroachdb//go1.26.7.results │        cockroachdb//go1.27.0.results         │
+                           │     read-p50-latency-sec      │ read-p50-latency-sec  vs base                │
+CockroachDBkv50/nodes=1-16                    2.500m ± 36%           2.350m ± 32%        ~ (p=0.724 n=10)
+CockroachDBkv95/nodes=1-16                    1.000m ± 10%           1.000m ±  0%        ~ (p=0.087 n=10)
+CockroachDBkv50/nodes=3-16                    1.500m ± 47%           2.250m ± 24%  +50.00% (p=0.003 n=10)
+CockroachDBkv95/nodes=3-16                    900.0µ ± 11%          1000.0µ ± 10%        ~ (p=0.070 n=10)
+geomean                                       1.355m                 1.516m        +11.88%
+
+                           │ cockroachdb//go1.26.7.results │        cockroachdb//go1.27.0.results        │
+                           │     read-p95-latency-sec      │ read-p95-latency-sec  vs base               │
+CockroachDBkv50/nodes=1-16                     151.0m ± 6%            151.0m ± 6%       ~ (p=0.768 n=10)
+CockroachDBkv95/nodes=1-16                     155.2m ± 8%            151.0m ± 6%       ~ (p=0.396 n=10)
+CockroachDBkv50/nodes=3-16                     151.0m ± 6%            151.0m ± 6%       ~ (p=0.210 n=10)
+CockroachDBkv95/nodes=3-16                     151.0m ± 6%            159.4m ± 5%       ~ (p=0.286 n=10)
+geomean                                        152.0m                 153.1m       +0.67%
+
+                           │ cockroachdb//go1.26.7.results │        cockroachdb//go1.27.0.results        │
+                           │     read-p99-latency-sec      │ read-p99-latency-sec  vs base               │
+CockroachDBkv50/nodes=1-16                    293.6m ± 20%           343.9m ± 22%       ~ (p=0.063 n=10)
+CockroachDBkv95/nodes=1-16                    264.2m ±  8%           255.9m ± 70%       ~ (p=0.586 n=10)
+CockroachDBkv50/nodes=3-16                    352.3m ± 29%           285.2m ± 41%       ~ (p=0.285 n=10)
+CockroachDBkv95/nodes=3-16                    268.4m ± 19%           268.4m ± 31%       ~ (p=0.805 n=10)
+geomean                                       292.6m                 286.5m        -2.11%
+
+                           │ cockroachdb//go1.26.7.results │    cockroachdb//go1.27.0.results    │
+                           │         read-ops/sec          │ read-ops/sec  vs base               │
+CockroachDBkv50/nodes=1-16                     11.45k ± 2%    11.53k ± 9%       ~ (p=0.565 n=10)
+CockroachDBkv95/nodes=1-16                     27.73k ± 6%    27.57k ± 4%       ~ (p=0.481 n=10)
+CockroachDBkv50/nodes=3-16                     11.40k ± 9%    11.50k ± 7%       ~ (p=0.971 n=10)
+CockroachDBkv95/nodes=3-16                     27.70k ± 1%    27.64k ± 0%       ~ (p=0.468 n=10)
+geomean                                        17.80k         17.83k       +0.18%
+
+                           │ cockroachdb//go1.26.7.results │   cockroachdb//go1.27.0.results    │
+                           │           read-ops            │  read-ops    vs base               │
+CockroachDBkv50/nodes=1-16                     686.7k ± 2%   691.6k ± 9%       ~ (p=0.579 n=10)
+CockroachDBkv95/nodes=1-16                     1.664M ± 6%   1.654M ± 5%       ~ (p=0.481 n=10)
+CockroachDBkv50/nodes=3-16                     684.1k ± 9%   689.9k ± 7%       ~ (p=1.000 n=10)
+CockroachDBkv95/nodes=3-16                     1.662M ± 1%   1.659M ± 0%       ~ (p=0.481 n=10)
+geomean                                        1.068M        1.070M       +0.19%

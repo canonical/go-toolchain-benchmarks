@@ -1,0 +1,2 @@
+arch=x86_64
+mem_gib=62

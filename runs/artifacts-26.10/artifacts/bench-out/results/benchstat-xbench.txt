@@ -1,0 +1,17 @@
+goos: linux
+goarch: amd64
+pkg: golang.org/x/benchmarks/gc_latency
+cpu: AMD EPYC 7302 16-Core Processor                
+                                    │ /home/ubuntu/bench-out/results/xbench-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/xbench-go1.27.0-all.txt │
+                                    │                      p99.999-sec                       │           p99.999-sec             vs base              │
+GCLatency/how=stack/fluff=false-32                                               181.8µ ± 4%                        176.7µ ± 5%       ~ (p=0.132 n=6)
+GCLatency/how=heap/fluff=false-32                                                184.6µ ± 5%                        185.9µ ± 6%       ~ (p=0.818 n=6)
+GCLatency/how=global/fluff=false-32                                              201.3µ ± 8%                        202.6µ ± 8%       ~ (p=0.589 n=6)
+geomean                                                                          189.1µ                             188.1µ       -0.50%
+
+                                    │ /home/ubuntu/bench-out/results/xbench-go1.26.7-all.txt │ /home/ubuntu/bench-out/results/xbench-go1.27.0-all.txt │
+                                    │                      p99.9999-sec                      │           p99.9999-sec            vs base              │
+GCLatency/how=stack/fluff=false-32                                              410.1µ ± 22%                       460.3µ ± 19%       ~ (p=0.180 n=6)
+GCLatency/how=heap/fluff=false-32                                               457.6µ ± 31%                       366.0µ ± 31%       ~ (p=0.589 n=6)
+GCLatency/how=global/fluff=false-32                                             904.8µ ± 22%                       989.2µ ±  7%       ~ (p=0.065 n=6)
+geomean                                                                         553.8µ                             550.3µ        -0.63%
